@@ -14,8 +14,8 @@ class MDStep:
         self.atoms = []
         self.atomNum = 0
 
-def parseMDDump(filePath):
-    with open(filePath, 'r') as f:
+def parseMDDump(mddumpFilePath):
+    with open(mddumpFilePath, 'r') as f:
         lines = f.readlines()
         # print(lines)
 
@@ -61,11 +61,33 @@ def parseMDDump(filePath):
                     j+=1
         #print(mdStep.lattice)
 
-        for atom in mdStep.atoms:
-            print(atom.specie, atom.positons, atom.forces, atom.velocity)
+        # for atom in mdStep.atoms:
+        #     print(atom.specie, atom.positons, atom.forces, atom.velocity)
+        mdStep.atomNum = len(mdStep.atoms)
+        print(mdStep.lattice)
 
-        mdStep.atomNum = len(mdStep.atoms)  
-        print(mdStep.atomNum)
+    return MDSteps
+
+def produceXYZ(XYZFilePath, mddumpFilePath):
+    MDSteps = parseMDDump(mddumpFilePath)
+    with open(XYZFilePath, 'w') as f:
+        for mdStep in MDSteps:
+            f.write(str(mdStep.atomNum)+'\n')
+
+            line = ''
+            for latticeLine in mdStep.lattice:
+                line = line+' '.join(str(x) for x in latticeLine)
+            f.write(f'Lattice="{line}"'+' ')
+            f.write('Properties=species:S:1:pos:R:3:forces:R:3 pbc="T T T"'+'\n')
+
+            
+            for atom in mdStep.atoms:
+                f.write(atom.specie+' ')
+                for x in atom.positons:
+                    f.write(str(x)+' ')
+                for x in atom.forces:
+                    f.write(str(x)+' ')
+                f.write('\n')
 
 
-parseMDDump('./MD_dump')
+produceXYZ('./test_MD_dump.xyz', './MD_dump')
