@@ -9,7 +9,7 @@
                               https://github.com/deepmodeling/abacus-develop         
                       Commit: unknown
 
-    Start Time is Mon Jun 17 07:07:40 2024
+    Start Time is Wed Jun 19 07:21:57 2024
                                                                                      
  ------------------------------------------------------------------------------------
 
@@ -302,7 +302,7 @@ mixing_ndim: 8
              electron number of element O = 6
        total electron number of element O = 384
             AUTOSET number of electrons:  = 1216
- DONE : SETUP UNITCELL Time : 0.0585778 (SEC)
+ DONE : SETUP UNITCELL Time : 0.0631595 (SEC)
 
 
 
@@ -344,7 +344,7 @@ K-POINTS CARTESIAN COORDINATES
 K-POINTS DIRECT COORDINATES
  KPOINTS     DIRECT_X     DIRECT_Y     DIRECT_Z WEIGHT
        1   0.00000000   0.00000000   0.00000000 2.0000
- DONE : INIT K-POINTS Time : 0.0595079 (SEC)
+ DONE : INIT K-POINTS Time : 0.0639519 (SEC)
 
 
 
@@ -379,7 +379,7 @@ K-POINTS DIRECT COORDINATES
         4            714          29794
  --------------- sum -------------------
         4           2851         119177
- DONE : INIT PLANEWAVE Time : 0.067851 (SEC)
+ DONE : INIT PLANEWAVE Time : 0.0723387 (SEC)
 
 
  Warning_Memory_Consuming allocated:  SF::strucFac 7.27032 MB
@@ -437,7 +437,7 @@ sender_size is 4779946 ; sender_size of each process is:
 
  Warning_Memory_Consuming allocated:  LOC::A2A_sender 145.872 MB
                                  init_chg = atomic
- DONE : INIT SCF Time : 1.02946 (SEC)
+ DONE : INIT SCF Time : 1.00549 (SEC)
 
 
  LCAO ALGORITHM --------------- ION=   1  ELEC=   1--------------------------------
@@ -466,7 +466,7 @@ eigenvalues were copied to ekb
   Energy         Rydberg                 eV         
 ------------------------------------------------------
 E_KohnSham    -16376.0897629417   -222808.1317354770
-E_Harris      -16466.2058714545   -224034.2242928373
+E_Harris      -16466.2058714545   -224034.2242928374
 E_Fermi            1.3716449672        18.6621871870
 ------------------------------------------------------
 
@@ -481,7 +481,7 @@ eigenvalues were copied to ekb
   Energy         Rydberg                 eV         
 ------------------------------------------------------
 E_KohnSham    -16376.0527119882   -222807.6276313928
-E_Harris      -16396.4864447736   -223085.6428286828
+E_Harris      -16396.4864447736   -223085.6428286829
 E_Fermi            1.3644537459        18.5643456019
 ------------------------------------------------------
 
@@ -510,7 +510,7 @@ eigenvalues were copied to ekb
 ------------------------------------------------------
   Energy         Rydberg                 eV         
 ------------------------------------------------------
-E_KohnSham    -16376.0676802125   -222807.8312845316
+E_KohnSham    -16376.0676802125   -222807.8312845317
 E_Harris      -16370.3468324192   -222729.9951571526
 E_Fermi            1.3546763669        18.4313175358
 ------------------------------------------------------
@@ -521,12 +521,12 @@ K-S equation was solved by genelpa2
 
 eigenvalues were copied to ekb
 
- Density error is 0.000273594367073
+ Density error is 0.000273594367074
 ------------------------------------------------------
   Energy         Rydberg                 eV         
 ------------------------------------------------------
 E_KohnSham    -16376.0679333229   -222807.8347282761
-E_Harris      -16374.4153945031   -222785.3507841597
+E_Harris      -16374.4153945031   -222785.3507841598
 E_Fermi            1.3568392121        18.4607445541
 ------------------------------------------------------
 
@@ -551,7 +551,7 @@ K-S equation was solved by genelpa2
 
 eigenvalues were copied to ekb
 
- Density error is 1.35697630272e-05
+ Density error is 1.35697630274e-05
 ------------------------------------------------------
   Energy         Rydberg                 eV         
 ------------------------------------------------------
@@ -566,11 +566,11 @@ K-S equation was solved by genelpa2
 
 eigenvalues were copied to ekb
 
- Density error is 7.61840850584e-06
+ Density error is 7.61840850587e-06
 ------------------------------------------------------
   Energy         Rydberg                 eV         
 ------------------------------------------------------
-E_KohnSham    -16376.0679470738   -222807.8349153657
+E_KohnSham    -16376.0679470738   -222807.8349153656
 E_Harris      -16376.0718500963   -222807.8880187118
 E_Fermi            1.3572024890        18.4656871900
 ------------------------------------------------------
@@ -581,7 +581,7 @@ K-S equation was solved by genelpa2
 
 eigenvalues were copied to ekb
 
- Density error is 6.62579063508e-07
+ Density error is 6.62579063365e-07
 ----------------------------------------------------------
     Energy           Rydberg                 eV         
 ----------------------------------------------------------
@@ -613,13 +613,13 @@ TOTAL-FORCE (eV/Angstrom)
 Hf1                              -0.0472649136        -0.0116833035        -0.0592764843
 Hf2                              -0.0480881327        -0.0114793093        -0.0588534697
 Hf3                              -0.0482881741        -0.0114528816        -0.0601355328
-Hf4                              -0.0474174702        -0.0117031999        -0.0579246321
+Hf4                              -0.0474174702        -0.0117031999        -0.0579246320
 Hf5                               0.0474174702         0.0117031999         0.0579246321
 Hf6                               0.0482881741         0.0114528816         0.0601355327
 Hf7                               0.0480881327         0.0114793093         0.0588534697
 Hf8                               0.0472649136         0.0116833035         0.0592764843
-Hf9                               0.0487473633         0.0113637339        -0.0602076540
-Hf10                              0.0479331007         0.0120932402        -0.0581095640
+Hf9                               0.0487473634         0.0113637340        -0.0602076541
+Hf10                              0.0479331007         0.0120932401        -0.0581095640
 Hf11                              0.0466776841         0.0112616049        -0.0594359856
 Hf12                              0.0478063237         0.0116198887        -0.0589181723
 Hf13                             -0.0478063237        -0.0116198887         0.0589181723
@@ -627,7 +627,7 @@ Hf14                             -0.0466776841        -0.0112616049         0.05
 Hf15                             -0.0479331007        -0.0120932402         0.0581095640
 Hf16                             -0.0487473634        -0.0113637340         0.0602076541
 Hf17                             -0.0472255342         0.0113955929         0.0588351736
-Hf18                             -0.0471873601         0.0114042038         0.0591637715
+Hf18                             -0.0471873601         0.0114042037         0.0591637715
 Hf19                             -0.0483144504         0.0116991585         0.0578756178
 Hf20                             -0.0482519576         0.0117085862         0.0601470264
 Hf21                              0.0482519576        -0.0117085862        -0.0601470264
@@ -635,10 +635,10 @@ Hf22                              0.0483144504        -0.0116991585        -0.05
 Hf23                              0.0471873601        -0.0114042037        -0.0591637715
 Hf24                              0.0472255342        -0.0113955929        -0.0588351736
 Hf25                              0.0484186914        -0.0118086732         0.0585331867
-Hf26                              0.0471982618        -0.0113332710         0.0598292246
+Hf26                              0.0471982618        -0.0113332710         0.0598292247
 Hf27                              0.0471990607        -0.0118073693         0.0583994722
-Hf28                              0.0480122419        -0.0112474644         0.0597533488
-Hf29                             -0.0480122418         0.0112474644        -0.0597533488
+Hf28                              0.0480122418        -0.0112474644         0.0597533488
+Hf29                             -0.0480122419         0.0112474644        -0.0597533488
 Hf30                             -0.0471990607         0.0118073693        -0.0583994722
 Hf31                             -0.0471982618         0.0113332710        -0.0598292247
 Hf32                             -0.0484186914         0.0118086732        -0.0585331867
@@ -648,8 +648,8 @@ O3                               -0.0183082124         0.0561572043        -0.01
 O4                               -0.0099160551         0.0641596057        -0.0017486221
 O5                                0.0099160551        -0.0641596057         0.0017486221
 O6                                0.0183082124        -0.0561572043         0.0115419937
-O7                               -0.0008394318        -0.0616193946        -0.0006636697
-O8                               -0.0102139122        -0.0487907342         0.0147593248
+O7                               -0.0008394319        -0.0616193946        -0.0006636697
+O8                               -0.0102139122        -0.0487907342         0.0147593249
 O9                                0.0106125682        -0.0452327226         0.0081292916
 O10                               0.0073018746        -0.0580430135        -0.0183573560
 O11                               0.0001313039        -0.0615929835        -0.0014277306
@@ -710,8 +710,8 @@ O64                              -0.0034451213         0.0086194814         0.05
 ----------------------------------------------------------------
 TOTAL-STRESS (KBAR)                                           
 ----------------------------------------------------------------
-       80.6743066421        -0.0001035947        -0.0000852394
-       -0.0001035947        79.2856770553         0.0030297678
+       80.6743066420        -0.0001035947        -0.0000852394
+       -0.0001035947        79.2856770554         0.0030297678
        -0.0000852394         0.0030297678        80.5653506023
 ----------------------------------------------------------------
  TOTAL-PRESSURE: 80.175111 KBAR
@@ -766,7 +766,7 @@ Kinetic Term is 1.254943 kbar
  +0.099415575        -0                  +0                  
  -0                  +0.1003958          -0                  
  +0                  -0                  +0.096085593        
- DONE : LOCAL POTENTIAL Time : 88.479061 (SEC)
+ DONE : LOCAL POTENTIAL Time : 156.82625 (SEC)
 
 
  SETUP K-POINTS
@@ -785,7 +785,7 @@ K-POINTS CARTESIAN COORDINATES
 K-POINTS DIRECT COORDINATES
  KPOINTS     DIRECT_X     DIRECT_Y     DIRECT_Z WEIGHT
        1   0.00000000   0.00000000   0.00000000 2.0000
- DONE : INIT K-POINTS Time : 88.480533 (SEC)
+ DONE : INIT K-POINTS Time : 156.83018 (SEC)
 
  Find the file, try to read charge from file.
  read in fermi energy = 0
@@ -817,7 +817,7 @@ receiver_size is 4875264 ; receiver_size of each process is:
 1254400 1218560 1218560 1183744 
 sender_size is 4779946 ; sender_size of each process is:
 1254400 1207801 1149184 1168561 
- DONE : INIT SCF Time : 89.2982 (SEC)
+ DONE : INIT SCF Time : 157.654 (SEC)
 
 
  LCAO ALGORITHM --------------- ION=2     ELEC=1   --------------------------------
@@ -841,12 +841,12 @@ K-S equation was solved by genelpa2
 
 eigenvalues were copied to ekb
 
- Density error is 0.000246919540601
+ Density error is 0.0002469195406
 ------------------------------------------------------
   Energy         Rydberg                 eV         
 ------------------------------------------------------
 E_KohnSham    -16376.0578990719   -222807.6982052864
-E_Harris      -16375.6114301199   -222801.6236835599
+E_Harris      -16375.6114301199   -222801.6236835600
 E_Fermi            1.3626342480        18.5395900627
 ------------------------------------------------------
 
@@ -856,12 +856,12 @@ K-S equation was solved by genelpa2
 
 eigenvalues were copied to ekb
 
- Density error is 9.19900978482e-05
+ Density error is 9.19900978479e-05
 ------------------------------------------------------
   Energy         Rydberg                 eV         
 ------------------------------------------------------
 E_KohnSham    -16376.0579099975   -222807.6983539368
-E_Harris      -16375.9142463423   -222805.7437096316
+E_Harris      -16375.9142463424   -222805.7437096317
 E_Fermi            1.3627185248        18.5407367074
 ------------------------------------------------------
 
@@ -871,12 +871,12 @@ K-S equation was solved by genelpa2
 
 eigenvalues were copied to ekb
 
- Density error is 4.34920603854e-05
+ Density error is 4.3492060385e-05
 ------------------------------------------------------
   Energy         Rydberg                 eV         
 ------------------------------------------------------
-E_KohnSham    -16376.0579110433   -222807.6983681666
-E_Harris      -16376.0221602769   -222807.2119540358
+E_KohnSham    -16376.0579110433   -222807.6983681667
+E_Harris      -16376.0221602769   -222807.2119540357
 E_Fermi            1.3627553168        18.5412372879
 ------------------------------------------------------
 
@@ -886,7 +886,7 @@ K-S equation was solved by genelpa2
 
 eigenvalues were copied to ekb
 
- Density error is 7.57329165866e-06
+ Density error is 7.57329165852e-06
 ------------------------------------------------------
   Energy         Rydberg                 eV         
 ------------------------------------------------------
@@ -901,12 +901,12 @@ K-S equation was solved by genelpa2
 
 eigenvalues were copied to ekb
 
- Density error is 2.65532340011e-06
+ Density error is 2.65532340013e-06
 ------------------------------------------------------
   Energy         Rydberg                 eV         
 ------------------------------------------------------
 E_KohnSham    -16376.0579111835   -222807.6983700730
-E_Harris      -16376.0577552722   -222807.6962487912
+E_Harris      -16376.0577552722   -222807.6962487913
 E_Fermi            1.3627690607        18.5414242837
 ------------------------------------------------------
 
@@ -916,11 +916,11 @@ K-S equation was solved by genelpa2
 
 eigenvalues were copied to ekb
 
- Density error is 1.04651199316e-06
+ Density error is 1.04651199315e-06
 ------------------------------------------------------
   Energy         Rydberg                 eV         
 ------------------------------------------------------
-E_KohnSham    -16376.0579111862   -222807.6983701103
+E_KohnSham    -16376.0579111862   -222807.6983701104
 E_Harris      -16376.0577172070   -222807.6957308877
 E_Fermi            1.3627676196        18.5414046762
 ------------------------------------------------------
@@ -931,7 +931,7 @@ K-S equation was solved by genelpa2
 
 eigenvalues were copied to ekb
 
- Density error is 4.54407552887e-07
+ Density error is 4.5440755276e-07
 ----------------------------------------------------------
     Energy           Rydberg                 eV         
 ----------------------------------------------------------
@@ -941,8 +941,8 @@ E_Harris          -16376.0576637569   -222807.6950036621
 E_band               362.3348279493      4929.8182439599
 E_one_elec         -5319.7119804059    -72378.3946523845
 E_Hartree           3940.6014384804     53614.6331103296
-E_xc               -1688.6789126187    -22975.6553040579
-E_Ewald           -13308.2684566421   -181068.2815239982
+E_xc               -1688.6789126187    -22975.6553040578
+E_Ewald           -13308.2684566421   -181068.2815239983
 E_entropy(-TS)        -0.0000000000        -0.0000000000
 E_descf                0.0000000000         0.0000000000
 E_exx                  0.0000000000         0.0000000000
@@ -956,33 +956,33 @@ TOTAL-FORCE (eV/Angstrom)
 ------------------------------------------------------------------------------------------
 Hf1                              -0.0495753410        -0.0402616442        -0.0929263448
 Hf2                              -0.0635736101         0.0195539766        -0.0466297543
-Hf3                              -0.0212322892        -0.0047081762        -0.0359740520
+Hf3                              -0.0212322893        -0.0047081762        -0.0359740520
 Hf4                              -0.0720055651         0.0263337471        -0.0819978889
 Hf5                               0.0483797232        -0.0464885518         0.0448639914
 Hf6                               0.0414034558         0.0060534007         0.0821573648
 Hf7                               0.1058607489        -0.0031291882         0.0848294781
 Hf8                               0.0532102891         0.0104646111         0.0832232305
-Hf9                               0.0622455685        -0.0195014013        -0.0249589986
+Hf9                               0.0622455685        -0.0195014014        -0.0249589986
 Hf10                              0.0553564635         0.0281637035        -0.1170360550
-Hf11                              0.0458691321        -0.0433968083        -0.0719926415
+Hf11                              0.0458691321        -0.0433968083        -0.0719926416
 Hf12                              0.0314409778         0.0191589432        -0.0937774740
 Hf13                             -0.0504614762         0.0182645753         0.1108464464
 Hf14                             -0.0448796115        -0.0431687072         0.0554423621
-Hf15                             -0.0536692492        -0.0144855926         0.0546470827
-Hf16                             -0.0419084780        -0.0132367574         0.0712080255
+Hf15                             -0.0536692492        -0.0144855925         0.0546470827
+Hf16                             -0.0419084780        -0.0132367574         0.0712080254
 Hf17                             -0.0336222425         0.0501298523         0.0276392131
 Hf18                             -0.0363198649         0.0347007603         0.1217842936
 Hf19                             -0.0603464513         0.0034778673         0.1065793165
 Hf20                             -0.0637751641        -0.0124911699         0.0774390897
-Hf21                              0.0814712121        -0.0147903920        -0.0563536838
+Hf21                              0.0814712121        -0.0147903921        -0.0563536838
 Hf22                              0.0551166401        -0.0677897937        -0.0185205477
 Hf23                              0.0619175554        -0.0263893549        -0.0456187381
-Hf24                             -0.0239255294        -0.0168197161        -0.0422472363
-Hf25                              0.0894560119        -0.0278611281         0.0601631830
+Hf24                             -0.0239255294        -0.0168197160        -0.0422472363
+Hf25                              0.0894560119        -0.0278611281         0.0601631829
 Hf26                              0.0476291166        -0.0635621166         0.0593618359
 Hf27                              0.0306020663        -0.0800752995         0.0609373224
 Hf28                              0.0743024445        -0.0831163787         0.0927003998
-Hf29                             -0.0438586060         0.0570395956        -0.1014712515
+Hf29                             -0.0438586060         0.0570395956        -0.1014712516
 Hf30                             -0.0195243046         0.0084035371        -0.0546918210
 Hf31                             -0.0625536416         0.0299987354        -0.1207723184
 Hf32                             -0.0081054965         0.0270673557        -0.0506276295
@@ -1044,8 +1044,8 @@ O55                              -0.0655014571        -0.0578673114        -0.00
 O56                              -0.0212789639        -0.0158818091         0.1308543086
 O57                               0.0452362031        -0.0630370971        -0.0447788906
 O58                               0.0390447004        -0.0144824748        -0.0839281397
-O59                               0.0071743528         0.0299631617        -0.0870191204
-O60                               0.0045304723        -0.0253177886        -0.0832448618
+O59                               0.0071743528         0.0299631618        -0.0870191204
+O60                               0.0045304723        -0.0253177886        -0.0832448619
 O61                              -0.0006659729         0.0628667901         0.0350480015
 O62                              -0.0176254439         0.0121728404         0.1106039767
 O63                               0.0052200839         0.0159649829         0.0617882224
@@ -1054,9 +1054,9 @@ O64                               0.0608955288        -0.0931870448         0.12
 ----------------------------------------------------------------
 TOTAL-STRESS (KBAR)                                           
 ----------------------------------------------------------------
-       87.0705554958        -0.2799410329        -0.1700152689
-       -0.2799410329        86.2724369847         0.1000924977
-       -0.1700152689         0.1000924977        87.6360862322
+       87.0705554959        -0.2799410328        -0.1700152688
+       -0.2799410328        86.2724369849         0.1000924977
+       -0.1700152688         0.1000924977        87.6360862321
 ----------------------------------------------------------------
  TOTAL-PRESSURE: 86.993026 KBAR
 
@@ -1093,113 +1093,113 @@ TIME STATISTICS
 ------------------------------------------------------------------------------------
      CLASS_NAME                 NAME            TIME(Sec)  CALLS   AVG(Sec) PER(%)
 ------------------------------------------------------------------------------------
-                     total                      164.07          15  10.94   100.00
+                     total                      234.16          15  15.61   100.00
 Driver               reading                      0.00           1   0.00     0.00
 Input                Init                         0.00           1   0.00     0.00
 Input_Conv           Convert                      0.00           1   0.00     0.00
-Driver               driver_line                164.07           1 164.07   100.00
+Driver               driver_line                234.16           1 234.16   100.00
 UnitCell             check_tau                    0.00           1   0.00     0.00
-ESolver_KS_LCAO      init                         0.55           1   0.55     0.33
+ESolver_KS_LCAO      init                         0.53           1   0.53     0.23
 PW_Basis_Sup         setuptransform               0.01           1   0.01     0.00
 PW_Basis_Sup         distributeg                  0.00           1   0.00     0.00
-mymath               heapsort                     0.03           4   0.01     0.02
+mymath               heapsort                     0.03           4   0.01     0.01
 PW_Basis_K           setuptransform               0.01           1   0.01     0.00
 PW_Basis_K           distributeg                  0.00           1   0.00     0.00
-PW_Basis             setup_struc_factor           0.23           2   0.11     0.14
-NOrbital_Lm          extra_uniform                0.04          16   0.00     0.02
+PW_Basis             setup_struc_factor           0.23           2   0.11     0.10
+NOrbital_Lm          extra_uniform                0.03          16   0.00     0.01
 Mathzone_Add1        SplineD2                     0.00          16   0.00     0.00
 Mathzone_Add1        Cubic_Spline_Interpolation   0.00          16   0.00     0.00
-Mathzone_Add1        Uni_Deriv_Phi                0.04          16   0.00     0.02
-ppcell_vl            init_vloc                    0.41           2   0.20     0.25
-Run_MD               md_line                    163.49           1 163.49    99.65
-Nose_Hoover          setup                       87.65           1  87.65    53.42
-MD_func              force_virial               163.46           2  81.73    99.63
-ESolver_KS_LCAO      run                        126.66           2  63.33    77.20
-ESolver_KS_LCAO      before_scf                   1.50           2   0.75     0.92
-ESolver_KS_LCAO      beforesolver                 0.15           2   0.08     0.09
+Mathzone_Add1        Uni_Deriv_Phi                0.03          16   0.00     0.01
+ppcell_vl            init_vloc                    0.43           2   0.21     0.18
+Run_MD               md_line                    233.59           1 233.59    99.76
+Nose_Hoover          setup                      156.02           1 156.02    66.63
+MD_func              force_virial               233.57           2 116.78    99.75
+ESolver_KS_LCAO      run                        196.49           2  98.24    83.91
+ESolver_KS_LCAO      before_scf                   1.51           2   0.75     0.64
+ESolver_KS_LCAO      beforesolver                 0.16           2   0.08     0.07
 ESolver_KS_LCAO      set_matrix_grid              0.02           2   0.01     0.01
 atom_arrange         search                       0.01           2   0.00     0.00
-Grid_Technique       init                         0.01           2   0.01     0.01
+Grid_Technique       init                         0.01           2   0.00     0.00
 Grid_BigCell         grid_expansion_index         0.00           4   0.00     0.00
 Record_adj           for_2d                       0.00           2   0.00     0.00
 Grid_Driver          Find_atom                    0.00        1344   0.00     0.00
 LCAO_domain          grid_prepare                 0.00           2   0.00     0.00
 OverlapNew           initialize_SR                0.01           2   0.00     0.00
 EkineticNew          initialize_HR                0.01           2   0.00     0.00
-NonlocalNew          initialize_HR                0.01           2   0.01     0.01
+NonlocalNew          initialize_HR                0.02           2   0.01     0.01
 Veff                 initialize_HR                0.00           2   0.00     0.00
-LOC                  Alltoall                     0.04           2   0.02     0.03
+LOC                  Alltoall                     0.05           2   0.03     0.02
 Charge               set_rho_core                 0.00           2   0.00     0.00
-Charge               atomic_rho                   0.95           4   0.24     0.58
-PW_Basis_Sup         recip2real                   0.79         128   0.01     0.48
-PW_Basis_Sup         gathers_scatterp             0.31         128   0.00     0.19
-Potential            init_pot                     0.24           2   0.12     0.14
-Potential            update_from_charge           2.16          20   0.11     1.32
-Potential            cal_fixed_v                  0.02           2   0.01     0.01
-PotLocal             cal_fixed_v                  0.02           2   0.01     0.01
-Potential            cal_v_eff                    2.13          20   0.11     1.30
-H_Hartree_pw         v_hartree                    0.27          20   0.01     0.16
-PW_Basis_Sup         real2recip                   0.66         148   0.00     0.40
-PW_Basis_Sup         gatherp_scatters             0.20         148   0.00     0.12
-PotXC                cal_v_eff                    1.83          20   0.09     1.12
-XC_Functional        v_xc                         1.82          20   0.09     1.11
+Charge               atomic_rho                   1.04           4   0.26     0.44
+PW_Basis_Sup         recip2real                  10.46         128   0.08     4.47
+PW_Basis_Sup         gathers_scatterp             3.55         128   0.03     1.52
+Potential            init_pot                     0.23           2   0.12     0.10
+Potential            update_from_charge          24.62          20   1.23    10.52
+Potential            cal_fixed_v                  0.01           2   0.01     0.01
+PotLocal             cal_fixed_v                  0.01           2   0.01     0.01
+Potential            cal_v_eff                   24.60          20   1.23    10.51
+H_Hartree_pw         v_hartree                    3.06          20   0.15     1.31
+PW_Basis_Sup         real2recip                  13.76         148   0.09     5.88
+PW_Basis_Sup         gatherp_scatters            11.04         148   0.07     4.72
+PotXC                cal_v_eff                   21.51          20   1.08     9.19
+XC_Functional        v_xc                        21.49          20   1.07     9.18
 Potential            interpolate_vrs              0.01          20   0.00     0.00
 H_Ewald_pw           compute_ewald                0.01           2   0.01     0.01
 Charge_Mixing        init_mixing                  0.00           2   0.00     0.00
-HSolverLCAO          solve                      121.30          18   6.74    73.93
-HamiltLCAO           updateHk                    57.05          18   3.17    34.77
-OperatorLCAO         init                        52.33          54   0.97    31.89
-OverlapNew           calculate_SR                 1.30           2   0.65     0.79
+HSolverLCAO          solve                      162.23          18   9.01    69.28
+HamiltLCAO           updateHk                    63.66          18   3.54    27.19
+OperatorLCAO         init                        58.04          54   1.07    24.79
+OverlapNew           calculate_SR                 1.45           2   0.73     0.62
 OverlapNew           contributeHk                 0.00           2   0.00     0.00
-EkineticNew          contributeHR                 2.00          18   0.11     1.22
-EkineticNew          calculate_HR                 1.99           2   1.00     1.22
-NonlocalNew          contributeHR                 2.72          18   0.15     1.66
-NonlocalNew          calculate_HR                 2.68           2   1.34     1.64
-Veff                 contributeHR                50.97          18   2.83    31.07
-Gint_interface       cal_gint                   109.79          38   2.89    66.91
-Gint_interface       cal_gint_vlocal             48.43          18   2.69    29.52
-Gint_Tools           cal_psir_ylm                 3.41       30240   0.00     2.08
-Gint_Gamma           transfer_pvpR                2.44          18   0.14     1.49
-OperatorLCAO         contributeHk                 0.02          18   0.00     0.01
-HSolverLCAO          hamiltSolvePsiK             19.15          18   1.06    11.67
+EkineticNew          contributeHR                 1.99          18   0.11     0.85
+EkineticNew          calculate_HR                 1.98           2   0.99     0.85
+NonlocalNew          contributeHR                 3.64          18   0.20     1.55
+NonlocalNew          calculate_HR                 3.59           2   1.79     1.53
+Veff                 contributeHR                56.50          18   3.14    24.13
+Gint_interface       cal_gint                   117.41          38   3.09    50.14
+Gint_interface       cal_gint_vlocal             54.03          18   3.00    23.07
+Gint_Tools           cal_psir_ylm                 4.49       30240   0.00     1.92
+Gint_Gamma           transfer_pvpR                2.36          18   0.13     1.01
+OperatorLCAO         contributeHk                 0.03          18   0.00     0.01
+HSolverLCAO          hamiltSolvePsiK             51.49          18   2.86    21.99
 OperatorLCAO         get_hs_pointers              0.00          20   0.00     0.00
-DiagoElpa            elpa_solve                  18.78          18   1.04    11.45
-ElecStateLCAO        psiToRho                    45.10          18   2.51    27.49
-ElecStateLCAO        cal_dm_2d                    0.69          18   0.04     0.42
-elecstate            cal_dm                       2.02          20   0.10     1.23
-psiMulPsiMpi         pdgemm                       1.99          20   0.10     1.21
-DensityMatrix        cal_DMR                      0.05          18   0.00     0.03
-Gint                 transfer_DMR                 0.74          18   0.04     0.45
-Gint_interface       cal_gint_rho                43.03          18   2.39    26.23
-Charge_Mixing        get_drho                     0.08          18   0.00     0.05
-Charge               mix_rho                      0.30          16   0.02     0.18
-Charge               Pulay_mixing                 0.02          16   0.00     0.01
-ESolver_KS_LCAO      cal_force                   36.80           2  18.40    22.43
-Force_Stress_LCAO    getForceStress              36.80           2  18.40    22.43
-Forces               cal_force_loc                0.21           2   0.11     0.13
-Forces               cal_force_ew                 0.19           2   0.10     0.12
+DiagoElpa            elpa_solve                  51.08          18   2.84    21.81
+ElecStateLCAO        psiToRho                    47.08          18   2.62    20.10
+ElecStateLCAO        cal_dm_2d                    1.04          18   0.06     0.45
+elecstate            cal_dm                       1.93          20   0.10     0.82
+psiMulPsiMpi         pdgemm                       1.90          20   0.10     0.81
+DensityMatrix        cal_DMR                      0.05          18   0.00     0.02
+Gint                 transfer_DMR                 0.85          18   0.05     0.36
+Gint_interface       cal_gint_rho                44.84          18   2.49    19.15
+Charge_Mixing        get_drho                     0.12          18   0.01     0.05
+Charge               mix_rho                      6.43          16   0.40     2.75
+Charge               Pulay_mixing                 3.63          16   0.23     1.55
+ESolver_KS_LCAO      cal_force                   37.08           2  18.54    15.83
+Force_Stress_LCAO    getForceStress              37.08           2  18.54    15.83
+Forces               cal_force_loc                0.36           2   0.18     0.15
+Forces               cal_force_ew                 0.20           2   0.10     0.08
 Forces               cal_force_cc                 0.00           2   0.00     0.00
-Forces               cal_force_scc                0.67           2   0.34     0.41
-Stress_Func          stress_loc                   0.69           2   0.35     0.42
-Stress_Func          stress_har                   0.01           2   0.01     0.01
-Stress_Func          stress_ewa                   0.20           2   0.10     0.12
+Forces               cal_force_scc                0.70           2   0.35     0.30
+Stress_Func          stress_loc                   0.79           2   0.40     0.34
+Stress_Func          stress_har                   0.02           2   0.01     0.01
+Stress_Func          stress_ewa                   0.23           2   0.11     0.10
 Stress_Func          stress_cc                    0.00           2   0.00     0.00
-Stress_Func          stress_gga                   0.10           2   0.05     0.06
-Force_LCAO_gamma     ftable_gamma                34.71           2  17.36    21.16
-Force_LCAO_gamma     allocate_gamma               5.81           2   2.90     3.54
-LCAO_gen_fixedH      build_ST_new                 3.77           4   0.94     2.29
-LCAO_gen_fixedH      b_NL_mu_new                  1.95           2   0.98     1.19
-Force_LCAO_gamma     cal_foverlap                 1.46           2   0.73     0.89
-Force_LCAO_gamma     cal_edm_2d                   1.39           2   0.69     0.85
-Force_LCAO_gamma     cal_ftvnl_dphi               0.07           2   0.04     0.04
-Force_LCAO_gamma     cal_fvnl_dbeta_new           9.01           2   4.51     5.49
-Force_LCAO_gamma     cal_fvl_dphi                18.33           2   9.17    11.17
-Gint_interface       cal_gint_force              18.33           2   9.17    11.17
-Gint_Tools           cal_dpsir_ylm                3.18        1680   0.00     1.94
-Gint_Tools           cal_dpsirr_ylm               1.24        1680   0.00     0.76
+Stress_Func          stress_gga                   0.12           2   0.06     0.05
+Force_LCAO_gamma     ftable_gamma                34.66           2  17.33    14.80
+Force_LCAO_gamma     allocate_gamma               5.64           2   2.82     2.41
+LCAO_gen_fixedH      build_ST_new                 3.88           4   0.97     1.66
+LCAO_gen_fixedH      b_NL_mu_new                  1.67           2   0.84     0.72
+Force_LCAO_gamma     cal_foverlap                 1.02           2   0.51     0.44
+Force_LCAO_gamma     cal_edm_2d                   0.95           2   0.47     0.40
+Force_LCAO_gamma     cal_ftvnl_dphi               0.08           2   0.04     0.03
+Force_LCAO_gamma     cal_fvnl_dbeta_new           9.02           2   4.51     3.85
+Force_LCAO_gamma     cal_fvl_dphi                18.54           2   9.27     7.92
+Gint_interface       cal_gint_force              18.54           2   9.27     7.92
+Gint_Tools           cal_dpsir_ylm                3.16        1680   0.00     1.35
+Gint_Tools           cal_dpsirr_ylm               1.26        1680   0.00     0.54
 ESolver_KS_LCAO      cal_stress                   0.00           2   0.00     0.00
 Nose_Hoover          first_half                   0.00           1   0.00     0.00
-ESolver_KS_LCAO      init_after_vc                0.24           1   0.24     0.15
+ESolver_KS_LCAO      init_after_vc                0.24           1   0.24     0.10
 Nose_Hoover          second_half                  0.00           1   0.00     0.00
 ESolver_KS_LCAO      post_process                 0.00           1   0.00     0.00
 ModuleIO             write_istate_info            0.00           1   0.00     0.00
@@ -1245,6 +1245,6 @@ Grid::AtomLink                1.313
  -------------   < 1.0 MB has been ignored ----------------
  ----------------------------------------------------------
 
- Start  Time  : Mon Jun 17 07:07:40 2024
- Finish Time  : Mon Jun 17 07:10:24 2024
- Total  Time  : 0 h 2 mins 44 secs 
+ Start  Time  : Wed Jun 19 07:21:57 2024
+ Finish Time  : Wed Jun 19 07:25:51 2024
+ Total  Time  : 0 h 3 mins 54 secs 

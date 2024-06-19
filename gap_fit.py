@@ -1,62 +1,48 @@
 
-import quippy.descriptors
 import subprocess
-from quippy.potential import Potential
 import numpy as np
 import ase.io
 import matplotlib.pyplot as plt
 
 
-def gap_fit():
-    print("gap_fit()")
-    command = """gap_fit"""
-    
-    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+def gap_fit(modelFile, inputFile):
+    print("Running gap_fit()")
 
-    print("标准输出:", result.stdout)
-    print("错误输出:", result.stderr)
+    # 直接定义命令字符串
+    command = f"""gap_fit force_parameter_name=forces \
+        do_copy_at_file=F sparse_separate_file=F gp_file={modelFile} at_file={inputFile} \
+        default_sigma={{0.001 0.5 0.0 0.0}} \
+        gap={{soap cutoff=4.0 \
+        covariance_type=dot_product \
+        zeta=2 \
+        delta=100.0 \
+        atom_sigma=0.7 \
+        l_max=6 \
+        n_max=6 \
+        n_sparse=200 \
+        sparse_method=cur_points}}"""
 
-def preditct():
+    try:
+        subprocess.run(command, shell=True, check=True, executable='/bin/bash')
+        print("命令执行成功。")
+    except subprocess.CalledProcessError as e:
+        print(f"执行命令时出错: {e}")
+
+def preditct(modelFile, inputFile, outputFile):
     print("preditct()")
 
-    quip_command = "quip F=T atoms_filename=validate.xyz param_filename=GAP_soap.xml"
-    grep_command = "grep AT"
-    sed_command = "sed 's/AT//'"
+    # 要执行的命令
+    command = f"quip E=T F=T atoms_filename={inputFile} param_filename={modelFile} | grep AT | sed 's/AT//' > {outputFile}"
+    print(command)
 
-    # 创建第一个子进程，运行 quip 命令
-    quip_process = subprocess.Popen(quip_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    # 执行命令
+    try:
+        subprocess.run(command, shell=True, check=True, executable='/bin/bash')
+        print("命令执行成功。")
+    except subprocess.CalledProcessError as e:
+        print(f"执行命令时出错: {e}")
 
-    # 创建第二个子进程，运行 grep 命令，将 quip 的输出传递给 grep
-    grep_process = subprocess.Popen(grep_command, shell=True, stdin=quip_process.stdout, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-    # 创建第三个子进程，运行 sed 命令，将 grep 的输出传递给 sed
-    sed_process = subprocess.Popen(sed_command, shell=True, stdin=grep_process.stdout, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
-    # 获取最终输出并写入文件
-    with open('quip_validate.xyz', 'w') as output_file:
-        for line in sed_process.stdout:
-            output_file.write(line.decode('utf-8'))
-
-    # 确保所有进程都完成
-    quip_process.stdout.close()
-    grep_process.stdout.close()
-    sed_process.stdout.close()
-
-    quip_process.wait()
-    grep_process.wait()
-    sed_process.wait()
-
-    # 检查错误输出
-    quip_stderr = quip_process.stderr.read().decode('utf-8')
-    grep_stderr = grep_process.stderr.read().decode('utf-8')
-    sed_stderr = sed_process.stderr.read().decode('utf-8')
-
-    if quip_stderr:
-        print(f"quip error: {quip_stderr}")
-    if grep_stderr:
-        print(f"grep error: {grep_stderr}")
-    if sed_stderr:
-        print(f"sed error: {sed_stderr}")
 
 def force_plot(in_file, out_file, ax, symbol='HfO', title='Plot of force'):
     """ Plots the distribution of firce components per atom on the output vs the input
@@ -110,7 +96,9 @@ def force_plot(in_file, out_file, ax, symbol='HfO', title='Plot of force'):
     # add text about RMSE
     _rms = rms_dict(in_force, out_force)
     rmse_text = 'RMSE:\n' + str(np.round(_rms['rmse'], 3)) + ' +- ' + str(np.round(_rms['std'], 3)) + 'eV/Å'
+
     print(title, rmse_text)
+
     ax.text(0.9, 0.1, rmse_text, transform=ax.transAxes, fontsize='large', horizontalalignment='right',
             verticalalignment='bottom')
     
@@ -131,14 +119,16 @@ def rms_dict(x_ref, x_pred):
     return {'rmse': average, 'std': std_}
 
 def main():
-    #gap_fit()
-    #preditct()
 
-    fig, ax_list = plt.subplots(nrows=3, ncols=2, gridspec_kw={'hspace': 0.3})
-    fig.set_size_inches(15, 20)
-    ax_list = ax_list.flat[:]
-    force_plot('./validate_raw.xyz', './quip_validate_3b.xyz', ax_list[2], 'Hf', 'Force - Hf')
-    force_plot('./validate_raw.xyz', './quip_validate_3b.xyz', ax_list[3], 'O', 'Force - O')
+    # gap_fit('./gaptest/GAP_3b.xml', './gaptest/test_MD_dump.xyz')
+
+    preditct('./GAP_3b.xml', 'empty.xyz', './quip_3b_validate.xyz')
+
+    # fig, ax_list = plt.subplots(nrows=3, ncols=2, gridspec_kw={'hspace': 0.3})
+    # fig.set_size_inches(15, 20)
+    # ax_list = ax_list.flat[:]
+    # force_plot('./validate_raw.xyz', './quip_validate_3b.xyz', ax_list[2], 'Hf', 'Force - Hf')
+    # force_plot('./validate_raw.xyz', './quip_validate_3b.xyz', ax_list[3], 'O', 'Force - O')
 
 
 if __name__ == "__main__":
