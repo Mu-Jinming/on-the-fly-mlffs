@@ -1,20 +1,11 @@
-class Atom:
-    def __init__(self, specie, positons, forces, velocity):
-        self.specie = specie
-        self.positons = positons
-        self.forces = forces
-        self.velocity = velocity
+from Atom import Atom
 
-class MDStep:
-    # atomNum, lattice, atoms
-    def __init__(self, MDIndex):
-        self.MDIndex = MDIndex
-        self.lines = [] #包含每一步的原始数据
-        self.lattice = []
-        self.atoms = []
-        self.atomNum = 0
+from MDStep import MDStep
+
 
 def parseMDDump(mddumpFilePath):
+    print("parseMDDump")
+    #读取md_dump文件，将每一步的每个原子的位置、力、速度保存到MDSteps[]中
     with open(mddumpFilePath, 'r') as f:
         lines = f.readlines()
         # print(lines)
@@ -30,12 +21,15 @@ def parseMDDump(mddumpFilePath):
         mdStep.lines.append(line)    
 
     for mdStep in MDSteps:
-        for i in range(len(mdStep.lines)):
-            line = mdStep.lines[i]
+        print('------------------------------------------:')
+        lines = mdStep.lines
+        for i in range(len(lines)):
+            line = lines[i]
             if line.startswith('LATTICE_VECTOR'):
                 for j in range(1,4):
-                    #print(mdStep.lines[i+j])
-                    latticeLine = mdStep.lines[i+j].split()
+                    #print(lines[i+j])
+                    latticeLine = lines[i+j].split()
+                    # print(latticeLine)
                     latticeLine = [float(x) for x in latticeLine]
                     #print(latticeLine)
                     mdStep.lattice.append(latticeLine)
@@ -45,30 +39,43 @@ def parseMDDump(mddumpFilePath):
                 atomNum = 0
                 while(lines[i+j] is not None and lines[i+j].startswith('INDEX')==False):
                     atomLine = lines[i+j].split()
-                    #print(atomLine)
+                    # print(atomLine)
+
                     if len(atomLine) == 0:
                         break
                     atomNum = max(atomNum, int(atomLine[0]))
                     specie = atomLine[1]
                     positions = [float(x) for x in atomLine[2:5]]
+                    # print(positions)
                     forces = [float(x) for x in atomLine[5:8]]
+                    # print(forces)
                     velocity = [float(x) for x in atomLine[8:11]]
                     #print(atomNum, specie, positions, forces, velocity)
 
-                    
-                    atom = Atom(specie, positions, forces, velocity)
+                    atom = Atom(specie)
+                    atom.positons = positions
+                    atom.forces = forces
+                    atom.velocity = velocity
+
+                    #TODO:atom.mass待添加，目前默认为15
+
                     mdStep.atoms.append(atom)
                     j+=1
         #print(mdStep.lattice)
 
         # for atom in mdStep.atoms:
         #     print(atom.specie, atom.positons, atom.forces, atom.velocity)
+
+        # print(mdStep.atoms[0].positons[0])
+
         mdStep.atomNum = len(mdStep.atoms)
-        print(mdStep.lattice)
+        # print(mdStep.lattice)
 
     return MDSteps
 
-def produceXYZ(XYZFilePath, mddumpFilePath):
+def produceXYZtoTrain(XYZFilePath, mddumpFilePath):
+    print("produceXYZtoTrain")
+    #生成的xyz文件用于训练gap模型
     MDSteps = parseMDDump(mddumpFilePath)
     with open(XYZFilePath, 'w') as f:
         for mdStep in MDSteps:
@@ -93,4 +100,4 @@ def produceXYZ(XYZFilePath, mddumpFilePath):
             f.write(fe0.read())
         
 
-produceXYZ('./test_MD_dump.xyz', './MD_dump')
+# produceXYZtoTrain('./test_MD_dump.xyz', './MD_dump')
