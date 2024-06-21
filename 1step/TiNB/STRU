@@ -1,12 +1,12 @@
 ATOMIC_SPECIES
-Ti  47.867  /home/jinming/on-the-fly-mlffs/1step/TiNB/Ti.upf
-N   14.007  /home/jinming/on-the-fly-mlffs/1step/TiNB/N.upf
-B   10.81   /home/jinming/on-the-fly-mlffs/1step/TiNB/B.upf
+Ti  47.867  /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/Ti.upf
+N   14.007  /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/N.upf
+B   10.81   /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/B.upf
 
 NUMERICAL_ORBITAL
-/home/jinming/on-the-fly-mlffs/1step/TiNB/Ti_gga_10au_100Ry_4s2p2d1f.orb
-/home/jinming/on-the-fly-mlffs/1step/TiNB/N_gga_10au_100Ry_2s2p1d.orb
-/home/jinming/on-the-fly-mlffs/1step/TiNB/B_gga_10au_100Ry_2s2p1d.orb
+/home/jinming/on-the-fly-mlffs/1step/TiNB/orb/Ti_gga_10au_100Ry_4s2p2d1f.orb
+/home/jinming/on-the-fly-mlffs/1step/TiNB/orb/N_gga_10au_100Ry_2s2p1d.orb
+/home/jinming/on-the-fly-mlffs/1step/TiNB/orb/B_gga_10au_100Ry_2s2p1d.orb
 
 LATTICE_CONSTANT
 1.8897260000
