@@ -1,6 +1,15 @@
 import subprocess
 import sys
 import os
+from MDStep import MDStep
+
+def modifySTRU(thisStep: MDStep, STRUFile):
+    #决定nextStep要通过ABACUS运行，故先根据thisStep的信息来构建STRU文件。主要是把位置信息和速度信息写入。
+    #写入速度的时候，针对hBN-md：要写入的V = thisStep.velocity / 21.87695
+
+    
+
+
 
 
 def abacusMd(abacusBuildPath, workdir):
@@ -46,3 +55,4 @@ def abacusMd(abacusBuildPath, workdir):
     return_code = proc.wait()
 
     print(f"Child process return code: {return_code}")
+

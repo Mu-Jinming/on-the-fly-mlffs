@@ -1,10 +1,10 @@
 ATOMIC_SPECIES
-Hf 178.492 /home/jinming/1step/Hf_ONCV_PBE-1.0.upf
-O 15.999 /home/jinming/1step/O_ONCV_PBE-1.0.upf
+Hf 178.492 /home/jinming/1step/HfO/Hf_ONCV_PBE-1.0.upf
+O 15.999 /home/jinming/1step/HfO/O_ONCV_PBE-1.0.upf
 
 NUMERICAL_ORBITAL
-/home/jinming/1step/Hf_gga_7au_100Ry_4s2p2d2f1g.orb
-/home/jinming/1step/O_gga_7au_100Ry_2s2p1d.orb
+/home/jinming/1step/HfO/Hf_gga_7au_100Ry_4s2p2d2f1g.orb
+/home/jinming/1step/HfO/O_gga_7au_100Ry_2s2p1d.orb
 
 LATTICE_CONSTANT
 1.889726

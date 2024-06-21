@@ -122,7 +122,8 @@ def main():
 
     # gap_fit('./gaptest/GAP_3b.xml', './gaptest/test_MD_dump.xyz')
 
-    preditct('./GAP_3b.xml', 'empty.xyz', './quip_3b_validate.xyz')
+    # preditct('./GAP_3b.xml', 'validate.xyz', './quip_3b_validate.xyz')
+    preditct('./GAP_3b.xml', './XYZ/WaitForPredict/step_2.xyz', './XYZ/PredictResult/step_2.xyz')
 
     # fig, ax_list = plt.subplots(nrows=3, ncols=2, gridspec_kw={'hspace': 0.3})
     # fig.set_size_inches(15, 20)
