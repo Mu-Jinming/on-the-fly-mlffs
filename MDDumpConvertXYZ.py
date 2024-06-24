@@ -29,6 +29,7 @@ def parseMDDump(mddumpFilePath):
                 for j in range(1,4):
                     #print(lines[i+j])
                     latticeLine = lines[i+j].split()
+
                     # print(latticeLine)
                     latticeLine = [float(x) for x in latticeLine]
                     #print(latticeLine)
@@ -98,6 +99,28 @@ def produceXYZtoTrain(XYZFilePath, mddumpFilePath):
                 f.write('\n')
         with open('./e0', 'r') as fe0:
             f.write(fe0.read())
+
+def parseXYZ(XYZFilePath, MDIndex:int): #new一个MDStep(MDIndex)对象。读取xyz文件，并将每个原子的位置、力保存到对象中。
+    print("parseXYZ")
+    thisStep = MDStep(str(MDIndex))
+    with open(XYZFilePath, 'r') as file:
+        header = file.readline()
+        atomCount = int(header.strip())
+        content = file.readline().strip()
+        lattice_str = content.split('Lattice="')[1].split('"')[0]
+        print(atomCount)
+        print(lattice_str)
+        for i in range(atomCount):
+            line = file.readline().strip()
+            atom_str = line.split()
+            atom = Atom(atom_str[0])
+            atom.positons = [float(x) for x in atom_str[1:4]]
+            atom.forces = [float(x) for x in atom_str[9:12]]
+            thisStep.atoms.append(atom)
+        print(thisStep.atoms[1].forces)
+        print(file.readline())
+    return thisStep
         
+#parseXYZ('./XYZ/PredictResult/step_2.xyz', MDStep(MDIndex = '2'))
 
 # produceXYZtoTrain('./test_MD_dump.xyz', './MD_dump')
