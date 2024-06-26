@@ -13,12 +13,34 @@ def parseAtoms(step: MDStep):
             atomsDict[specie] = []
         atomsDict[specie].append(atom)
     return atomsDict
+
+def createRestartFile(thisStep: MDStep, workDir):
+    # 生成Restart_md.dat，生成OUT.ABACUS/STRU/目录，生成STRU_MD_i
+    outDirPath = os.path.join(workDir, 'OUT.ABACUS')
+    if not os.path.exists(outDirPath):
+        os.mkdir(outDirPath)
+    restartFilePath = os.path.join(outDirPath, 'Restart_md.dat')
+    with open(restartFilePath, 'w') as f:
+        f.write(f"{thisStep.MDIndex}\n")
+        f.write('0.000950045\n')
+
+    STRUPath = os.path.join(outDirPath, 'STRU')
+    if not os.path.exists(STRUPath):
+        os.mkdir(STRUPath)
+
+    STRUName = f"STRU_MD_{thisStep.MDIndex}"
+    STRUPath = os.path.join(STRUPath, STRUName)
+    sourceSTRUPath = os.path.join(workDir, 'STRU')
+    if not os.path.exists(STRUPath):
+        shutil.copy(sourceSTRUPath, STRUPath)
+
+
 def createSTRU(thisStep: MDStep):
     #决定thisStep要通过ABACUS运行，故先根据thisStep的位置和速度来构建STRU文件。主要是把位置信息和速度信息写入。
     #写入速度的时候，针对hBN-md：写入的V = thisStep.velocity / 21.87695
     # 指定要创建的文件夹的名称或路径
 
-    fileName = f"step_{thisStep.MDIndex}"
+    fileName = f"abacus_step_{thisStep.MDIndex}"
     folderName = os.path.join("./1step/TiNB/", fileName)
 
     # 使用os.path.exists()检查文件夹是否已经存在
@@ -62,7 +84,7 @@ LATTICE_VECTORS
     0.0000000000        0.0000000000       30.0000000000
 
 ATOMIC_POSITIONS
-Direct
+Cartesian
 
         """
     atomsDict = parseAtoms(thisStep)
@@ -81,16 +103,7 @@ Direct
                 # content = space + atom.positons[0] +space + atom.positons[1]+ space + atom.positons[2] + m111v + space + atom.velocity[0] / 21.87695 + space + atom.velocity[1] / 21.87695 + space + atom.velocity[2] / 21.87695
                 f.write(content + '\n')
                 f.write('\n')
-
-# from MDDumpConvertXYZ import parseXYZ
-# step2 = parseXYZ('./XYZ/PredictResult/step_2.xyz', 2) #step2中有位置、力
-# print(step2.MDIndex)
-# for atom in step2.atoms:
-#     for i in range(3):
-#         print(atom.forces)
-#         atom.acceleration.append(atom.forces[i] / atom.atomicMassMap[atom.specie])
-#         atom.velocity.append(1.1111 * atom.acceleration[i]) #随便编的数据，测试能否生成STRU文件
-# createSTRU(step2)
+    return folderName
 
 def abacusMd(abacusBuildPath, workdir):
     originalDir = os.getcwd()
@@ -137,4 +150,4 @@ def abacusMd(abacusBuildPath, workdir):
     print(f"Child process return code: {return_code}")
     os.chdir(originalDir)
 
-abacusMd(1, './1step/TiNB/step_19')
+# abacusMd(1, './1step/TiNB/step_19')

@@ -109,7 +109,7 @@ def rms_dict(x_ref, x_pred):
 
     x_ref = np.array(x_ref)
     x_pred = np.array(x_pred)
-
+    # print(x_ref)
     if np.shape(x_pred) != np.shape(x_ref):
         raise ValueError('WARNING: not matching shapes in rms')
 
@@ -127,16 +127,16 @@ def rms_dict(x_ref, x_pred):
 
 # def main():
 
-    # gap_fit('./gaptest/GAP_3b.xml', './gaptest/test_MD_dump.xyz')
+#     # gap_fit('./gaptest/GAP_3b.xml', './gaptest/test_MD_dump.xyz')
 
-    # preditct('./GAP_3b.xml', 'validate.xyz', './quip_3b_validate.xyz')
-    # preditct('./GAP_3b.xml', './XYZ/WaitForPredict/step_2.xyz', './XYZ/PredictResult/step_2.xyz')
+#     # preditct('./GAP_3b.xml', 'validate.xyz', './quip_3b_validate.xyz')
+#     # preditct('./GAP_3b.xml', './XYZ/WaitForPredict/step_2.xyz', './XYZ/PredictResult/step_2.xyz')
 
-    # fig, ax_list = plt.subplots(nrows=3, ncols=2, gridspec_kw={'hspace': 0.3})
-    # fig.set_size_inches(15, 20)
-    # ax_list = ax_list.flat[:]
-    # force_plot('./validate_raw.xyz', './quip_validate_3b.xyz', ax_list[2], 'Hf', 'Force - Hf')
-    # force_plot('./validate_raw.xyz', './quip_validate_3b.xyz', ax_list[3], 'O', 'Force - O')
+#     fig, ax_list = plt.subplots(nrows=3, ncols=2, gridspec_kw={'hspace': 0.3})
+#     fig.set_size_inches(15, 20)
+#     ax_list = ax_list.flat[:]
+#     force_plot('./validate_raw.xyz', './quip_validate_3b.xyz', ax_list[2], 'Hf', 'Force - Hf')
+#     force_plot('./validate_raw.xyz', './quip_validate_3b.xyz', ax_list[3], 'O', 'Force - O')
 
 
 # if __name__ == "__main__":

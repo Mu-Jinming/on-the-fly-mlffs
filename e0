@@ -1,6 +1,9 @@
 1
-Lattice="20.0 0.0 0.0 0.0 20.0 0.0 0.0 0.0 20.0" Properties=species:S:1:pos:R:3:forces:R:3:energies:R:1 energy=15.3 free_energy=15.3 pbc="T T T"
-Hf        0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       3.21000000
+Lattice="20.0 0.0 0.0 0.0 20.0 0.0 0.0 0.0 20.0" Properties=species:S:1:pos:R:3:forces:R:3:energies:R:1 energy=29.7 free_energy=29.7 pbc="T T T"
+Ti        0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       29.7
 1
-Lattice="20.0 0.0 0.0 0.0 20.0 0.0 0.0 0.0 20.0" Properties=species:S:1:pos:R:3:forces:R:3:energies:R:1 energy=4.6 free_energy=4.6 pbc="T T T"
-O        0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       4.60000000
+Lattice="20.0 0.0 0.0 0.0 20.0 0.0 0.0 0.0 20.0" Properties=species:S:1:pos:R:3:forces:R:3:energies:R:1 energy=5.1 free_energy=5.1 pbc="T T T"
+N        0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       5.1
+1
+Lattice="20.0 0.0 0.0 0.0 20.0 0.0 0.0 0.0 20.0" Properties=species:S:1:pos:R:3:forces:R:3:energies:R:1 energy=1.36 free_energy=1.36 pbc="T T T"
+B        0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       1.36
