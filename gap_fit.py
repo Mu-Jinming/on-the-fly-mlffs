@@ -5,7 +5,7 @@ import ase.io
 import matplotlib.pyplot as plt
 
 
-def gap_fit(modelFile, inputFile):
+def gap_fit(modelFile, inputFile, callback=None):
     print("Running gap_fit()")
 
     # 直接定义命令字符串
@@ -25,6 +25,8 @@ def gap_fit(modelFile, inputFile):
     try:
         subprocess.run(command, shell=True, check=True, executable='/bin/bash')
         print("命令执行成功。")
+        if callback:
+            callback()
     except subprocess.CalledProcessError as e:
         print(f"执行命令时出错: {e}")
 
@@ -118,12 +120,17 @@ def rms_dict(x_ref, x_pred):
 
     return {'rmse': average, 'std': std_}
 
-def main():
+# traindataFilePath = './XYZ/initial10Steps.xyz'
+
+# gap_fit('./GAP_SOAP.xml', traindataFilePath)
+# gap_fit('./gaptest/GAP_3b.xml', './gaptest/test_MD_dump.xyz')
+
+# def main():
 
     # gap_fit('./gaptest/GAP_3b.xml', './gaptest/test_MD_dump.xyz')
 
     # preditct('./GAP_3b.xml', 'validate.xyz', './quip_3b_validate.xyz')
-    preditct('./GAP_3b.xml', './XYZ/WaitForPredict/step_2.xyz', './XYZ/PredictResult/step_2.xyz')
+    # preditct('./GAP_3b.xml', './XYZ/WaitForPredict/step_2.xyz', './XYZ/PredictResult/step_2.xyz')
 
     # fig, ax_list = plt.subplots(nrows=3, ncols=2, gridspec_kw={'hspace': 0.3})
     # fig.set_size_inches(15, 20)
@@ -132,5 +139,5 @@ def main():
     # force_plot('./validate_raw.xyz', './quip_validate_3b.xyz', ax_list[3], 'O', 'Force - O')
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()

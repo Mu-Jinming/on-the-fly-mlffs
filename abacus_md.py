@@ -93,6 +93,7 @@ Direct
 # createSTRU(step2)
 
 def abacusMd(abacusBuildPath, workdir):
+    originalDir = os.getcwd()
     os.chdir(workdir)
 
     # 查看当前设置的 OMP_NUM_THREADS 环境变量
@@ -112,8 +113,8 @@ def abacusMd(abacusBuildPath, workdir):
         shell=True
     )
 
-    # commands = 'mpirun -n 4 /home/jinming/abacus-develop/build/abacus'
-    commands = 'mpirun -n 4 %s'%(abacusBuildPath)
+    commands = 'mpirun -n 4 /home/jinming/abacus-develop/build/abacus'
+    # commands = 'mpirun -n 4 %s'%(abacusBuildPath)
 
     proc.stdin.write(commands.encode())
     proc.stdin.flush()
@@ -133,6 +134,7 @@ def abacusMd(abacusBuildPath, workdir):
 
     # Wait for child process and get return code
     return_code = proc.wait()
-
     print(f"Child process return code: {return_code}")
+    os.chdir(originalDir)
 
+abacusMd(1, './1step/TiNB/step_19')

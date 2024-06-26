@@ -15,7 +15,7 @@ def calcPosition(thisStep: MDStep, nextStep: MDStep):
             #首先计算出第i步的加速度$a_i$，查表得到原子质量m，故$a_i$=$F_i/m$
             # print(thisStepAtom.forces[i])
             if (len(thisStepAtom.acceleration) <= 3):
-                thisStepAtom.acceleration.append(thisStepAtom.forces[i] / thisStepAtom.mass )
+                thisStepAtom.acceleration.append(thisStepAtom.forces[i] / Atom.atomicMassMap[thisStepAtom.specie])
             #再第i+1步的原子坐标：$\mathbf{r_{i+1}} = \mathbf{r}_i + \mathbf{v}_i \Delta t + \frac{1}{2} \mathbf{a}_i (\Delta t)^2 $
             nextStepAtom.positons.append(verlet(thisStepAtom.positons[i], thisStep.deltaT, thisStepAtom.velocity[i], thisStepAtom.acceleration[i]))
 
@@ -25,22 +25,27 @@ def calcLattice(thisStep: MDStep, nextStep: MDStep):
     print('Calculating Lattice')
     #根据第i步的晶胞参数，计算第i+1步的晶胞参数
     #针对针对hBN-md，晶格矢量不变
-    nextStep.lattice = thisStep.lattice
+    for la in thisStep.lattice:
+        nextStep.lattice.append(la)
+
     #TODO:若是其他体系，则需要想办法求出晶格矢量
+
+
 
 def prodeceXYZtoPridict(nextStep: MDStep):
     print('prodeceXYZtoPridict')
     #根据nextStep中第i+1步的坐标，生成xyz文件，用于gap模型预测
-    #TODO:
     folderPath = './XYZ/WaitForPredict/'
     if not os.path.exists(folderPath):
         os.makedirs(folderPath)
     fileName = 'step_' + str(nextStep.MDIndex) + '.xyz'
     XYZFilePath = os.path.join(folderPath, fileName)
     with open(XYZFilePath, 'w') as f:
-        f.write(str(nextStep.atomNum)+'\n')
+        f.write(str(len(nextStep.atoms))+'\n')
         line = ''
         for latticeLine in nextStep.lattice:
+            print('latticeLine = ')
+            print(latticeLine)
             line = line+' '.join(str(x) for x in latticeLine)
             line = line+' '
             #print(line)
@@ -56,17 +61,20 @@ def prodeceXYZtoPridict(nextStep: MDStep):
             f.write('\n')
 
         print(XYZFilePath+' is created')
+        return XYZFilePath
 
 def calcVelocity(thisStep: MDStep, nextStep: MDStep):
     print('Calculating Velocity')
-    #需使用abacus或者gap得到第i+1步的力之后，再使用此函数计算第i+1步的速度
-    #求出第i+1步的速度$\mathbf{{v}_{i+1}} = \mathbf{{v}_i} + \frac{1}{2} (\mathbf{a_i} + \mathbf {a_{i+1}}) \Delta t $
-    for j in range(nextStep.atoms):
+    # 需使用abacus或者gap得到第i+1步的力之后，再使用此函数计算第i+1步的速度()。
+    # 有了第i+1步的速度，才可以求出第i+2步的位置坐标。有了第i+2步的位置，才可以求第i+2步的力。以此类推...
+
+    # 第i+1步的速度$\mathbf{{v}_{i+1}} = \mathbf{{v}_i} + \frac{1}{2} (\mathbf{a_i} + \mathbf {a_{i+1}}) \Delta t $
+    for j in range(len(nextStep.atoms)):
         nextStepAtom = nextStep.atoms[j]
         thisStepAtom = thisStep.atoms[j]
         for i in range(3):
             #先算出第i+1步的加速度
-            nextStepAtom.acceleration.append(9.64e-3 * nextStepAtom.forces[i] / Atom.atomicMassMap(nextStepAtom.specie))
+            nextStepAtom.acceleration.append(9.64e-3 * nextStepAtom.forces[i] / Atom.atomicMassMap[nextStepAtom.specie])
             #再算出第i+1步的速度
             nextStepAtom.velocity.append(thisStepAtom.velocity[i] + 0.5 * (thisStepAtom.acceleration[i] + nextStepAtom.acceleration[i]) * thisStep.deltaT)
 
@@ -75,7 +83,6 @@ def test():
     thisStep = MDSteps[-1]
     nextIndex = int(thisStep.MDIndex) + 1
     nextStep = MDStep(nextIndex)
-    nextStep.atomNum = thisStep.atomNum
 
     #TODO nextStep.lattice = ?
     calcLattice(thisStep, nextStep)
@@ -86,4 +93,4 @@ def test():
 
     prodeceXYZtoPridict(nextStep)
 
-test()
+# test()

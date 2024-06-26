@@ -1,7 +1,5 @@
 from Atom import Atom
-
 from MDStep import MDStep
-
 
 def parseMDDump(mddumpFilePath):
     print("parseMDDump")
@@ -58,8 +56,6 @@ def parseMDDump(mddumpFilePath):
                     atom.forces = forces
                     atom.velocity = velocity
 
-                    #TODO:atom.mass待添加，目前默认为15
-
                     mdStep.atoms.append(atom)
                     j+=1
         #print(mdStep.lattice)
@@ -74,10 +70,10 @@ def parseMDDump(mddumpFilePath):
 
     return MDSteps
 
-def produceXYZtoTrain(XYZFilePath, mddumpFilePath):
+def produceXYZtoTrain(XYZFilePath, MDSteps):
     print("produceXYZtoTrain")
     #生成的xyz文件用于训练gap模型
-    MDSteps = parseMDDump(mddumpFilePath)
+    # MDSteps = parseMDDump(mddumpFilePath)
     with open(XYZFilePath, 'w') as f:
         for mdStep in MDSteps:
             f.write(str(mdStep.atomNum)+'\n')

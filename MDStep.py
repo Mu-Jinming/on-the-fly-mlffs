@@ -6,4 +6,4 @@ class MDStep:
         self.lattice = []
         self.atoms = [] #每一步包含的所有原子
         self.atomNum = 0
-        self.deltaT = 0.1
+        self.deltaT = 1   #fs
