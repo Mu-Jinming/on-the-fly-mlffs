@@ -1,0 +1,38 @@
+initial fit done at 2024-06-27 02:00:40
+GAP predict step 11 done at 2024-06-27 02:00:42
+GAP predict step 12 done at 2024-06-27 02:00:45
+GAP predict step 13 done at 2024-06-27 02:00:47
+GAP predict step 14 done at 2024-06-27 02:00:49
+GAP predict step 15 done at 2024-06-27 02:00:52
+GAP predict step 16 done at 2024-06-27 02:00:54
+GAP predict step 17 done at 2024-06-27 02:00:57
+GAP predict step 18 done at 2024-06-27 02:00:59
+GAP predict step 19 done at 2024-06-27 02:01:02
+abacus step 20 done at 2024-06-27 02:08:43
+AabcusStep_20and GAPStep_20 RMSE:
+2.093 +- 12.275eV/Å:  refit done at 2024-06-27 02:08:43
+refit at 20
+GAP predict step 20 done at 2024-06-27 02:08:45
+GAP predict step 21 done at 2024-06-27 02:08:47
+GAP predict step 22 done at 2024-06-27 02:08:48
+GAP predict step 23 done at 2024-06-27 02:08:50
+GAP predict step 24 done at 2024-06-27 02:08:52
+GAP predict step 25 done at 2024-06-27 02:08:54
+GAP predict step 26 done at 2024-06-27 02:08:56
+GAP predict step 27 done at 2024-06-27 02:08:58
+GAP predict step 28 done at 2024-06-27 02:09:00
+GAP predict step 29 done at 2024-06-27 02:09:02
+abacus step 30 done at 2024-06-27 02:17:54
+AabcusStep_30GAPStep_30 RMSE:
+2.728 +- 21.926eV/Å:  refit done at 2024-06-27 02:17:54
+refit at 30
+GAP predict step 30 done at 2024-06-27 02:17:56
+GAP predict step 31 done at 2024-06-27 02:17:58
+GAP predict step 32 done at 2024-06-27 02:18:00
+GAP predict step 33 done at 2024-06-27 02:18:02
+GAP predict step 34 done at 2024-06-27 02:18:03
+GAP predict step 35 done at 2024-06-27 02:18:05
+GAP predict step 36 done at 2024-06-27 02:18:07
+GAP predict step 37 done at 2024-06-27 02:18:09
+GAP predict step 38 done at 2024-06-27 02:18:11
+GAP predict step 39 done at 2024-06-27 02:18:13

@@ -19,14 +19,15 @@ def getInitialData():
     return steps
     
 def refit(steps):
+    with open('./on-the-fly_RunTime_log', 'a') as f:
+        current_time = datetime.now()
+        formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
+        f.write(f'refit at {formatted_time}\n')
     n = len(steps)
     traindataFilePath = f'./XYZ/refit_{n}steps.xyz'
     print(traindataFilePath)
     gap_fit('./ttttGAP_SOAP.xml', traindataFilePath)
-    with open('./on-the-fly_RunTime_log', 'w') as f:
-        current_time = datetime.now()
-        formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
-        f.write(f'refit done at {formatted_time}\n')
+    
 
 def getRMSE(AabcusStep, GapStep):
     ref = []
@@ -40,9 +41,9 @@ def getRMSE(AabcusStep, GapStep):
         ref.append(refi)
         pred.append(predi)
     dict = rms_dict(ref, pred)
-    rmse_text ='step_' + AabcusStep.MDIndex + ' RMSE:\n' + str(np.round(dict['rmse'], 3)) + ' +- ' + str(np.round(dict['std'], 3)) + 'eV/Å\n'
+    rmse_text ='AabcusStep_' + AabcusStep.MDIndex +' and GAPStep_'+ GapStep.MDIndex + ' RMSE:  ' + str(np.round(dict['rmse'], 3)) + ' +- ' + str(np.round(dict['std'], 3)) + 'eV/Å'
     print(rmse_text)
-    with open('./on-the-fly_RunTime_log', 'w') as f:
+    with open('./on-the-fly_RunTime_log', 'a') as f:
         f.write(rmse_text)
     return dict['rmse']
 def onthefly(sumSteps, abacusCheckInterval):
@@ -61,7 +62,7 @@ def onthefly(sumSteps, abacusCheckInterval):
             workDir = createSTRU(thisStep)
             createRestartFile(thisStep, workDir)
             abacusMd('', workDir)
-            with open('./on-the-fly_RunTime_log', 'w') as f:
+            with open('./on-the-fly_RunTime_log', 'a') as f:
                 current_time = datetime.now()
                 formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
                 f.write(f'abacus step {thisStep.MDIndex} done at {formatted_time}\n')
@@ -71,8 +72,8 @@ def onthefly(sumSteps, abacusCheckInterval):
             rmse = getRMSE(abacusStep, thisStep)
             if rmse > 1:
                 refit(steps)
-                with open('./on-the-fly_RunTime_log', 'w') as f:
-                    f.write(f'refit at {steps[-1].MDIndex}\n')
+                with open('./on-the-fly_RunTime_log', 'a') as f:
+                    f.write(f'refit done at {steps[-1].MDIndex}\n')
 
         nextStep = MDStep(str(int(thisStep.MDIndex) + 1))
         calcLattice(latticeSaveStep, nextStep)
@@ -81,7 +82,7 @@ def onthefly(sumSteps, abacusCheckInterval):
         resultFileName = 'step_' + str(nextStep.MDIndex) + '.xyz'
         resultFilePath = os.path.join('./XYZ/PredictResult/', resultFileName)
         preditct('./GAP_SOAP.xml', XYZFilePath, resultFilePath)
-        with open('./on-the-fly_RunTime_log', 'w') as f:
+        with open('./on-the-fly_RunTime_log', 'a') as f:
                 current_time = datetime.now()
                 formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
                 f.write(f'GAP predict step {thisStep.MDIndex} done at {formatted_time}\n')
