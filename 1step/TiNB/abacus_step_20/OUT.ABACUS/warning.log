@@ -1,0 +1,362 @@
+ In SCAN_END, can't find: </PP_RELWFC.1> block.
+ In SCAN_END, can't find: </PP_RELWFC.2> block.
+ In SCAN_END, can't find: </PP_RELWFC.3> block.
+ In SCAN_END, can't find: </PP_RELWFC.4> block.
+ In SCAN_END, can't find: </PP_RELWFC.5> block.
+ In SCAN_END, can't find: </PP_RELWFC.6> block.
+ In SCAN_END, can't find: </PP_RELBETA.1> block.
+ In SCAN_END, can't find: </PP_RELBETA.2> block.
+ In SCAN_END, can't find: </PP_RELBETA.3> block.
+ In SCAN_END, can't find: </PP_RELBETA.4> block.
+ In SCAN_END, can't find: </PP_RELBETA.5> block.
+ In SCAN_END, can't find: </PP_RELBETA.6> block.
+ In SCAN_END, can't find: </PP_RELBETA.7> block.
+ In SCAN_END, can't find: </PP_RELBETA.8> block.
+ In SCAN_END, can't find: </PP_RELBETA.9> block.
+ In SCAN_END, can't find: </PP_RELBETA.10> block.
+ In SCAN_END, can't find: </PP_SPIN_ORB> block.
+ In SCAN_END, can't find: </PP_RELWFC.1> block.
+ In SCAN_END, can't find: </PP_RELWFC.2> block.
+ In SCAN_END, can't find: </PP_RELWFC.3> block.
+ In SCAN_END, can't find: </PP_RELBETA.1> block.
+ In SCAN_END, can't find: </PP_RELBETA.2> block.
+ In SCAN_END, can't find: </PP_RELBETA.3> block.
+ In SCAN_END, can't find: </PP_RELBETA.4> block.
+ In SCAN_END, can't find: </PP_RELBETA.5> block.
+ In SCAN_END, can't find: </PP_RELBETA.6> block.
+ In SCAN_END, can't find: </PP_SPIN_ORB> block.
+ In SCAN_END, can't find: </PP_RELWFC.1> block.
+ In SCAN_END, can't find: </PP_RELWFC.2> block.
+ In SCAN_END, can't find: </PP_RELWFC.3> block.
+ In SCAN_END, can't find: </PP_RELBETA.1> block.
+ In SCAN_END, can't find: </PP_RELBETA.2> block.
+ In SCAN_END, can't find: </PP_RELBETA.3> block.
+ In SCAN_END, can't find: </PP_RELBETA.4> block.
+ In SCAN_END, can't find: </PP_RELBETA.5> block.
+ In SCAN_END, can't find: </PP_RELBETA.6> block.
+ In SCAN_END, can't find: </PP_SPIN_ORB> block.
+ AUTO_SET NBANDS to 0
+ Auto generating k-points file: KPT
+ AUTO_SET NBANDS to 314
+ Grid_Technique::init_atoms_on_grid  warning : No atom on this sub-FFT-mesh.
+      Processor           Atom
+              1              0
+              2             44
+              3             44
+              4              0
+ Grid_Technique::init_atoms_on_grid2  warning : no atom on this sub FFT grid.
+                            startmag_type = 2
+                       charge from rho_at = 12
+                         charge should be = 12
+                            startmag_type = 2
+                       charge from rho_at = 5
+                         charge should be = 5
+                            startmag_type = 2
+                       charge from rho_at = 3
+                         charge should be = 3
+ Warning: negative or imaginary starting charge :  neg = -0.00245599 ima = 1.4622e-07 SPIN = 0
+
+ SETUP ATOMIC RHO FOR SPIN 1
+                 Electron number from rho = 521
+           total electron number from rho = 521
+                                should be = 521
+                 charge before normalized = 521
+                  charge after normalized = 521
+                 charge before normalized = 521.000000774415
+                  charge after normalized = 521.000000000001
+                 charge before normalized = 520.999999999963
+                  charge after normalized = 520.999999999998
+                 charge before normalized = 521.00000065737
+                  charge after normalized = 520.999999999995
+                 charge before normalized = 521.000000000023
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000629619
+                  charge after normalized = 520.999999999987
+                 charge before normalized = 520.999999999999
+                  charge after normalized = 521
+                 charge before normalized = 521.000000607914
+                  charge after normalized = 521.000000000021
+                 charge before normalized = 521.00000000001
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000592915
+                  charge after normalized = 521.000000000018
+                 charge before normalized = 521.000000000028
+                  charge after normalized = 520.999999999998
+                 charge before normalized = 521.000000588926
+                  charge after normalized = 520.999999999976
+                 charge before normalized = 520.999999999949
+                  charge after normalized = 520.999999999998
+                 charge before normalized = 521.000000587008
+                  charge after normalized = 520.999999999989
+                 charge before normalized = 520.999999999963
+                  charge after normalized = 521.000000000001
+                 charge before normalized = 521.000000583131
+                  charge after normalized = 520.99999999999
+                 charge before normalized = 520.999999999991
+                  charge after normalized = 521
+                 charge before normalized = 521.000000582061
+                  charge after normalized = 520.999999999998
+                 charge before normalized = 521.000000000024
+                  charge after normalized = 521
+                 charge before normalized = 521.000000580236
+                  charge after normalized = 521.000000000035
+                 charge before normalized = 520.999999999996
+                  charge after normalized = 521
+                 charge before normalized = 521.000000578359
+                  charge after normalized = 521.00000000001
+                 charge before normalized = 521.000000000044
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000576767
+                  charge after normalized = 520.999999999998
+                 charge before normalized = 520.999999999966
+                  charge after normalized = 521
+                 charge before normalized = 521.000000577041
+                  charge after normalized = 521.000000000014
+                 charge before normalized = 521.000000000025
+                  charge after normalized = 521.000000000001
+                 charge before normalized = 521.000000576564
+                  charge after normalized = 521.000000000013
+                 charge before normalized = 520.999999999986
+                  charge after normalized = 521
+                 charge before normalized = 521.00000057605
+                  charge after normalized = 520.999999999996
+                 charge before normalized = 520.999999999991
+                  charge after normalized = 521
+                 charge before normalized = 521.000000576153
+                  charge after normalized = 520.999999999993
+                 charge before normalized = 521.000000000003
+                  charge after normalized = 521
+                 charge before normalized = 521.000000576031
+                  charge after normalized = 520.999999999981
+                 charge before normalized = 521.000000000027
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000575876
+                  charge after normalized = 520.99999999999
+                 charge before normalized = 520.999999999987
+                  charge after normalized = 521
+                 charge before normalized = 521.000000575771
+                  charge after normalized = 520.999999999997
+                 charge before normalized = 520.999999999997
+                  charge after normalized = 521
+                 charge before normalized = 521.000000575869
+                  charge after normalized = 520.999999999996
+                 charge before normalized = 521.000000000062
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000575914
+                  charge after normalized = 520.999999999991
+                 charge before normalized = 520.999999999886
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.00000057579
+                  charge after normalized = 521.000000000002
+                 charge before normalized = 521.00000000013
+                  charge after normalized = 521.000000000001
+                 charge before normalized = 521.000000575899
+                  charge after normalized = 520.999999999988
+                 charge before normalized = 520.999999999972
+                  charge after normalized = 521
+                 charge before normalized = 521.000000575963
+                  charge after normalized = 521.000000000004
+                 charge before normalized = 520.999999999967
+                  charge after normalized = 521.000000000001
+                 charge before normalized = 521.00000057584
+                  charge after normalized = 520.999999999985
+                 charge before normalized = 521.00000000006
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000575838
+                  charge after normalized = 521.000000000006
+                            startmag_type = 2
+                       charge from rho_at = 11.9999945058124
+                         charge should be = 12
+                            startmag_type = 2
+                       charge from rho_at = 4.99999668790933
+                         charge should be = 5
+                            startmag_type = 2
+                       charge from rho_at = 2.99999864850755
+                         charge should be = 3
+ Warning: negative or imaginary starting charge :  neg = -0.00245598848968342 ima = 1.46219696907377e-07 SPIN = 0
+
+ SETUP ATOMIC RHO FOR SPIN 1
+                 Electron number from rho = 521.000000000003
+           total electron number from rho = 521.000000000003
+                                should be = 521
+ In SCAN_END, can't find: </PP_RELWFC.1> block.
+ In SCAN_END, can't find: </PP_RELWFC.2> block.
+ In SCAN_END, can't find: </PP_RELWFC.3> block.
+ In SCAN_END, can't find: </PP_RELWFC.4> block.
+ In SCAN_END, can't find: </PP_RELWFC.5> block.
+ In SCAN_END, can't find: </PP_RELWFC.6> block.
+ In SCAN_END, can't find: </PP_RELBETA.1> block.
+ In SCAN_END, can't find: </PP_RELBETA.2> block.
+ In SCAN_END, can't find: </PP_RELBETA.3> block.
+ In SCAN_END, can't find: </PP_RELBETA.4> block.
+ In SCAN_END, can't find: </PP_RELBETA.5> block.
+ In SCAN_END, can't find: </PP_RELBETA.6> block.
+ In SCAN_END, can't find: </PP_RELBETA.7> block.
+ In SCAN_END, can't find: </PP_RELBETA.8> block.
+ In SCAN_END, can't find: </PP_RELBETA.9> block.
+ In SCAN_END, can't find: </PP_RELBETA.10> block.
+ In SCAN_END, can't find: </PP_SPIN_ORB> block.
+ In SCAN_END, can't find: </PP_RELWFC.1> block.
+ In SCAN_END, can't find: </PP_RELWFC.2> block.
+ In SCAN_END, can't find: </PP_RELWFC.3> block.
+ In SCAN_END, can't find: </PP_RELBETA.1> block.
+ In SCAN_END, can't find: </PP_RELBETA.2> block.
+ In SCAN_END, can't find: </PP_RELBETA.3> block.
+ In SCAN_END, can't find: </PP_RELBETA.4> block.
+ In SCAN_END, can't find: </PP_RELBETA.5> block.
+ In SCAN_END, can't find: </PP_RELBETA.6> block.
+ In SCAN_END, can't find: </PP_SPIN_ORB> block.
+ In SCAN_END, can't find: </PP_RELWFC.1> block.
+ In SCAN_END, can't find: </PP_RELWFC.2> block.
+ In SCAN_END, can't find: </PP_RELWFC.3> block.
+ In SCAN_END, can't find: </PP_RELBETA.1> block.
+ In SCAN_END, can't find: </PP_RELBETA.2> block.
+ In SCAN_END, can't find: </PP_RELBETA.3> block.
+ In SCAN_END, can't find: </PP_RELBETA.4> block.
+ In SCAN_END, can't find: </PP_RELBETA.5> block.
+ In SCAN_END, can't find: </PP_RELBETA.6> block.
+ In SCAN_END, can't find: </PP_SPIN_ORB> block.
+ AUTO_SET NBANDS to 0
+ Auto generating k-points file: KPT
+ AUTO_SET NBANDS to 314
+ Grid_Technique::init_atoms_on_grid  warning : No atom on this sub-FFT-mesh.
+      Processor           Atom
+              1              0
+              2             44
+              3             44
+              4              0
+ Grid_Technique::init_atoms_on_grid2  warning : no atom on this sub FFT grid.
+                            startmag_type = 2
+                       charge from rho_at = 12
+                         charge should be = 12
+                            startmag_type = 2
+                       charge from rho_at = 5
+                         charge should be = 5
+                            startmag_type = 2
+                       charge from rho_at = 3
+                         charge should be = 3
+ Warning: negative or imaginary starting charge :  neg = -0.00245599 ima = 1.4622e-07 SPIN = 0
+
+ SETUP ATOMIC RHO FOR SPIN 1
+                 Electron number from rho = 521
+           total electron number from rho = 521
+                                should be = 521
+                 charge before normalized = 521
+                  charge after normalized = 521
+                 charge before normalized = 521.000000774416
+                  charge after normalized = 521
+                 charge before normalized = 520.999999999963
+                  charge after normalized = 520.999999999998
+                 charge before normalized = 521.000000657369
+                  charge after normalized = 520.999999999995
+                 charge before normalized = 521.000000000023
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000629618
+                  charge after normalized = 520.999999999988
+                 charge before normalized = 520.999999999999
+                  charge after normalized = 521
+                 charge before normalized = 521.000000607917
+                  charge after normalized = 521.000000000021
+                 charge before normalized = 521.00000000001
+                  charge after normalized = 521
+                 charge before normalized = 521.000000592884
+                  charge after normalized = 521.000000000017
+                 charge before normalized = 521.000000000027
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000589026
+                  charge after normalized = 520.999999999977
+                 charge before normalized = 520.999999999951
+                  charge after normalized = 521
+                 charge before normalized = 521.000000587018
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 520.999999999961
+                  charge after normalized = 521
+                 charge before normalized = 521.00000058325
+                  charge after normalized = 520.999999999996
+                 charge before normalized = 520.999999999993
+                  charge after normalized = 521
+                 charge before normalized = 521.000000581925
+                  charge after normalized = 520.999999999997
+                 charge before normalized = 521.000000000012
+                  charge after normalized = 521
+                 charge before normalized = 521.000000580232
+                  charge after normalized = 521.000000000027
+                 charge before normalized = 521.000000000009
+                  charge after normalized = 521
+                 charge before normalized = 521.000000578323
+                  charge after normalized = 521.000000000007
+                 charge before normalized = 521.000000000043
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000576683
+                  charge after normalized = 521.000000000003
+                 charge before normalized = 520.999999999973
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000577121
+                  charge after normalized = 521.000000000016
+                 charge before normalized = 521.000000000019
+                  charge after normalized = 521
+                 charge before normalized = 521.00000057658
+                  charge after normalized = 521.000000000011
+                 charge before normalized = 520.999999999985
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000576067
+                  charge after normalized = 520.999999999992
+                 charge before normalized = 521
+                  charge after normalized = 521
+                 charge before normalized = 521.000000576089
+                  charge after normalized = 520.999999999993
+                 charge before normalized = 520.999999999994
+                  charge after normalized = 521
+                 charge before normalized = 521.000000575916
+                  charge after normalized = 520.999999999981
+                 charge before normalized = 521.000000000044
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000575942
+                  charge after normalized = 520.999999999991
+                 charge before normalized = 520.999999999975
+                  charge after normalized = 521.000000000001
+                 charge before normalized = 521.000000575958
+                  charge after normalized = 520.999999999993
+                 charge before normalized = 521.000000000005
+                  charge after normalized = 521
+                 charge before normalized = 521.00000057591
+                  charge after normalized = 520.999999999998
+                 charge before normalized = 521.000000000058
+                  charge after normalized = 521.000000000001
+                 charge before normalized = 521.000000575843
+                  charge after normalized = 520.99999999999
+                 charge before normalized = 520.999999999889
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000575902
+                  charge after normalized = 520.999999999999
+                 charge before normalized = 521.000000000121
+                  charge after normalized = 521
+                 charge before normalized = 521.000000575828
+                  charge after normalized = 520.999999999993
+                 charge before normalized = 520.999999999982
+                  charge after normalized = 521
+                 charge before normalized = 521.000000575843
+                  charge after normalized = 520.999999999998
+                 charge before normalized = 520.999999999962
+                  charge after normalized = 521.000000000001
+                 charge before normalized = 521.000000575903
+                  charge after normalized = 520.99999999999
+                 charge before normalized = 521.000000000058
+                  charge after normalized = 521.000000000001
+                 charge before normalized = 521.000000575857
+                  charge after normalized = 521.000000000003
+                            startmag_type = 2
+                       charge from rho_at = 11.9999945058124
+                         charge should be = 12
+                            startmag_type = 2
+                       charge from rho_at = 4.99999668790933
+                         charge should be = 5
+                            startmag_type = 2
+                       charge from rho_at = 2.99999864850755
+                         charge should be = 3
+ Warning: negative or imaginary starting charge :  neg = -0.00245598848968342 ima = 1.46219696907377e-07 SPIN = 0
+
+ SETUP ATOMIC RHO FOR SPIN 1
+                 Electron number from rho = 521.000000000003
+           total electron number from rho = 521.000000000003
+                                should be = 521

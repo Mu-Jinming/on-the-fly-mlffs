@@ -9,7 +9,7 @@ GAP predict step 17 done at 2024-06-27 02:00:57
 GAP predict step 18 done at 2024-06-27 02:00:59
 GAP predict step 19 done at 2024-06-27 02:01:02
 abacus step 20 done at 2024-06-27 02:08:43
-AabcusStep_20and GAPStep_20 RMSE:
+AabcusStep_20 and GAPStep_20 RMSE:
 2.093 +- 12.275eV/Å:  refit done at 2024-06-27 02:08:43
 refit at 20
 GAP predict step 20 done at 2024-06-27 02:08:45
@@ -23,7 +23,7 @@ GAP predict step 27 done at 2024-06-27 02:08:58
 GAP predict step 28 done at 2024-06-27 02:09:00
 GAP predict step 29 done at 2024-06-27 02:09:02
 abacus step 30 done at 2024-06-27 02:17:54
-AabcusStep_30GAPStep_30 RMSE:
+AabcusStep_30 and GAPStep_30 RMSE:
 2.728 +- 21.926eV/Å:  refit done at 2024-06-27 02:17:54
 refit at 30
 GAP predict step 30 done at 2024-06-27 02:17:56

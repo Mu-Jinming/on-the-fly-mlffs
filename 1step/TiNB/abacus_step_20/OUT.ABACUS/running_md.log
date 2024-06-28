@@ -1,0 +1,2510 @@
+                                                                                     
+                              ABACUS v3.6.0
+
+               Atomic-orbital Based Ab-initio Computation at UStc                    
+
+                     Website: http://abacus.ustc.edu.cn/                             
+               Documentation: https://abacus.deepmodeling.com/                       
+                  Repository: https://github.com/abacusmodeling/abacus-develop       
+                              https://github.com/deepmodeling/abacus-develop         
+                      Commit: unknown
+
+    Start Time is Thu Jun 27 01:48:35 2024
+                                                                                     
+ ------------------------------------------------------------------------------------
+
+ READING GENERAL INFORMATION
+                           global_out_dir = OUT.ABACUS/
+                           global_in_card = INPUT
+                               pseudo_dir = 
+                              orbital_dir = 
+                                    DRANK = 1
+                                    DSIZE = 4
+                                   DCOLOR = 1
+                                    GRANK = 1
+                                    GSIZE = 1
+ The esolver type has been set to : ksdft_lcao
+
+ RUNNING WITH DEVICE  : CPU / 13th Gen Intel(R) Core(TM) i9-13900K
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Reading atom information in unitcell:                              |
+ | From the input file and the structure file we know the number of   |
+ | different elments in this unitcell, then we list the detail        |
+ | information for each element, especially the zeta and polar atomic |
+ | orbital number for each element. The total atom number is counted. |
+ | We calculate the nearest atom distance for each atom and show the  |
+ | Cartesian and Direct coordinates for each atom. We list the file   |
+ | address for atomic orbitals. The volume and the lattice vectors    |
+ | in real and reciprocal space is also shown.                        |
+ |                                                                    |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+ READING UNITCELL INFORMATION
+                                    ntype = 3
+                  lattice constant (Bohr) = 1.88973
+              lattice constant (Angstrom) = 1
+
+ READING ATOM TYPE 1
+                               atom label = Ti
+                      L=0, number of zeta = 4
+                      L=1, number of zeta = 2
+                      L=2, number of zeta = 2
+                      L=3, number of zeta = 1
+             number of atom for this type = 1
+
+ READING ATOM TYPE 2
+                               atom label = N
+                      L=0, number of zeta = 2
+                      L=1, number of zeta = 2
+                      L=2, number of zeta = 1
+             number of atom for this type = 64
+
+ READING ATOM TYPE 3
+                               atom label = B
+                      L=0, number of zeta = 2
+                      L=1, number of zeta = 2
+                      L=2, number of zeta = 1
+             number of atom for this type = 63
+
+                        TOTAL ATOM NUMBER = 128
+
+ CARTESIAN COORDINATES ( UNIT = 1.88973 Bohr ).
+         atom                   x                   y                   z                 mag                  vx                  vy                  vz
+     tauc_Ti1       6.32254238999          9.42151979         16.37491933                   0   0.000145736828806     7.514167856e-05   0.000115634351511
+      tauc_N1       4.72908936999         10.23546415         15.34246336                   0  -3.99294683738e-05  -0.000381312255139  -0.000103016311034
+      tauc_N2      0.328313809994          1.28030063          15.0042231                   0   0.000794537441209  -0.000899492259408   0.000247021460182
+      tauc_N3       2.23050994002       1.69631558999         14.95196192                   0  -0.000700739005618   0.000585892600832   -0.00018088205279
+      tauc_N4       4.94644868001          1.18507365         15.03647129                   0  -0.000350928247842  -0.000739397819671   0.000232787639891
+      tauc_N5          7.51890369       1.44570309001         14.94924278                   0   0.000464943613172   0.000366794233782  -0.000288388980457
+      tauc_N6         10.28376692           1.4012138         15.19403841                   0   0.000959891976333  -0.000159794112104   0.000407937503256
+      tauc_N7         12.39517839          1.41153631         15.26989211                   0  -0.000588690980723   0.000409365068192    0.00112866401528
+      tauc_N8         14.75120527       1.55383923001         15.07081236                   0   -0.00121963880633   0.000493562045481   0.000196934406458
+      tauc_N9         17.54299743       1.72494570001         14.76451195                   0    0.00014600557359    0.00135666766451  -0.000719638578832
+     tauc_N10      -1.29857698001          3.43551137         14.94851961                   0    0.00121059100697  -0.000549254586688  -0.000365142180438
+     tauc_N11       1.21758198999       3.71453146999         15.07762017                   0  -0.000190385755446  -0.000231011381619    0.00034724431411
+     tauc_N12       3.83756167001       3.63789379999         14.87103413                   0  -0.000135957311541   -0.00017589647464  -0.000110585700394
+     tauc_N13       6.23197567001       3.45648169001          14.8581759                   0  -0.000784073392116  -0.000395587143983  -0.000325791726466
+     tauc_N14       8.81880578999          3.72640804         15.12406356                   0  -0.000169387683248   0.000137504354996   0.000745171152097
+     tauc_N15         11.35158291       3.77985050001         15.21237922                   0   0.000230029655842   0.000151608064737   0.000332508312251
+     tauc_N16         13.87088191       3.44429303999         15.01458495                   0   0.000357926629257  -0.000126676037173   0.000120889498682
+     tauc_N17         16.42945907       3.59942268999         15.02648888                   0  -0.000335968470093  -0.000540743599577   1.48806980656e-05
+     tauc_N18      -2.50354533001       5.90005399001         15.02880406                   0   0.000562883128203   4.24948740075e-05    0.00019291845438
+     tauc_N19     -0.187792849994          5.70984274         15.01753154                   0   -0.00125517586116   9.40564043692e-05   0.000293073683644
+     tauc_N20       2.49383805998       5.89286184002         15.04366988                   0  -0.000445850361858   0.000122281240506   0.000164752529417
+     tauc_N21       4.90557355001       5.65359773001         14.89234991                   0   0.000149312778725   0.000279249033356  -8.94866169574e-05
+     tauc_N22       7.68198278002       5.76352526999         14.85086055                   0   0.000757454046061      0.000368950114   -7.6921715011e-05
+     tauc_N23       9.91914530002          5.73222314         15.03047518                   0   2.35120679716e-06   0.000398886566056   0.000448068326606
+     tauc_N24          12.5222187          5.64626199         14.71742803                   0   -0.00042886991373  -0.000674185136182  -0.000686349405259
+     tauc_N25         14.99793751       5.90846926999         14.83016789                   0  -0.000488032877323   8.10919979871e-05  -0.000615454101723
+     tauc_N26          -3.7933002       7.91196483001         15.03731592                   0   0.000209608808303  -0.000557622219024    6.0787803072e-05
+     tauc_N27      -1.04573505002       7.71981615001         14.98125569                   0   0.000966571758578  -0.000257398976774   9.27982588343e-05
+     tauc_N28          1.11472239       8.13348621001         15.02375228                   0   0.000706935388884  -0.000238426143054   0.000102506640388
+     tauc_N29       3.85598284999          7.98771876           15.170286                   0  -0.000367670428268   0.000204262709593   0.000605892893207
+     tauc_N30          6.26600101       7.76690318001         15.42237113                   0  -0.000434836277719    0.00013731201151  -0.000191348323789
+     tauc_N31       9.00636657001       7.93174461002         14.97217921                   0  -0.000324345967931   0.000703642727368  -0.000549251309847
+     tauc_N32         11.18716479       8.00137697001         14.83813576                   0  -7.88594552946e-05    -0.0009187951921  -0.000504925255145
+     tauc_N33         13.91852473       8.13712416999         14.87215391                   0    -0.0007202323242    0.00101022551744  -0.000298157793773
+     tauc_N34      -5.05878101999         10.30735903         15.08678806                   0  -0.000242184560428   0.000277579483408   0.000246246242117
+     tauc_N35      -2.60266614999         10.10688909         15.10277735                   0  -6.62058502701e-05   -0.00169977710703   0.000284487015444
+     tauc_N36     0.0291150600083          9.92148231         14.91980201                   0  -5.63317586009e-05  -0.000828341066607   5.41399841731e-05
+     tauc_N37       2.61017284001         10.09121854         14.82386528                   0   0.000803684838123  -0.000110366249786   -0.00015556037783
+     tauc_N38       7.47462918001         10.15525449         15.50771799                   0  -0.000180001482874   2.24428566522e-05   0.000388965597962
+     tauc_N39         10.14946949         10.11329268         14.95395799                   0   0.000672925782909   0.000396989782332  -0.000110438783599
+     tauc_N40         12.72445566         10.29111577         15.09367441                   0   0.000414622270695   0.000315248630754   0.000612374038507
+     tauc_N41      -6.45519603001         12.17732514         14.92921532                   0  -0.000916363009086  -6.02438239819e-05  -0.000629114695778
+     tauc_N42      -3.76517072998         12.37692255         15.03977566                   0  -0.000139605230733    0.00038172385548   0.000251807965161
+     tauc_N43         -1.20334947         12.59559569         14.96611473                   0  -0.000524736020617    -0.0004085951719  -0.000342415051688
+     tauc_N44      0.986753340003         12.53843855         14.84141321                   0  -0.000482743290355    0.00124335493148  -0.000324553928289
+     tauc_N45          3.91091127         12.32523232         14.95876985                   0  -0.000717904085827   0.000707137320545  -0.000363600893802
+     tauc_N46          6.14832481         12.11517541          15.1862188                   0   -0.00116238631275  -0.000376896278292    0.00031519653146
+     tauc_N47       8.82576598001         12.40301674         14.88766413                   0  -0.000354668023277   0.000501227369043    2.7698195841e-05
+     tauc_N48         11.20755814         12.33921899         14.95740758                   0   0.000303327865131   5.60600308663e-05   0.000238056668714
+     tauc_N49      -7.50678969002          14.1986827         14.82111389                   0    0.00033394268991   -0.00145466255599  -0.000252939191583
+     tauc_N50         -5.10855043         14.56497138         15.10682776                   0   0.000157238436561   0.000269714065431   1.72988932101e-05
+     tauc_N51         -2.36631807         14.48284504         15.07074732                   0   0.000444363221033  -0.000554924207638   0.000373891585535
+     tauc_N52     0.0710161200066         14.36335403         15.02526347                   0   0.000116211037798  -0.000295337117125   0.000387936274143
+     tauc_N53          2.44696774         14.54109843         14.99113653                   0     0.0012106851324   0.000800422722398   0.000180446052358
+     tauc_N54          5.16671361         14.41766969         15.02816086                   0  -0.000184789997626  -0.000470578369183   0.000182878537309
+     tauc_N55       7.65273340001         14.70235334         14.73889895                   0   0.000916915424281    0.00113236656325  -0.000711064601665
+     tauc_N56         10.10291757         14.41540213         14.80022562                   0    0.00106448439647   -0.00038983602948  -0.000421827964484
+     tauc_N57      -8.94166057999         16.89025634         14.93246008                   0  -0.000754486533978  -0.000387264587958  -0.000360788390391
+     tauc_N58      -6.23410877999         16.71534571         14.95884537                   0   8.58367285642e-05   0.000879437739764  -0.000537983037271
+     tauc_N59      -3.60908368999         16.64454431         15.14814219                   0    0.00180821901833   9.93763206801e-05   0.000751555447182
+     tauc_N60      -1.41681101002         16.71595864          15.0048482                   0  -0.000167836962431   0.000156123866528  -0.000147013364295
+     tauc_N61       1.30500684002          16.7617233         15.12673815                   0    -0.0010833287319  -0.000641596821018   0.000203307445935
+     tauc_N62       3.57731439001         16.54385135         15.10658252                   0  -0.000379109543157  -0.000174049196366   0.000371730680459
+     tauc_N63       6.48325763999         16.42827032         14.88341541                   0  -0.000383622911893  -0.000406509294551  -0.000691944654709
+     tauc_N64       8.65689047001         16.76228659         14.84780173                   0  -0.000114590474568   0.000939229222763  -0.000390567456856
+      tauc_B1       1.40558675001       0.69523974999         15.03367686                   0   0.000564608384344   0.000411330651477   8.81333797078e-05
+      tauc_B2       3.56878026999      0.858041130005         15.05807432                   0   -0.00109942114774  -0.000132247286419    0.00012967020741
+      tauc_B3       6.42164557002      0.675676759995          14.7408992                   0  -0.000208866862868  -0.000914088938349  -0.000843546712295
+      tauc_B4       8.83228213999      0.842916269998         15.20758867                   0   0.000796319211002   0.000349755946667   0.000945750166972
+      tauc_B5         11.45849722      0.553391170007         14.77173953                   0   2.76522012971e-05   0.000908470495201   -0.00122432016541
+      tauc_B6          13.5679309      0.946971780003         14.75177874                   0   -0.00125296880475   5.95634420509e-05  -0.000737869394385
+      tauc_B7         16.52427607      0.692209260009         15.28904281                   0   0.000615951782912  -0.000401719993957   0.000819088646308
+      tauc_B8         18.84351217      0.768124800001         15.22530164                   0   0.000387974728944   0.000867713064784   0.000691897377112
+      tauc_B9      0.149482499997       2.62770914001         14.75989577                   0   0.000866186565744  -0.000912001503558  -0.000876421675419
+     tauc_B10       2.66903120002       2.87653196999         14.92853547                   0   6.42994346459e-05    0.00221774547074   -3.0382462406e-05
+     tauc_B11          4.89596558       2.76273680001         14.83164628                   0    0.00029325310425    -0.0011443746816  -0.000309254868964
+     tauc_B12          7.41611019          2.86388386         14.88771816                   0   2.94912743795e-05   0.000130189035314  -2.75530496685e-06
+     tauc_B13       9.97935783999       2.91426639999         14.59913143                   0   0.000301386122089   1.77995258407e-05   -0.00127989840624
+     tauc_B14         12.63118254          2.92978874          14.8706282                   0   -0.00058646932198  -0.000339959684546  -0.000268869020813
+     tauc_B15         15.08787162          2.92948114         14.86408742                   0   0.000742149300766  -0.000560161422006   -0.00069173110243
+     tauc_B16         17.58431498       3.16923720999          15.2557204                   0  -0.000838250111516  -0.000645093364294    0.00128681486786
+     tauc_B17      -1.34892017001       4.96632043999         14.92320059                   0  -0.000819362045839  -0.000729148478764  -5.49661001474e-05
+     tauc_B18      0.899266589978       5.01576998001           14.704447                   0  -0.000283298716534   0.000370800078038   -0.00113873161204
+     tauc_B19       3.69449305999       5.04810479001         14.87484303                   0  -0.000891752806161   0.000110037292478  -5.17133305568e-05
+     tauc_B20          6.42171125       5.13953829001         14.90398529                   0  -9.04085497306e-05  -0.000434998935784   1.83013390417e-05
+     tauc_B21           8.9191167       5.07263820999         14.66393467                   0  -0.000758808100089   -0.00050928416859    -0.0010617954194
+     tauc_B22         11.05867801       5.04191097001         15.00435617                   0  -0.000353436910499   0.000302770604962  -4.81413292061e-05
+     tauc_B23         13.79423127       5.09645980998         15.35377798                   0   0.000308927737512  -0.000427800229784    0.00115054113042
+     tauc_B24         16.56742699          4.87736901          14.9558529                   0   0.000660271363216    0.00103601178608  -0.000434919784741
+     tauc_B25      -2.34784302002       7.35858783001         14.82193684                   0  -0.000142883920903  -0.000503718160535  -0.000600463596254
+     tauc_B26          0.16827815       7.30504055999         14.94313854                   0   0.000402496649749   -0.00120594036789  -2.64957927328e-05
+     tauc_B27       2.58316214001          7.17725248         14.85170611                   0    0.00024784080749   0.000513688264412  -0.000485691136315
+     tauc_B28       4.92612968001       7.28170160001         14.96638368                   0   0.000513478633155  -0.000826582792024  -0.000771288244661
+     tauc_B29       7.45192289999          7.15508961         15.41672986                   0   0.000831749845217  -0.000803410713023   0.000875483642867
+     tauc_B30          9.89419811          7.14618402         15.17685818                   0    0.00128333993797   -0.00121065996704    0.00054900196267
+     tauc_B31         12.53512397       7.09382630999         15.21861104                   0   -0.00049928468118  -0.000565203860932   0.000822277026814
+     tauc_B32         14.89115909          7.31259425          15.1548615                   0   0.000978709656815  -0.000497511062872   0.000736211711832
+     tauc_B33         -3.81148433          9.24551346         14.85321219                   0  -0.000717277656823   0.000156855447504  -0.000520077343153
+     tauc_B34      -1.29499369999       9.28256959001          14.9681174                   0   0.000695660483745  -0.000957536366948   0.000181217952712
+     tauc_B35          1.41199339       9.33515863999         14.80875054                   0   0.000486044257676     0.0015235561587  -0.000720600165466
+     tauc_B36       3.82879515999          9.38881635          15.3273581                   0    -0.0010455376704  -0.000486239988771   0.000777111301375
+     tauc_B37       8.94124375999       9.55574487999         15.34680753                   0   0.000345332057033   0.000159117178413   0.000774198305062
+     tauc_B38         11.40451104       9.34620000999         15.07688946                   0   0.000547522946304   0.000597859441941     0.0004724378681
+     tauc_B39         13.82491657       9.53736387999         14.61137267                   0   0.000705229870606    0.00104550568846   -0.00136594726827
+     tauc_B40      -5.27522280998         11.66744864         15.17952733                   0   0.000655474034096   1.08079552508e-05   0.000964147986741
+     tauc_B41         -2.38958891         11.38725757         14.82842015                   0  -5.60678663749e-05    0.00129803289495  -0.000890307526711
+     tauc_B42     -0.120120059983         11.89346893         15.00952725                   0  -0.000414400991555   8.05040350244e-05   0.000286876945554
+     tauc_B43       2.35149530002         11.58356751         15.19564896                   0   -0.00117249526995   6.57768316953e-05   0.000958548364579
+     tauc_B44       4.80092301001         11.45715703         15.16974969                   0   0.000638018852689  -0.000404649885035  -0.000154013545711
+     tauc_B45       7.42007768998          11.7653603         15.16488522                   0  -0.000287603747681   3.71497106771e-05   8.07777696812e-06
+     tauc_B46         10.06617383         11.72814541         14.83151766                   0  -0.000700697886745   -0.00038650816552  -0.000504841093242
+     tauc_B47          12.5377267         11.59955167         14.87737088                   0   -0.00194639196604  -0.000274269123835  -0.000481276759488
+     tauc_B48      -6.21865954001         13.51959601         15.06702315                   0  -2.04831223443e-05  -3.68555697661e-05   0.000138534937069
+     tauc_B49         -3.74173499         13.92182772         14.83965046                   0   0.000137784715079   0.000421941048994  -0.000489910195228
+     tauc_B50      -1.26414372001         13.74713078         14.99593831                   0   0.000730937901393    0.00211284656414   0.000233629503807
+     tauc_B51       1.35989651999         13.90637262         14.84977651                   0  -0.000824758160467  -0.000268177363299  -0.000535738182857
+     tauc_B52       3.88845537999         13.73715505         14.97082164                   0   0.000439136627059  -0.000200069005167   2.82607698479e-05
+     tauc_B53       6.33886697998         13.93340823         15.35525254                   0    0.00231967408669    -0.0001338550819    0.00134167192556
+     tauc_B54          8.97454094         13.83732032         15.24463786                   0  -0.000587667087473   8.66307653304e-05    0.00120289462441
+     tauc_B55         11.35931207         13.68648776         14.93044471                   0  -1.85365266435e-05  -0.000390657039628   9.46622764053e-05
+     tauc_B56      -7.53146063001          16.1065864         15.32745074                   0  -0.000268743131263   0.000902058024911    0.00119340079565
+     tauc_B57      -4.78885913999         16.06535422           14.929284                   0  -0.000366993353809   0.000446166370518  -0.000375143288585
+     tauc_B58      -2.38014691998         15.76181418         14.79826859                   0   0.000409058137947   0.000214615870833  -0.000628547016286
+     tauc_B59    -0.0889048999906         15.78316913         14.90662215                   0  -0.000638220352085  -1.25973457851e-05  -0.000460877947359
+     tauc_B60          2.35330775         16.13545266          15.0936552                   0    0.00016536131522  -0.000530192085526   0.000531489154841
+     tauc_B61          4.87296105         15.73763314         14.81835367                   0  -0.000401479470648   0.000205095019308  -0.000820397051932
+     tauc_B62       7.60500331999         16.15723998         15.41258021                   0    0.00125220775285  -0.000677545161774    0.00169474390582
+     tauc_B63       9.74800734001         15.73853129         14.88057364                   0   -0.00134639432874   0.000506984906205  -0.000720857684086
+
+
+                          Volume (Bohr^3) = 70667.4498483
+                             Volume (A^3) = 10471.8231456
+
+ Lattice vectors: (Cartesian coordinate: in unit of a_0)
+       +20.0763846187                  +0                  +0
+       -10.0381923094        +17.38665923                  +0
+                   +0                  +0                 +30
+ Reciprocal vectors: (Cartesian coordinate: in unit of 2 pi/a_0)
+     +0.0498097650046    +0.0287576810121                  -0
+                   -0    +0.0575153620239                  -0
+                   +0                  -0    +0.0333333333333
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Reading pseudopotentials files:                                    |
+ | The pseudopotential file is in UPF format. The 'NC' indicates that |
+ | the type of pseudopotential is 'norm conserving'. Functional of    |
+ | exchange and correlation is decided by 4 given parameters in UPF   |
+ | file.  We also read in the 'core correction' if there exists.      |
+ | Also we can read the valence electrons number and the maximal      |
+ | angular momentum used in this pseudopotential. We also read in the |
+ | trail wave function, trail atomic density and local-pseudopotential|
+ | on logrithmic grid. The non-local pseudopotential projector is also|
+ | read in if there is any.                                           |
+ |                                                                    |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+                PAO radial cut off (Bohr) = 15
+
+ Read in pseudopotential file is /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/Ti.upf
+                     pseudopotential type = NC
+          exchange-correlation functional = PBE
+                 nonlocal core correction = 1
+                        valence electrons = 12
+                                     lmax = 2
+                           number of zeta = 4
+                     number of projectors = 6
+                           L of projector = 0
+                           L of projector = 0
+                           L of projector = 1
+                           L of projector = 1
+                           L of projector = 2
+                           L of projector = 2
+                PAO radial cut off (Bohr) = 15
+
+ Read in pseudopotential file is /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/N.upf
+                     pseudopotential type = NC
+          exchange-correlation functional = PBE
+                 nonlocal core correction = 1
+                        valence electrons = 5
+                                     lmax = 1
+                           number of zeta = 2
+                     number of projectors = 4
+                           L of projector = 0
+                           L of projector = 0
+                           L of projector = 1
+                           L of projector = 1
+                PAO radial cut off (Bohr) = 15
+
+ Read in pseudopotential file is /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/B.upf
+                     pseudopotential type = NC
+          exchange-correlation functional = PBE
+                 nonlocal core correction = 1
+                        valence electrons = 3
+                                     lmax = 1
+                           number of zeta = 2
+                     number of projectors = 4
+                           L of projector = 0
+                           L of projector = 0
+                           L of projector = 1
+                           L of projector = 1
+     initial pseudo atomic orbital number = 518
+                                   NLOCAL = 1678
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ Warning: the number of valence electrons in pseudopotential > 4 for Ti: [Ar] 3d2 4s2
+ Pseudopotentials with additional electrons can yield (more) accurate outcomes, but may be less efficient.
+ If you're confident that your chosen pseudopotential is appropriate, you can safely ignore this warning.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                  
+
+ Warning_Memory_Consuming allocated:  FFT::grid 125.141143799 MB
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Setup plane waves of charge/potential:                             |
+ | Use the energy cutoff and the lattice vectors to generate the      |
+ | dimensions of FFT grid. The number of FFT grid on each processor   |
+ | is 'nrxx'. The number of plane wave basis in reciprocal space is   |
+ | different for charege/potential and wave functions. We also set    |
+ | the 'sticks' for the parallel of FFT. The number of plane waves    |
+ | is 'npw' in each processor.                                        |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+ SETUP THE PLANE WAVE BASIS
+ energy cutoff for charge/potential (unit:Ry) = 320
+            fft grid for charge/potential = [ 225, 225, 324 ]
+                        fft grid division = [ 5, 5, 3 ]
+        big fft grid for charge/potential = [ 45, 45, 108 ]
+                                     nbxx = 54675
+                                     nrxx = 4100625
+
+ SETUP PLANE WAVES FOR CHARGE/POTENTIAL
+                    number of plane waves = 6830333
+                         number of sticks = 31723
+
+ PARALLEL PW FOR CHARGE/POTENTIAL
+     PROC   COLUMNS(POT)             PW
+        1           7931        1707585
+        2           7931        1707583
+        3           7931        1707583
+        4           7930        1707582
+ --------------- sum -------------------
+        4          31723        6830333
+                            number of |g| = 534926
+                                  max |g| = 28.9458904779
+                                  min |g| = 0
+
+----------- Double Check Mixing Parameters Begin ------------
+mixing_type: pulay
+mixing_beta: 0.4
+mixing_gg0: 1.5
+mixing_gg0_min: 0.1
+mixing_ndim: 20
+----------- Double Check Mixing Parameters End ------------
+
+ SETUP THE ELECTRONS NUMBER
+            electron number of element Ti = 12
+      total electron number of element Ti = 12
+             electron number of element N = 5
+       total electron number of element N = 320
+             electron number of element B = 3
+       total electron number of element B = 189
+            AUTOSET number of electrons:  = 521
+ DONE : SETUP UNITCELL Time : 0.355034085 (SEC)
+
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Setup K-points                                                     |
+ | We setup the k-points according to input parameters.               |
+ | The reduced k-points are set according to symmetry operations.     |
+ | We treat the spin as another set of k-points.                      |
+ |                                                                    |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+ SETUP K-POINTS
+                                    nspin = 1
+                   Input type of k points = Monkhorst-Pack(Gamma)
+                                   nkstot = 1
+                               nkstot_ibz = 1
+K-POINTS REDUCTION ACCORDING TO SYMMETRY
+     IBZ     DIRECT_X     DIRECT_Y     DIRECT_Z WEIGHT ibz2bz
+       1   0.00000000   0.00000000   0.00000000 1.0000 0     
+                               nkstot now = 1
+K-POINTS DIRECT COORDINATES
+ KPOINTS     DIRECT_X     DIRECT_Y     DIRECT_Z WEIGHT
+       1   0.00000000   0.00000000   0.00000000 1.0000
+
+           k-point number in this process = 1
+       minimum distributed K point number = 1
+
+K-POINTS CARTESIAN COORDINATES
+ KPOINTS  CARTESIAN_X  CARTESIAN_Y  CARTESIAN_Z WEIGHT
+       1   0.00000000   0.00000000   0.00000000 2.0000
+
+K-POINTS DIRECT COORDINATES
+ KPOINTS     DIRECT_X     DIRECT_Y     DIRECT_Z WEIGHT
+       1   0.00000000   0.00000000   0.00000000 2.0000
+ DONE : INIT K-POINTS Time : 0.356451665 (SEC)
+
+
+ Warning_Memory_Consuming allocated:  FFT::grid 126.686096191 MB
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Setup plane waves of wave functions:                               |
+ | Use the energy cutoff and the lattice vectors to generate the      |
+ | dimensions of FFT grid. The number of FFT grid on each processor   |
+ | is 'nrxx'. The number of plane wave basis in reciprocal space is   |
+ | different for charege/potential and wave functions. We also set    |
+ | the 'sticks' for the parallel of FFT. The number of plane wave of  |
+ | each k-point is 'npwk[ik]' in each processor                       |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+ SETUP PLANE WAVES FOR WAVE FUNCTIONS
+     energy cutoff for wavefunc (unit:Ry) = 80
+              fft grid for wave functions = [ 225, 225, 324 ]
+                    number of plane waves = 853619
+                         number of sticks = 7915
+
+ PARALLEL PW FOR WAVE FUNCTIONS
+     PROC   COLUMNS(POT)             PW
+        1           1979         213405
+        2           1978         213406
+        3           1979         213403
+        4           1979         213405
+ --------------- sum -------------------
+        4           7915         853619
+ DONE : INIT PLANEWAVE Time : 0.399626781 (SEC)
+
+
+ Warning_Memory_Consuming allocated:  SF::strucFac 78.1670379639 MB
+                           occupied bands = 261
+                                   NLOCAL = 1678
+                                   NBANDS = 314
+                                   NBANDS = 314
+ SET NONLOCAL PSEUDOPOTENTIAL PROJECTORS
+ SET NONLOCAL PSEUDOPOTENTIAL PROJECTORS
+ SET NONLOCAL PSEUDOPOTENTIAL PROJECTORS
+ max number of nonlocal projetors among all species is 6
+
+ Warning_Memory_Consuming allocated:  TwoCenterTable: Kinetic 7.88999176025 MB
+
+ Warning_Memory_Consuming allocated:  TwoCenterTable: Overlap 7.88999176025 MB
+
+ Warning_Memory_Consuming allocated:  TwoCenterTable: Nonlocal 5.6070098877 MB
+
+ SETUP THE DIVISION OF H/S MATRIX
+ divide the H&S matrix using 2D block algorithms.
+                                     nb2d = 64
+               global2local_row dimension = 1678
+               global2local_col dimension = 1678
+
+ Warning_Memory_Consuming allocated:  DensityMatrix::DMK 5.46047973633 MB
+                                     nloc = 715716
+
+ Warning_Memory_Consuming allocated:  Chg::rho 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rho_save 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rhog 13.0278396606 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rhog_save 13.0278396606 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rho_core 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rhog_core 13.0278396606 MB
+
+ Warning_Memory_Consuming allocated:  Pot::veff_fix 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Pot::veff 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Pot::veff_smooth 31.2852859497 MB
+
+ -------------------------------------------
+ STEP OF MOLECULAR DYNAMICS : 20
+ -------------------------------------------
+              searching radius is (Bohr)) = 20.01
+         searching radius unit is (Bohr)) = 1.889726
+ No atoms on this sub-FFT-mesh.
+        enter setAlltoallvParameter, nblk = 64
+                                     pnum = 0
+                                     prow = 0
+                                     pcol = 0
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+                                     pnum = 1
+                                     prow = 0
+                                     pcol = 1
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+                                     pnum = 2
+                                     prow = 1
+                                     pcol = 0
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+                                     pnum = 3
+                                     prow = 1
+                                     pcol = 1
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+receiver_size is 0 ; receiver_size of each process is:
+0 0 0 0 
+sender_size is 1431432 ; sender_size of each process is:
+0 715716 715716 0 
+
+ Warning_Memory_Consuming allocated:  LOC::A2A_sender 43.6838684082 MB
+                                 init_chg = atomic
+ DONE : INIT SCF Time : 17.6123 (SEC)
+
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   1--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.238417173569
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1818.2673714618    -24738.7967393626
+E_Harris       -1830.0994397713    -24899.7802874977
+E_Fermi           -0.3156577666        -4.2947442439
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   2--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.100915077263
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1820.1229893249    -24764.0437156113
+E_Harris       -1555.7141585902    -21166.5770161028
+E_Fermi           -0.4212774085        -5.7317731940
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   3--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0641195370824
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.7606076103    -24759.1132594420
+E_Harris       -1676.3022615435    -22807.2623272776
+E_Fermi           -0.2675995338        -3.6408784422
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   4--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0428244080981
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5892118701    -24756.7813007628
+E_Harris       -1724.8567379784    -23467.8798701986
+E_Fermi           -0.3682226833        -5.0099266260
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   5--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0205937910108
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.6511064072    -24757.6234191423
+E_Harris       -1748.2518930987    -23786.1872854294
+E_Fermi           -0.2336643787        -3.1791669705
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   6--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0172702528827
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.6037843914    -24756.9795700860
+E_Harris       -1768.0974385745    -24056.1997838188
+E_Fermi           -0.2183142108        -2.9703172211
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   7--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0119134753298
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5971188110    -24756.8888802124
+E_Harris       -1781.4166419393    -24237.4168424006
+E_Fermi           -0.1949933403        -2.6530205005
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   8--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0105630403672
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5975911598    -24756.8953068479
+E_Harris       -1786.5901502464    -24307.8060340265
+E_Fermi           -0.2027979805        -2.7592080778
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   9--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.00942014138971
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5841067917    -24756.7118426076
+E_Harris       -1788.2061640071    -24329.7930292185
+E_Fermi           -0.1938010262        -2.6367982347
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  10--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.00632328087072
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5840845124    -24756.7115394823
+E_Harris       -1797.5323743207    -24456.6826302304
+E_Fermi           -0.1755063571        -2.3878864911
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  11--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.00512033978738
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5830441018    -24756.6973839703
+E_Harris       -1803.2594618555    -24534.6036536483
+E_Fermi           -0.1722343323        -2.3433683099
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  12--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.00306077851487
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5840130847    -24756.7105676582
+E_Harris       -1810.0299643818    -24626.7210663299
+E_Fermi           -0.1624271711        -2.2099350365
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  13--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.00212379266935
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5853421461    -24756.7286504661
+E_Harris       -1813.5396076729    -24674.4722130365
+E_Fermi           -0.1562331532        -2.1256610999
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  14--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.00141745768143
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5861890717    -24756.7401734806
+E_Harris       -1815.8750148941    -24706.2470583942
+E_Fermi           -0.1533250473        -2.0860942895
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  15--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.000852603993115
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5868669742    -24756.7493968171
+E_Harris       -1817.6076177465    -24729.8203295578
+E_Fermi           -0.1511184717        -2.0560722876
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  16--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.000507706438703
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5872537732    -24756.7546594874
+E_Harris       -1818.4910304454    -24741.8397759483
+E_Fermi           -0.1497220029        -2.0370723559
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  17--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.000288472111674
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5874723451    -24756.7576333102
+E_Harris       -1819.0341516326    -24749.2293187990
+E_Fermi           -0.1488012702        -2.0245451439
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  18--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.000146793913559
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875212766    -24756.7582990582
+E_Harris       -1819.3564626292    -24753.6145848813
+E_Fermi           -0.1482674070        -2.0172815627
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  19--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 8.81224214353e-05
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875587503    -24756.7588089134
+E_Harris       -1819.5108377084    -24755.7149655876
+E_Fermi           -0.1480747689        -2.0146605866
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  20--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 4.57190802196e-05
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875705156    -24756.7589689889
+E_Harris       -1819.5596822934    -24756.3795302593
+E_Fermi           -0.1480000148        -2.0136435050
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  21--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 2.50415757253e-05
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875757905    -24756.7590407583
+E_Harris       -1819.5793503502    -24756.6471279005
+E_Fermi           -0.1479706175        -2.0132435351
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  22--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 1.18569441789e-05
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875766387    -24756.7590522982
+E_Harris       -1819.5822317748    -24756.6863316933
+E_Fermi           -0.1479692316        -2.0132246781
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  23--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 6.22848435733e-06
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875768356    -24756.7590549772
+E_Harris       -1819.5856289868    -24756.7325531340
+E_Fermi           -0.1479591150        -2.0130870351
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  24--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 3.16240023391e-06
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875768330    -24756.7590549422
+E_Harris       -1819.5866904847    -24756.7469955541
+E_Fermi           -0.1479572741        -2.0130619878
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  25--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 1.87371678703e-06
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875768314    -24756.7590549192
+E_Harris       -1819.5881525799    -24756.7668883804
+E_Fermi           -0.1479544772        -2.0130239352
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  26--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 9.96666598814e-07
+----------------------------------------------------------
+    Energy           Rydberg                 eV         
+----------------------------------------------------------
+E_KohnSham         -1819.5875767802    -24756.7590542231
+E_KS(sigma->0)     -1819.5838973166    -24756.7089925527
+E_Harris           -1819.5881759943    -24756.7672069487
+E_band              -463.6413573791     -6308.1642888099
+E_one_elec        -23057.1950234968   -313709.2322168006
+E_Hartree          11617.5338908557    158064.6576237473
+E_xc                -567.5792256017     -7722.3115346107
+E_Ewald            10188.0115847856    138615.0088430940
+E_entropy(-TS)        -0.0073589272        -0.1001233407
+E_descf                0.0000000000         0.0000000000
+E_vdwD3               -0.3514443958        -4.7816463125
+E_exx                  0.0000000000         0.0000000000
+E_Fermi               -0.1479545724        -2.0130252301
+----------------------------------------------------------
+
+ charge density convergence is achieved
+ final etot is -24756.759054 eV
+
+ Warning_Memory_Consuming allocated:  Force::dS_GO 16.381439209 MB
+
+ Warning_Memory_Consuming allocated:  Stress::dSH_GO 65.525756836 MB
+
+ Warning_Memory_Consuming allocated:  Force::dTVNL 16.381439209 MB
+------------------------------------------------------------------------------------------
+TOTAL-FORCE (eV/Angstrom)                                                               
+------------------------------------------------------------------------------------------
+Ti1                              -5.2336845261        -2.1397617464         2.2923317066
+N1                                9.1933378156        -5.3154020421         4.5236751716
+N2                              -20.4092273237         8.9711426139         0.3216517557
+N3                               13.0638841319        -7.0135073602         0.4749308696
+N4                                1.5535669027         8.1457326827        -2.1664545077
+N5                                3.3991501188         1.8882663486        -0.1414839584
+N6                               -8.2579105803         2.2509685831        -4.1570360179
+N7                                4.2964853327         4.7195684097        -4.2920674627
+N8                                8.3321502541        -2.4129229686        -1.3232097672
+N9                                0.6442486479        -8.0158978671         5.7853801650
+N10                               9.3559865597         6.9073375054        -1.2494815974
+N11                               0.2993357840        -4.0223015155        -3.5059628343
+N12                              -3.0129980685        -2.2250988377        -0.2567482013
+N13                              -2.4779455210         4.5801625023        -0.5917858151
+N14                              -1.2633035792        -5.8840379967        -4.9476795848
+N15                              -1.1648386855        -8.5045105508        -3.8100237739
+N16                              -1.8266180206         9.2980975554         0.6458867480
+N17                             -10.6301760688         0.7081208427        -0.3395778629
+N18                               0.1620606775        -5.5469724502        -1.3261535357
+N19                               3.3914345459         3.0291619572        -1.6698150485
+N20                              -1.7579387716        -5.8076324733        -2.3739054725
+N21                               6.4218538972         5.9747367052        -0.4663669521
+N22                              -4.4717383135         1.9060293716         0.6615290489
+N23                               6.0455917633         6.1649289644         1.2140668736
+N24                              -0.5790282341         4.3991805072         5.4954836184
+N25                              -0.9943996043        -4.6713861445         4.2397390102
+N26                               2.6003606378         0.0918636255        -1.0582135727
+N27                              -9.3304343824         9.3817999093        -0.9142984380
+N28                              11.0285503468        -9.1509527436        -0.0621905692
+N29                              -6.1254404683         0.3419154700        -0.7815148252
+N30                              -2.6145760265         0.9251407558         0.4141987110
+N31                             -16.0855780154         9.5242911233         3.1665005642
+N32                               4.9889451395        -5.4834718765         3.7886706581
+N33                              -7.3226570474        -0.9811269182         0.4819533078
+N34                               1.3727026247        -6.2587959803        -3.2813173640
+N35                               3.3618493934        -5.9466189918        -1.6559731532
+N36                              -2.5455621280         6.0715070976        -0.1669275304
+N37                              -2.7605185159         2.3394809848         2.2622792372
+N38                               9.3556506475         3.7034319375        -3.7683265678
+N39                              -0.8946902717         4.1884909959         0.8705621036
+N40                              -6.4724393021        -8.0056188209        -1.9274889724
+N41                               8.5374736535         8.2039258071         0.2725347354
+N42                              -0.6592984063         0.4766310282        -1.2425347549
+N43                              -6.7898452883       -23.1738947198        -1.1158855690
+N44                              12.6245489584        -4.8759354830         1.0346177808
+N45                             -12.3142520580         4.8645356094         0.1040122533
+N46                               0.0403254662         5.7005550517         1.0558878461
+N47                              -3.4696338768        -0.1216093157         2.4610022561
+N48                               5.7581131992        -1.8356571248        -0.3468553978
+N49                               3.6532369225         6.4281499176         2.6440223558
+N50                               4.6484629276        -1.6248088965        -1.7100471753
+N51                              -5.9233507951        -1.1153699679        -1.7509736027
+N52                              -3.9789975560         8.7678858156        -0.8064770733
+N53                               8.7934085437         2.5207510255         0.3050914993
+N54                              -6.7520859231         0.8378516414        -0.4499656109
+N55                               0.2399541706        -5.5392174968         7.4347292947
+N56                               2.1293448145         2.3262904628         1.3067300572
+N57                               4.2885676347       -18.3610127297         1.7130157426
+N58                              -3.6192132233         0.2655631970         1.9034886033
+N59                               1.3631219557         0.1246765475        -3.5808369233
+N60                               8.7503863641        -1.2857349696        -0.8228138489
+N61                             -12.8281827689        -7.6059712269         0.0738154187
+N62                              10.0769818653         4.2988028402        -2.9662924121
+N63                             -12.9150352259         9.4292139680         0.8459863841
+N64                               6.2042102080         1.1693972515         2.5742861849
+B1                                2.2026161478         1.0802416337         0.4744987463
+B2                                2.9634640412        -3.9837285573        -1.3167979968
+B3                               -4.9960913768        -2.4488951848         3.9160852270
+B4                                1.1967111731        -3.0227186409        -2.3682261690
+B5                               -5.9875424218        11.0527698294         1.9642088663
+B6                                3.9952981502        -5.1667554466         4.1499247986
+B7                               -2.9214354981         0.5489321297        -5.2053384422
+B8                                1.7788015313         1.6678901254        -4.8676700212
+B9                               -1.2414728128         5.8125936554         3.4200390405
+B10                              -4.4434219255         9.4131456496         0.5225420935
+B11                               5.6557404124        -0.8736090956         1.1685352681
+B12                               4.6257919861         0.6672341079         1.2736565540
+B13                               2.7573514268        -0.6755929312         8.1384610440
+B14                              -5.5228596126        -0.4583874876         4.0659886526
+B15                               1.9499337199        -3.3955292597         1.9193271889
+B16                               2.0054865034       -11.9556740779        -0.8248089813
+B17                               0.6385024272         1.2565042565         0.9122419758
+B18                               6.2481585664        -0.5488080126         3.3231428303
+B19                              -0.7476585876         0.4216117659         0.7843749444
+B20                              -4.8367077417        -4.1541475091        -0.9724768273
+B21                              -8.7797801151        -3.8074653226         1.8969008397
+B22                               7.9388305154         2.1856856861        -0.5214249499
+B23                               0.8400110153        -0.8074122207        -7.1644945124
+B24                              -4.9701361039        12.3106485063        -0.3030806792
+B25                              -4.7331941303        -4.9296736546         2.5617201168
+B26                              -3.2602987610        -8.5115418561         0.3771452816
+B27                              -0.9394096033         5.7984471966         2.5642201509
+B28                               6.1819916529        -6.3114736797         1.8645539226
+B29                               5.6013957801        -1.3924947892        -4.6235526226
+B30                              11.5720953350        -3.4286275819        -1.2655969722
+B31                              -1.1193039085         2.7350821934        -6.3317939332
+B32                               6.9583230792        -3.2418619513        -2.4304728582
+B33                              -1.2708040715         7.5364330672         3.0884482536
+B34                               3.9908518135         0.8599614917         0.6679062440
+B35                              -3.5250449982         8.8934763239        -0.0049935006
+B36                              -8.3870098150        -3.1564812530        -3.2420871504
+B37                              -1.7899704842        -3.6600415628        -2.5507425544
+B38                              -0.2292838083         3.3744127691        -1.2372713653
+B39                               1.8498474225         0.9782993261         5.6234903823
+B40                              10.5827661289        -2.3731809239        -1.2466918017
+B41                              -4.1228603001         9.3786334308         1.9579223726
+B42                               1.8002053691        -8.0977476936        -0.5217521642
+B43                               1.5003710265         0.1494727364        -5.0359713378
+B44                               8.5886877097         5.7517537919        -0.1942689254
+B45                               4.5336939258        -3.5373669491        -0.0783139838
+B46                              -3.5716952035        -6.2614158566         1.0060184792
+B47                             -11.1395814540        -2.5309417330         0.8129319072
+B48                              -2.5846589437         8.0447104294        -1.8419176848
+B49                              -1.0248581468        -4.7896859650         3.6770548195
+B50                               3.1160402960        15.4909529820         0.6474434162
+B51                              -5.7902654627        -4.9866663157         0.3600305509
+B52                              -2.9712356501         0.3750588726         0.3266435368
+B53                               5.9226269711        -4.1414435847        -3.7047316089
+B54                              -6.5960815058        -2.6159816103        -4.7419336229
+B55                              -1.7062158098         1.5372459963        -0.8603057487
+B56                              -0.0048016500        -2.3994679987        -5.6740371605
+B57                              -8.6856996860        -3.4697712901         1.9755972997
+B58                              -3.0533715500         7.8918314200         2.9871796268
+B59                               0.4073420206         4.3370340554         2.3340064833
+B60                               6.9485707801       -12.5402390936        -0.0553754366
+B61                               1.2559715141         6.2548735386         2.4411224005
+B62                               0.7986250209        -7.5221627127        -2.7344523477
+B63                               4.0529643471         7.3916974374        -0.6241561630
+------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+TOTAL-STRESS (KBAR)                                           
+----------------------------------------------------------------
+       29.8870456517         1.0694402194         1.8652064508
+        1.0694402194        31.2126088703        -3.6922977004
+        1.8652064508        -3.6922977004        -6.9680423030
+----------------------------------------------------------------
+ TOTAL-PRESSURE: 18.043871 KBAR
+
+
+
+ ------------------------------------------------------------------------------------------------
+ Energy (Ry)         Potential (Ry)      Kinetic (Ry)        Temperature (K)     Pressure (kbar)     
+ -1816.0492          -1819.5876          3.5383476           2932.5996           22.954283           
+ ------------------------------------------------------------------------------------------------
+Virtual Pressure is 22.954283 kbar 
+Virial Term is 18.043871 kbar 
+Kinetic Term is 4.9104119 kbar 
+
+
+ ><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+ MD STRESS (kbar)
+
+ ><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+35.569019      0.97554342     2.7010927      
+0.97554342     36.329787      -4.3775262     
+2.7010927      -4.3775262     -3.0359574     
+
+
+
+
+ --------------------------------------------
+ !FINAL_ETOT_IS -24756.75905422308 eV
+ --------------------------------------------
+
+
+TIME STATISTICS
+------------------------------------------------------------------------------------
+     CLASS_NAME                 NAME            TIME(Sec)  CALLS   AVG(Sec) PER(%)
+------------------------------------------------------------------------------------
+                     total                      459.95           9  51.11   100.00
+Driver               reading                      0.01           1   0.01     0.00
+Input                Init                         0.00           1   0.00     0.00
+Input_Conv           Convert                      0.00           1   0.00     0.00
+Driver               driver_line                459.95           1 459.95   100.00
+UnitCell             check_tau                    0.00           1   0.00     0.00
+ESolver_KS_LCAO      init                         6.22           1   6.22     1.35
+PW_Basis_Sup         setuptransform               0.03           1   0.03     0.01
+PW_Basis_Sup         distributeg                  0.02           1   0.02     0.00
+mymath               heapsort                     0.18           3   0.06     0.04
+PW_Basis_K           setuptransform               0.02           1   0.02     0.00
+PW_Basis_K           distributeg                  0.02           1   0.02     0.00
+PW_Basis             setup_struc_factor           1.15           1   1.15     0.25
+NOrbital_Lm          extra_uniform                0.03          19   0.00     0.01
+Mathzone_Add1        SplineD2                     0.00          19   0.00     0.00
+Mathzone_Add1        Cubic_Spline_Interpolation   0.00          19   0.00     0.00
+Mathzone_Add1        Uni_Deriv_Phi                0.03          19   0.00     0.01
+ppcell_vl            init_vloc                    4.28           1   4.28     0.93
+Run_MD               md_line                    453.67           1 453.67    98.63
+Verlet               setup                      453.63           1 453.63    98.63
+MD_func              force_virial               453.63           1 453.63    98.63
+ESolver_KS_LCAO      run                        393.22           1 393.22    85.49
+ESolver_KS_LCAO      before_scf                  11.37           1  11.37     2.47
+Vdwd3                cal_energy                   0.02           1   0.02     0.00
+ESolver_KS_LCAO      beforesolver                 0.09           1   0.09     0.02
+ESolver_KS_LCAO      set_matrix_grid              0.04           1   0.04     0.01
+atom_arrange         search                       0.00           1   0.00     0.00
+Grid_Technique       init                         0.04           1   0.04     0.01
+Grid_BigCell         grid_expansion_index         0.01           1   0.01     0.00
+Record_adj           for_2d                       0.00           1   0.00     0.00
+Grid_Driver          Find_atom                    0.00         896   0.00     0.00
+LCAO_domain          grid_prepare                 0.00           1   0.00     0.00
+OverlapNew           initialize_SR                0.00           1   0.00     0.00
+EkineticNew          initialize_HR                0.00           1   0.00     0.00
+NonlocalNew          initialize_HR                0.01           1   0.01     0.00
+Veff                 initialize_HR                0.00           1   0.00     0.00
+LOC                  Alltoall                     0.04           1   0.04     0.01
+Charge               set_rho_core                 4.82           1   4.82     1.05
+PW_Basis_Sup         recip2real                  14.25         175   0.08     3.10
+PW_Basis_Sup         gathers_scatterp             5.59         175   0.03     1.22
+Charge               atomic_rho                  10.20           2   5.10     2.22
+Potential            init_pot                     1.28           1   1.28     0.28
+Potential            update_from_charge          32.04          27   1.19     6.97
+Potential            cal_fixed_v                  0.10           1   0.10     0.02
+PotLocal             cal_fixed_v                  0.10           1   0.10     0.02
+Potential            cal_v_eff                   31.83          27   1.18     6.92
+H_Hartree_pw         v_hartree                    5.00          27   0.19     1.09
+PW_Basis_Sup         real2recip                  14.56         205   0.07     3.17
+PW_Basis_Sup         gatherp_scatters             5.74         205   0.03     1.25
+PotXC                cal_v_eff                   26.45          27   0.98     5.75
+XC_Functional        v_xc                        28.23          29   0.97     6.14
+Potential            interpolate_vrs              0.11          27   0.00     0.02
+H_Ewald_pw           compute_ewald                0.03           1   0.03     0.01
+Charge_Mixing        init_mixing                  0.00           1   0.00     0.00
+HSolverLCAO          solve                      333.98          26  12.85    72.61
+HamiltLCAO           updateHk                   171.58          26   6.60    37.30
+OperatorLCAO         init                       170.94          78   2.19    37.16
+OverlapNew           calculate_SR                 0.22           1   0.22     0.05
+OverlapNew           contributeHk                 0.00           1   0.00     0.00
+EkineticNew          contributeHR                 0.21          26   0.01     0.05
+EkineticNew          calculate_HR                 0.21           1   0.21     0.05
+NonlocalNew          contributeHR                 0.43          26   0.02     0.09
+NonlocalNew          calculate_HR                 0.40           1   0.40     0.09
+Veff                 contributeHR               170.67          26   6.56    37.11
+Gint_interface       cal_gint                     0.00          53   0.00     0.00
+Gint_interface       cal_gint_vlocal              0.00          26   0.00     0.00
+Gint_Gamma           transfer_pvpR              170.67          26   6.56    37.11
+OperatorLCAO         contributeHk                 0.02          26   0.00     0.00
+HSolverLCAO          hamiltSolvePsiK             11.68          26   0.45     2.54
+OperatorLCAO         get_hs_pointers              0.00          27   0.00     0.00
+DiagoElpa            elpa_solve                  11.19          26   0.43     2.43
+ElecStateLCAO        psiToRho                   150.72          26   5.80    32.77
+ElecStateLCAO        cal_dm_2d                    0.26          26   0.01     0.06
+elecstate            cal_dm                       0.54          27   0.02     0.12
+psiMulPsiMpi         pdgemm                       0.52          27   0.02     0.11
+DensityMatrix        cal_DMR                      0.03          26   0.00     0.01
+Gint                 transfer_DMR                 0.17          26   0.01     0.04
+Gint_interface       cal_gint_rho                 0.00          26   0.00     0.00
+Charge_Mixing        get_drho                     0.14          26   0.01     0.03
+Charge               mix_rho                      7.43          25   0.30     1.62
+Charge               Pulay_mixing                 1.24          25   0.05     0.27
+ESolver_KS_LCAO      cal_force                   60.41           1  60.41    13.13
+Force_Stress_LCAO    getForceStress              60.41           1  60.41    13.13
+Forces               cal_force_loc                1.30           1   1.30     0.28
+Forces               cal_force_ew                 0.98           1   0.98     0.21
+Forces               cal_force_cc                 6.82           1   6.82     1.48
+Forces               cal_force_scc                5.88           1   5.88     1.28
+Stress_Func          stress_loc                   7.45           1   7.45     1.62
+Stress_Func          stress_har                   0.10           1   0.10     0.02
+Stress_Func          stress_ewa                   1.23           1   1.23     0.27
+Stress_Func          stress_cc                   13.56           1  13.56     2.95
+Stress_Func          stress_gga                   0.57           1   0.57     0.12
+Force_LCAO_gamma     ftable_gamma                22.42           1  22.42     4.87
+Force_LCAO_gamma     allocate_gamma               0.63           1   0.63     0.14
+LCAO_gen_fixedH      build_ST_new                 0.42           2   0.21     0.09
+LCAO_gen_fixedH      b_NL_mu_new                  0.20           1   0.20     0.04
+Force_LCAO_gamma     cal_foverlap                 0.32           1   0.32     0.07
+Force_LCAO_gamma     cal_edm_2d                   0.30           1   0.30     0.07
+Force_LCAO_gamma     cal_ftvnl_dphi               0.02           1   0.02     0.00
+Force_LCAO_gamma     cal_fvnl_dbeta_new           1.12           1   1.12     0.24
+Force_LCAO_gamma     cal_fvl_dphi                 0.00           1   0.00     0.00
+Gint_interface       cal_gint_force               0.00           1   0.00     0.00
+Vdwd3                cal_force                    0.05           1   0.05     0.01
+Vdwd3                cal_stress                   0.05           1   0.05     0.01
+ESolver_KS_LCAO      cal_stress                   0.00           1   0.00     0.00
+ESolver_KS_LCAO      post_process                 0.00           1   0.00     0.00
+ModuleIO             write_istate_info            0.00           1   0.00     0.00
+------------------------------------------------------------------------------------
+
+ NAME-------------------------|MEMORY(MB)--------
+total                         2637           
+FFT::grid                     503.7          
+SF::strucFac                  312.7          
+Stress::dSH_GO                214.8          
+                              128.9          
+Chg::rho                      125.1          
+Chg::rho_save                 125.1          
+Chg::rho_core                 125.1          
+Pot::veff_fix                 125.1          
+Pot::veff                     125.1          
+Pot::veff_smooth              125.1          
+Force::dTVNL                  118.1          
+LOC::A2A_sender               92.11          
+Force::dS_GO                  75.19          
+Chg::rhog                     52.11          
+Chg::rhog_save                52.11          
+Chg::rhog_core                52.11          
+                              32.22          
+                              32.22          
+TwoCenterTable: Kinetic       31.56          
+TwoCenterTable: Overlap       31.56          
+TwoCenterTable: Nonlocal      22.43          
+DensityMatrix::DMK            21.48          
+PW_B_K::gcar                  19.54          
+GT::index2normal              12.45          
+SF::eigts123                  12.09          
+HamiltLCAO::hR                11.41          
+Gint::hRGint                  8.662          
+Gint::DMRGint                 8.662          
+PW_B_K::gk2                   6.513          
+LOC::A2A_receiv               6.331          
+GT::trace_lo                  6.238          
+DensityMatrix::DMR            5.016          
+LOC::A2A_other                2.758          
+HamiltLCAO::sR                2.723          
+                              2.282          
+Grid::AtomLink                1.75           
+meshball_pos                  1.622          
+ -------------   < 1.0 MB has been ignored ----------------
+ ----------------------------------------------------------
+
+ Start  Time  : Thu Jun 27 01:48:35 2024
+ Finish Time  : Thu Jun 27 01:56:15 2024
+ Total  Time  : 0 h 7 mins 40 secs 
+                                                                                     
+                              ABACUS v3.6.0
+
+               Atomic-orbital Based Ab-initio Computation at UStc                    
+
+                     Website: http://abacus.ustc.edu.cn/                             
+               Documentation: https://abacus.deepmodeling.com/                       
+                  Repository: https://github.com/abacusmodeling/abacus-develop       
+                              https://github.com/deepmodeling/abacus-develop         
+                      Commit: unknown
+
+    Start Time is Thu Jun 27 02:01:04 2024
+                                                                                     
+ ------------------------------------------------------------------------------------
+
+ READING GENERAL INFORMATION
+                           global_out_dir = OUT.ABACUS/
+                           global_in_card = INPUT
+                               pseudo_dir = 
+                              orbital_dir = 
+                                    DRANK = 1
+                                    DSIZE = 4
+                                   DCOLOR = 1
+                                    GRANK = 1
+                                    GSIZE = 1
+ The esolver type has been set to : ksdft_lcao
+
+ RUNNING WITH DEVICE  : CPU / 13th Gen Intel(R) Core(TM) i9-13900K
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Reading atom information in unitcell:                              |
+ | From the input file and the structure file we know the number of   |
+ | different elments in this unitcell, then we list the detail        |
+ | information for each element, especially the zeta and polar atomic |
+ | orbital number for each element. The total atom number is counted. |
+ | We calculate the nearest atom distance for each atom and show the  |
+ | Cartesian and Direct coordinates for each atom. We list the file   |
+ | address for atomic orbitals. The volume and the lattice vectors    |
+ | in real and reciprocal space is also shown.                        |
+ |                                                                    |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+ READING UNITCELL INFORMATION
+                                    ntype = 3
+                  lattice constant (Bohr) = 1.88973
+              lattice constant (Angstrom) = 1
+
+ READING ATOM TYPE 1
+                               atom label = Ti
+                      L=0, number of zeta = 4
+                      L=1, number of zeta = 2
+                      L=2, number of zeta = 2
+                      L=3, number of zeta = 1
+             number of atom for this type = 1
+
+ READING ATOM TYPE 2
+                               atom label = N
+                      L=0, number of zeta = 2
+                      L=1, number of zeta = 2
+                      L=2, number of zeta = 1
+             number of atom for this type = 64
+
+ READING ATOM TYPE 3
+                               atom label = B
+                      L=0, number of zeta = 2
+                      L=1, number of zeta = 2
+                      L=2, number of zeta = 1
+             number of atom for this type = 63
+
+                        TOTAL ATOM NUMBER = 128
+
+ CARTESIAN COORDINATES ( UNIT = 1.88973 Bohr ).
+         atom                   x                   y                   z                 mag                  vx                  vy                  vz
+     tauc_Ti1       6.32254238999          9.42151979         16.37491933                   0        0.0001457368         7.51417e-05        0.0001156344
+      tauc_N1       4.72908936999         10.23546415         15.34246336                   0        -3.99295e-05       -0.0003813123       -0.0001030163
+      tauc_N2      0.328313809994          1.28030063          15.0042231                   0        0.0007945374       -0.0008994923        0.0002470215
+      tauc_N3       2.23050994002       1.69631558999         14.95196192                   0        -0.000700739        0.0005858926       -0.0001808821
+      tauc_N4       4.94644868001          1.18507365         15.03647129                   0       -0.0003509282       -0.0007393978        0.0002327876
+      tauc_N5          7.51890369       1.44570309001         14.94924278                   0        0.0004649436        0.0003667942        -0.000288389
+      tauc_N6         10.28376692           1.4012138         15.19403841                   0         0.000959892       -0.0001597941        0.0004079375
+      tauc_N7         12.39517839          1.41153631         15.26989211                   0        -0.000588691        0.0004093651         0.001128664
+      tauc_N8         14.75120527       1.55383923001         15.07081236                   0       -0.0012196388         0.000493562        0.0001969344
+      tauc_N9         17.54299743       1.72494570001         14.76451195                   0        0.0001460056        0.0013566677       -0.0007196386
+     tauc_N10      -1.29857698001          3.43551137         14.94851961                   0         0.001210591       -0.0005492546       -0.0003651422
+     tauc_N11       1.21758198999       3.71453146999         15.07762017                   0       -0.0001903858       -0.0002310114        0.0003472443
+     tauc_N12       3.83756167001       3.63789379999         14.87103413                   0       -0.0001359573       -0.0001758965       -0.0001105857
+     tauc_N13       6.23197567001       3.45648169001          14.8581759                   0       -0.0007840734       -0.0003955871       -0.0003257917
+     tauc_N14       8.81880578999          3.72640804         15.12406356                   0       -0.0001693877        0.0001375044        0.0007451712
+     tauc_N15         11.35158291       3.77985050001         15.21237922                   0        0.0002300297        0.0001516081        0.0003325083
+     tauc_N16         13.87088191       3.44429303999         15.01458495                   0        0.0003579266        -0.000126676        0.0001208895
+     tauc_N17         16.42945907       3.59942268999         15.02648888                   0       -0.0003359685       -0.0005407436         1.48807e-05
+     tauc_N18      -2.50354533001       5.90005399001         15.02880406                   0        0.0005628831         4.24949e-05        0.0001929185
+     tauc_N19     -0.187792849994          5.70984274         15.01753154                   0       -0.0012551759         9.40564e-05        0.0002930737
+     tauc_N20       2.49383805998       5.89286184002         15.04366988                   0       -0.0004458504        0.0001222812        0.0001647525
+     tauc_N21       4.90557355001       5.65359773001         14.89234991                   0        0.0001493128         0.000279249        -8.94866e-05
+     tauc_N22       7.68198278002       5.76352526999         14.85086055                   0         0.000757454        0.0003689501        -7.69217e-05
+     tauc_N23       9.91914530002          5.73222314         15.03047518                   0          2.3512e-06        0.0003988866        0.0004480683
+     tauc_N24          12.5222187          5.64626199         14.71742803                   0       -0.0004288699       -0.0006741851       -0.0006863494
+     tauc_N25         14.99793751       5.90846926999         14.83016789                   0       -0.0004880329          8.1092e-05       -0.0006154541
+     tauc_N26          -3.7933002       7.91196483001         15.03731592                   0        0.0002096088       -0.0005576222         6.07878e-05
+     tauc_N27      -1.04573505002       7.71981615001         14.98125569                   0        0.0009665718        -0.000257399         9.27983e-05
+     tauc_N28          1.11472239       8.13348621001         15.02375228                   0        0.0007069354       -0.0002384261        0.0001025066
+     tauc_N29       3.85598284999          7.98771876           15.170286                   0       -0.0003676704        0.0002042627        0.0006058929
+     tauc_N30          6.26600101       7.76690318001         15.42237113                   0       -0.0004348363         0.000137312       -0.0001913483
+     tauc_N31       9.00636657001       7.93174461002         14.97217921                   0        -0.000324346        0.0007036427       -0.0005492513
+     tauc_N32         11.18716479       8.00137697001         14.83813576                   0        -7.88595e-05       -0.0009187952       -0.0005049253
+     tauc_N33         13.91852473       8.13712416999         14.87215391                   0       -0.0007202323        0.0010102255       -0.0002981578
+     tauc_N34      -5.05878101999         10.30735903         15.08678806                   0       -0.0002421846        0.0002775795        0.0002462462
+     tauc_N35      -2.60266614999         10.10688909         15.10277735                   0        -6.62059e-05       -0.0016997771         0.000284487
+     tauc_N36     0.0291150600083          9.92148231         14.91980201                   0        -5.63318e-05       -0.0008283411           5.414e-05
+     tauc_N37       2.61017284001         10.09121854         14.82386528                   0        0.0008036848       -0.0001103662       -0.0001555604
+     tauc_N38       7.47462918001         10.15525449         15.50771799                   0       -0.0001800015         2.24429e-05        0.0003889656
+     tauc_N39         10.14946949         10.11329268         14.95395799                   0        0.0006729258        0.0003969898       -0.0001104388
+     tauc_N40         12.72445566         10.29111577         15.09367441                   0        0.0004146223        0.0003152486         0.000612374
+     tauc_N41      -6.45519603001         12.17732514         14.92921532                   0        -0.000916363        -6.02438e-05       -0.0006291147
+     tauc_N42      -3.76517072998         12.37692255         15.03977566                   0       -0.0001396052        0.0003817239         0.000251808
+     tauc_N43         -1.20334947         12.59559569         14.96611473                   0        -0.000524736       -0.0004085952       -0.0003424151
+     tauc_N44      0.986753340003         12.53843855         14.84141321                   0       -0.0004827433        0.0012433549       -0.0003245539
+     tauc_N45          3.91091127         12.32523232         14.95876985                   0       -0.0007179041        0.0007071373       -0.0003636009
+     tauc_N46          6.14832481         12.11517541          15.1862188                   0       -0.0011623863       -0.0003768963        0.0003151965
+     tauc_N47       8.82576598001         12.40301674         14.88766413                   0        -0.000354668        0.0005012274         2.76982e-05
+     tauc_N48         11.20755814         12.33921899         14.95740758                   0        0.0003033279           5.606e-05        0.0002380567
+     tauc_N49      -7.50678969002          14.1986827         14.82111389                   0        0.0003339427       -0.0014546626       -0.0002529392
+     tauc_N50         -5.10855043         14.56497138         15.10682776                   0        0.0001572384        0.0002697141         1.72989e-05
+     tauc_N51         -2.36631807         14.48284504         15.07074732                   0        0.0004443632       -0.0005549242        0.0003738916
+     tauc_N52     0.0710161200066         14.36335403         15.02526347                   0         0.000116211       -0.0002953371        0.0003879363
+     tauc_N53          2.44696774         14.54109843         14.99113653                   0        0.0012106851        0.0008004227        0.0001804461
+     tauc_N54          5.16671361         14.41766969         15.02816086                   0         -0.00018479       -0.0004705784        0.0001828785
+     tauc_N55       7.65273340001         14.70235334         14.73889895                   0        0.0009169154        0.0011323666       -0.0007110646
+     tauc_N56         10.10291757         14.41540213         14.80022562                   0        0.0010644844        -0.000389836        -0.000421828
+     tauc_N57      -8.94166057999         16.89025634         14.93246008                   0       -0.0007544865       -0.0003872646       -0.0003607884
+     tauc_N58      -6.23410877999         16.71534571         14.95884537                   0         8.58367e-05        0.0008794377        -0.000537983
+     tauc_N59      -3.60908368999         16.64454431         15.14814219                   0         0.001808219         9.93763e-05        0.0007515554
+     tauc_N60      -1.41681101002         16.71595864          15.0048482                   0        -0.000167837        0.0001561239       -0.0001470134
+     tauc_N61       1.30500684002          16.7617233         15.12673815                   0       -0.0010833287       -0.0006415968        0.0002033074
+     tauc_N62       3.57731439001         16.54385135         15.10658252                   0       -0.0003791095       -0.0001740492        0.0003717307
+     tauc_N63       6.48325763999         16.42827032         14.88341541                   0       -0.0003836229       -0.0004065093       -0.0006919447
+     tauc_N64       8.65689047001         16.76228659         14.84780173                   0       -0.0001145905        0.0009392292       -0.0003905675
+      tauc_B1       1.40558675001       0.69523974999         15.03367686                   0        0.0005646084        0.0004113307         8.81334e-05
+      tauc_B2       3.56878026999      0.858041130005         15.05807432                   0       -0.0010994211       -0.0001322473        0.0001296702
+      tauc_B3       6.42164557002      0.675676759995          14.7408992                   0       -0.0002088669       -0.0009140889       -0.0008435467
+      tauc_B4       8.83228213999      0.842916269998         15.20758867                   0        0.0007963192        0.0003497559        0.0009457502
+      tauc_B5         11.45849722      0.553391170007         14.77173953                   0         2.76522e-05        0.0009084705       -0.0012243202
+      tauc_B6          13.5679309      0.946971780003         14.75177874                   0       -0.0012529688         5.95634e-05       -0.0007378694
+      tauc_B7         16.52427607      0.692209260009         15.28904281                   0        0.0006159518         -0.00040172        0.0008190886
+      tauc_B8         18.84351217      0.768124800001         15.22530164                   0        0.0003879747        0.0008677131        0.0006918974
+      tauc_B9      0.149482499997       2.62770914001         14.75989577                   0        0.0008661866       -0.0009120015       -0.0008764217
+     tauc_B10       2.66903120002       2.87653196999         14.92853547                   0         6.42994e-05        0.0022177455        -3.03825e-05
+     tauc_B11          4.89596558       2.76273680001         14.83164628                   0        0.0002932531       -0.0011443747       -0.0003092549
+     tauc_B12          7.41611019          2.86388386         14.88771816                   0         2.94913e-05         0.000130189         -2.7553e-06
+     tauc_B13       9.97935783999       2.91426639999         14.59913143                   0        0.0003013861         1.77995e-05       -0.0012798984
+     tauc_B14         12.63118254          2.92978874          14.8706282                   0       -0.0005864693       -0.0003399597        -0.000268869
+     tauc_B15         15.08787162          2.92948114         14.86408742                   0        0.0007421493       -0.0005601614       -0.0006917311
+     tauc_B16         17.58431498       3.16923720999          15.2557204                   0       -0.0008382501       -0.0006450934        0.0012868149
+     tauc_B17      -1.34892017001       4.96632043999         14.92320059                   0        -0.000819362       -0.0007291485        -5.49661e-05
+     tauc_B18      0.899266589978       5.01576998001           14.704447                   0       -0.0002832987        0.0003708001       -0.0011387316
+     tauc_B19       3.69449305999       5.04810479001         14.87484303                   0       -0.0008917528        0.0001100373        -5.17133e-05
+     tauc_B20          6.42171125       5.13953829001         14.90398529                   0        -9.04085e-05       -0.0004349989         1.83013e-05
+     tauc_B21           8.9191167       5.07263820999         14.66393467                   0       -0.0007588081       -0.0005092842       -0.0010617954
+     tauc_B22         11.05867801       5.04191097001         15.00435617                   0       -0.0003534369        0.0003027706        -4.81413e-05
+     tauc_B23         13.79423127       5.09645980998         15.35377798                   0        0.0003089277       -0.0004278002        0.0011505411
+     tauc_B24         16.56742699          4.87736901          14.9558529                   0        0.0006602714        0.0010360118       -0.0004349198
+     tauc_B25      -2.34784302002       7.35858783001         14.82193684                   0       -0.0001428839       -0.0005037182       -0.0006004636
+     tauc_B26          0.16827815       7.30504055999         14.94313854                   0        0.0004024966       -0.0012059404        -2.64958e-05
+     tauc_B27       2.58316214001          7.17725248         14.85170611                   0        0.0002478408        0.0005136883       -0.0004856911
+     tauc_B28       4.92612968001       7.28170160001         14.96638368                   0        0.0005134786       -0.0008265828       -0.0007712882
+     tauc_B29       7.45192289999          7.15508961         15.41672986                   0        0.0008317498       -0.0008034107        0.0008754836
+     tauc_B30          9.89419811          7.14618402         15.17685818                   0        0.0012833399         -0.00121066         0.000549002
+     tauc_B31         12.53512397       7.09382630999         15.21861104                   0       -0.0004992847       -0.0005652039         0.000822277
+     tauc_B32         14.89115909          7.31259425          15.1548615                   0        0.0009787097       -0.0004975111        0.0007362117
+     tauc_B33         -3.81148433          9.24551346         14.85321219                   0       -0.0007172777        0.0001568554       -0.0005200773
+     tauc_B34      -1.29499369999       9.28256959001          14.9681174                   0        0.0006956605       -0.0009575364         0.000181218
+     tauc_B35          1.41199339       9.33515863999         14.80875054                   0        0.0004860443        0.0015235562       -0.0007206002
+     tauc_B36       3.82879515999          9.38881635          15.3273581                   0       -0.0010455377         -0.00048624        0.0007771113
+     tauc_B37       8.94124375999       9.55574487999         15.34680753                   0        0.0003453321        0.0001591172        0.0007741983
+     tauc_B38         11.40451104       9.34620000999         15.07688946                   0        0.0005475229        0.0005978594        0.0004724379
+     tauc_B39         13.82491657       9.53736387999         14.61137267                   0        0.0007052299        0.0010455057       -0.0013659473
+     tauc_B40      -5.27522280998         11.66744864         15.17952733                   0         0.000655474          1.0808e-05         0.000964148
+     tauc_B41         -2.38958891         11.38725757         14.82842015                   0        -5.60679e-05        0.0012980329       -0.0008903075
+     tauc_B42     -0.120120059983         11.89346893         15.00952725                   0        -0.000414401          8.0504e-05        0.0002868769
+     tauc_B43       2.35149530002         11.58356751         15.19564896                   0       -0.0011724953         6.57768e-05        0.0009585484
+     tauc_B44       4.80092301001         11.45715703         15.16974969                   0        0.0006380189       -0.0004046499       -0.0001540135
+     tauc_B45       7.42007768998          11.7653603         15.16488522                   0       -0.0002876037         3.71497e-05          8.0778e-06
+     tauc_B46         10.06617383         11.72814541         14.83151766                   0       -0.0007006979       -0.0003865082       -0.0005048411
+     tauc_B47          12.5377267         11.59955167         14.87737088                   0        -0.001946392       -0.0002742691       -0.0004812768
+     tauc_B48      -6.21865954001         13.51959601         15.06702315                   0        -2.04831e-05        -3.68556e-05        0.0001385349
+     tauc_B49         -3.74173499         13.92182772         14.83965046                   0        0.0001377847         0.000421941       -0.0004899102
+     tauc_B50      -1.26414372001         13.74713078         14.99593831                   0        0.0007309379        0.0021128466        0.0002336295
+     tauc_B51       1.35989651999         13.90637262         14.84977651                   0       -0.0008247582       -0.0002681774       -0.0005357382
+     tauc_B52       3.88845537999         13.73715505         14.97082164                   0        0.0004391366        -0.000200069         2.82608e-05
+     tauc_B53       6.33886697998         13.93340823         15.35525254                   0        0.0023196741       -0.0001338551        0.0013416719
+     tauc_B54          8.97454094         13.83732032         15.24463786                   0       -0.0005876671         8.66308e-05        0.0012028946
+     tauc_B55         11.35931207         13.68648776         14.93044471                   0        -1.85365e-05        -0.000390657         9.46623e-05
+     tauc_B56      -7.53146063001          16.1065864         15.32745074                   0       -0.0002687431         0.000902058        0.0011934008
+     tauc_B57      -4.78885913999         16.06535422           14.929284                   0       -0.0003669934        0.0004461664       -0.0003751433
+     tauc_B58      -2.38014691998         15.76181418         14.79826859                   0        0.0004090581        0.0002146159        -0.000628547
+     tauc_B59    -0.0889048999906         15.78316913         14.90662215                   0       -0.0006382204        -1.25973e-05       -0.0004608779
+     tauc_B60          2.35330775         16.13545266          15.0936552                   0        0.0001653613       -0.0005301921        0.0005314892
+     tauc_B61          4.87296105         15.73763314         14.81835367                   0       -0.0004014795         0.000205095       -0.0008203971
+     tauc_B62       7.60500331999         16.15723998         15.41258021                   0        0.0012522078       -0.0006775452        0.0016947439
+     tauc_B63       9.74800734001         15.73853129         14.88057364                   0       -0.0013463943        0.0005069849       -0.0007208577
+
+
+                          Volume (Bohr^3) = 70667.4498483
+                             Volume (A^3) = 10471.8231456
+
+ Lattice vectors: (Cartesian coordinate: in unit of a_0)
+       +20.0763846187                  +0                  +0
+       -10.0381923094        +17.38665923                  +0
+                   +0                  +0                 +30
+ Reciprocal vectors: (Cartesian coordinate: in unit of 2 pi/a_0)
+     +0.0498097650046    +0.0287576810121                  -0
+                   -0    +0.0575153620239                  -0
+                   +0                  -0    +0.0333333333333
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Reading pseudopotentials files:                                    |
+ | The pseudopotential file is in UPF format. The 'NC' indicates that |
+ | the type of pseudopotential is 'norm conserving'. Functional of    |
+ | exchange and correlation is decided by 4 given parameters in UPF   |
+ | file.  We also read in the 'core correction' if there exists.      |
+ | Also we can read the valence electrons number and the maximal      |
+ | angular momentum used in this pseudopotential. We also read in the |
+ | trail wave function, trail atomic density and local-pseudopotential|
+ | on logrithmic grid. The non-local pseudopotential projector is also|
+ | read in if there is any.                                           |
+ |                                                                    |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+                PAO radial cut off (Bohr) = 15
+
+ Read in pseudopotential file is /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/Ti.upf
+                     pseudopotential type = NC
+          exchange-correlation functional = PBE
+                 nonlocal core correction = 1
+                        valence electrons = 12
+                                     lmax = 2
+                           number of zeta = 4
+                     number of projectors = 6
+                           L of projector = 0
+                           L of projector = 0
+                           L of projector = 1
+                           L of projector = 1
+                           L of projector = 2
+                           L of projector = 2
+                PAO radial cut off (Bohr) = 15
+
+ Read in pseudopotential file is /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/N.upf
+                     pseudopotential type = NC
+          exchange-correlation functional = PBE
+                 nonlocal core correction = 1
+                        valence electrons = 5
+                                     lmax = 1
+                           number of zeta = 2
+                     number of projectors = 4
+                           L of projector = 0
+                           L of projector = 0
+                           L of projector = 1
+                           L of projector = 1
+                PAO radial cut off (Bohr) = 15
+
+ Read in pseudopotential file is /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/B.upf
+                     pseudopotential type = NC
+          exchange-correlation functional = PBE
+                 nonlocal core correction = 1
+                        valence electrons = 3
+                                     lmax = 1
+                           number of zeta = 2
+                     number of projectors = 4
+                           L of projector = 0
+                           L of projector = 0
+                           L of projector = 1
+                           L of projector = 1
+     initial pseudo atomic orbital number = 518
+                                   NLOCAL = 1678
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ Warning: the number of valence electrons in pseudopotential > 4 for Ti: [Ar] 3d2 4s2
+ Pseudopotentials with additional electrons can yield (more) accurate outcomes, but may be less efficient.
+ If you're confident that your chosen pseudopotential is appropriate, you can safely ignore this warning.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                  
+
+ Warning_Memory_Consuming allocated:  FFT::grid 125.141143799 MB
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Setup plane waves of charge/potential:                             |
+ | Use the energy cutoff and the lattice vectors to generate the      |
+ | dimensions of FFT grid. The number of FFT grid on each processor   |
+ | is 'nrxx'. The number of plane wave basis in reciprocal space is   |
+ | different for charege/potential and wave functions. We also set    |
+ | the 'sticks' for the parallel of FFT. The number of plane waves    |
+ | is 'npw' in each processor.                                        |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+ SETUP THE PLANE WAVE BASIS
+ energy cutoff for charge/potential (unit:Ry) = 320
+            fft grid for charge/potential = [ 225, 225, 324 ]
+                        fft grid division = [ 5, 5, 3 ]
+        big fft grid for charge/potential = [ 45, 45, 108 ]
+                                     nbxx = 54675
+                                     nrxx = 4100625
+
+ SETUP PLANE WAVES FOR CHARGE/POTENTIAL
+                    number of plane waves = 6830333
+                         number of sticks = 31723
+
+ PARALLEL PW FOR CHARGE/POTENTIAL
+     PROC   COLUMNS(POT)             PW
+        1           7931        1707585
+        2           7931        1707583
+        3           7931        1707583
+        4           7930        1707582
+ --------------- sum -------------------
+        4          31723        6830333
+                            number of |g| = 534926
+                                  max |g| = 28.9458904779
+                                  min |g| = 0
+
+----------- Double Check Mixing Parameters Begin ------------
+mixing_type: pulay
+mixing_beta: 0.4
+mixing_gg0: 1.5
+mixing_gg0_min: 0.1
+mixing_ndim: 20
+----------- Double Check Mixing Parameters End ------------
+
+ SETUP THE ELECTRONS NUMBER
+            electron number of element Ti = 12
+      total electron number of element Ti = 12
+             electron number of element N = 5
+       total electron number of element N = 320
+             electron number of element B = 3
+       total electron number of element B = 189
+            AUTOSET number of electrons:  = 521
+ DONE : SETUP UNITCELL Time : 0.345825865 (SEC)
+
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Setup K-points                                                     |
+ | We setup the k-points according to input parameters.               |
+ | The reduced k-points are set according to symmetry operations.     |
+ | We treat the spin as another set of k-points.                      |
+ |                                                                    |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+ SETUP K-POINTS
+                                    nspin = 1
+                   Input type of k points = Monkhorst-Pack(Gamma)
+                                   nkstot = 1
+                               nkstot_ibz = 1
+K-POINTS REDUCTION ACCORDING TO SYMMETRY
+     IBZ     DIRECT_X     DIRECT_Y     DIRECT_Z WEIGHT ibz2bz
+       1   0.00000000   0.00000000   0.00000000 1.0000 0     
+                               nkstot now = 1
+K-POINTS DIRECT COORDINATES
+ KPOINTS     DIRECT_X     DIRECT_Y     DIRECT_Z WEIGHT
+       1   0.00000000   0.00000000   0.00000000 1.0000
+
+           k-point number in this process = 1
+       minimum distributed K point number = 1
+
+K-POINTS CARTESIAN COORDINATES
+ KPOINTS  CARTESIAN_X  CARTESIAN_Y  CARTESIAN_Z WEIGHT
+       1   0.00000000   0.00000000   0.00000000 2.0000
+
+K-POINTS DIRECT COORDINATES
+ KPOINTS     DIRECT_X     DIRECT_Y     DIRECT_Z WEIGHT
+       1   0.00000000   0.00000000   0.00000000 2.0000
+ DONE : INIT K-POINTS Time : 0.347261432 (SEC)
+
+
+ Warning_Memory_Consuming allocated:  FFT::grid 126.686096191 MB
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Setup plane waves of wave functions:                               |
+ | Use the energy cutoff and the lattice vectors to generate the      |
+ | dimensions of FFT grid. The number of FFT grid on each processor   |
+ | is 'nrxx'. The number of plane wave basis in reciprocal space is   |
+ | different for charege/potential and wave functions. We also set    |
+ | the 'sticks' for the parallel of FFT. The number of plane wave of  |
+ | each k-point is 'npwk[ik]' in each processor                       |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+ SETUP PLANE WAVES FOR WAVE FUNCTIONS
+     energy cutoff for wavefunc (unit:Ry) = 80
+              fft grid for wave functions = [ 225, 225, 324 ]
+                    number of plane waves = 853619
+                         number of sticks = 7915
+
+ PARALLEL PW FOR WAVE FUNCTIONS
+     PROC   COLUMNS(POT)             PW
+        1           1979         213405
+        2           1978         213406
+        3           1979         213403
+        4           1979         213405
+ --------------- sum -------------------
+        4           7915         853619
+ DONE : INIT PLANEWAVE Time : 0.390267453 (SEC)
+
+
+ Warning_Memory_Consuming allocated:  SF::strucFac 78.1670379639 MB
+                           occupied bands = 261
+                                   NLOCAL = 1678
+                                   NBANDS = 314
+                                   NBANDS = 314
+ SET NONLOCAL PSEUDOPOTENTIAL PROJECTORS
+ SET NONLOCAL PSEUDOPOTENTIAL PROJECTORS
+ SET NONLOCAL PSEUDOPOTENTIAL PROJECTORS
+ max number of nonlocal projetors among all species is 6
+
+ Warning_Memory_Consuming allocated:  TwoCenterTable: Kinetic 7.88999176025 MB
+
+ Warning_Memory_Consuming allocated:  TwoCenterTable: Overlap 7.88999176025 MB
+
+ Warning_Memory_Consuming allocated:  TwoCenterTable: Nonlocal 5.6070098877 MB
+
+ SETUP THE DIVISION OF H/S MATRIX
+ divide the H&S matrix using 2D block algorithms.
+                                     nb2d = 64
+               global2local_row dimension = 1678
+               global2local_col dimension = 1678
+
+ Warning_Memory_Consuming allocated:  DensityMatrix::DMK 5.46047973633 MB
+                                     nloc = 715716
+
+ Warning_Memory_Consuming allocated:  Chg::rho 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rho_save 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rhog 13.0278396606 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rhog_save 13.0278396606 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rho_core 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rhog_core 13.0278396606 MB
+
+ Warning_Memory_Consuming allocated:  Pot::veff_fix 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Pot::veff 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Pot::veff_smooth 31.2852859497 MB
+
+ -------------------------------------------
+ STEP OF MOLECULAR DYNAMICS : 20
+ -------------------------------------------
+              searching radius is (Bohr)) = 20.01
+         searching radius unit is (Bohr)) = 1.889726
+ No atoms on this sub-FFT-mesh.
+        enter setAlltoallvParameter, nblk = 64
+                                     pnum = 0
+                                     prow = 0
+                                     pcol = 0
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+                                     pnum = 1
+                                     prow = 0
+                                     pcol = 1
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+                                     pnum = 2
+                                     prow = 1
+                                     pcol = 0
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+                                     pnum = 3
+                                     prow = 1
+                                     pcol = 1
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+receiver_size is 0 ; receiver_size of each process is:
+0 0 0 0 
+sender_size is 1431432 ; sender_size of each process is:
+0 715716 715716 0 
+
+ Warning_Memory_Consuming allocated:  LOC::A2A_sender 43.6838684082 MB
+                                 init_chg = atomic
+ DONE : INIT SCF Time : 18.0479 (SEC)
+
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   1--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.238417173569
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1818.2673714618    -24738.7967393626
+E_Harris       -1830.0994397713    -24899.7802874977
+E_Fermi           -0.3156577666        -4.2947442439
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   2--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.100915077263
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1820.1229893249    -24764.0437156114
+E_Harris       -1555.7141585902    -21166.5770161028
+E_Fermi           -0.4212774085        -5.7317731940
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   3--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0641195370824
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.7606076103    -24759.1132594421
+E_Harris       -1676.3022615435    -22807.2623272775
+E_Fermi           -0.2675995338        -3.6408784422
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   4--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0428244080981
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5892118702    -24756.7813007634
+E_Harris       -1724.8567379784    -23467.8798701986
+E_Fermi           -0.3682226833        -5.0099266260
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   5--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0205937910109
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.6511064072    -24757.6234191418
+E_Harris       -1748.2518930987    -23786.1872854289
+E_Fermi           -0.2336643787        -3.1791669705
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   6--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0172702528825
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.6037843914    -24756.9795700861
+E_Harris       -1768.0974385746    -24056.1997838190
+E_Fermi           -0.2183142108        -2.9703172211
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   7--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0119134753314
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5971188112    -24756.8888802148
+E_Harris       -1781.4166419409    -24237.4168424227
+E_Fermi           -0.1949933403        -2.6530205003
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   8--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0105630403701
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5975911599    -24756.8953068489
+E_Harris       -1786.5901502410    -24307.8060339537
+E_Fermi           -0.2027979805        -2.7592080780
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   9--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.00942014139165
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5841067913    -24756.7118426027
+E_Harris       -1788.2061640012    -24329.7930291386
+E_Fermi           -0.1938010262        -2.6367982349
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  10--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.00632328086904
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5840845124    -24756.7115394826
+E_Harris       -1797.5323743183    -24456.6826301983
+E_Fermi           -0.1755063571        -2.3878864914
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  11--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.0051203397833
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5830441023    -24756.6973839765
+E_Harris       -1803.2594618634    -24534.6036537553
+E_Fermi           -0.1722343322        -2.3433683095
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  12--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.00306077851079
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5840130845    -24756.7105676555
+E_Harris       -1810.0299643920    -24626.7210664682
+E_Fermi           -0.1624271710        -2.2099350361
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  13--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.00212379266772
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5853421459    -24756.7286504631
+E_Harris       -1813.5396076810    -24674.4722131464
+E_Fermi           -0.1562331532        -2.1256610998
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  14--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.00141745768097
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5861890715    -24756.7401734784
+E_Harris       -1815.8750148966    -24706.2470584280
+E_Fermi           -0.1533250473        -2.0860942894
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  15--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.000852603993177
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5868669741    -24756.7493968161
+E_Harris       -1817.6076177473    -24729.8203295699
+E_Fermi           -0.1511184717        -2.0560722877
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  16--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.000507706440793
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5872537731    -24756.7546594865
+E_Harris       -1818.4910304405    -24741.8397758827
+E_Fermi           -0.1497220029        -2.0370723560
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  17--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.000288472113074
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5874723451    -24756.7576333105
+E_Harris       -1819.0341516296    -24749.2293187587
+E_Fermi           -0.1488012702        -2.0245451440
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  18--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.000146793913758
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875212767    -24756.7582990598
+E_Harris       -1819.3564626281    -24753.6145848666
+E_Fermi           -0.1482674070        -2.0172815628
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  19--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 8.81224221717e-05
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875587503    -24756.7588089144
+E_Harris       -1819.5108377064    -24755.7149655601
+E_Fermi           -0.1480747689        -2.0146605867
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  20--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 4.57190800903e-05
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875705157    -24756.7589689902
+E_Harris       -1819.5596822938    -24756.3795302659
+E_Fermi           -0.1480000148        -2.0136435049
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  21--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 2.50415769334e-05
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875757904    -24756.7590407566
+E_Harris       -1819.5793503510    -24756.6471279116
+E_Fermi           -0.1479706175        -2.0132435350
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  22--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 1.18569441224e-05
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875766388    -24756.7590522991
+E_Harris       -1819.5822317748    -24756.6863316941
+E_Fermi           -0.1479692316        -2.0132246781
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  23--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 6.22848531507e-06
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875768354    -24756.7590549745
+E_Harris       -1819.5856289857    -24756.7325531193
+E_Fermi           -0.1479591150        -2.0130870351
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  24--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 3.16240044013e-06
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875768329    -24756.7590549396
+E_Harris       -1819.5866904857    -24756.7469955681
+E_Fermi           -0.1479572741        -2.0130619878
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  25--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 1.87371196222e-06
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1819.5875768313    -24756.7590549184
+E_Harris       -1819.5881525856    -24756.7668884581
+E_Fermi           -0.1479544772        -2.0130239351
+------------------------------------------------------
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=  26--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 9.96666287283e-07
+----------------------------------------------------------
+    Energy           Rydberg                 eV         
+----------------------------------------------------------
+E_KohnSham         -1819.5875767801    -24756.7590542218
+E_KS(sigma->0)     -1819.5838973165    -24756.7089925514
+E_Harris           -1819.5881759943    -24756.7672069494
+E_band              -463.6413573796     -6308.1642888164
+E_one_elec        -23057.1950234963   -313709.2322167937
+E_Hartree          11617.5338908553    158064.6576237417
+E_xc                -567.5792256017     -7722.3115346106
+E_Ewald            10188.0115847856    138615.0088430940
+E_entropy(-TS)        -0.0073589272        -0.1001233407
+E_descf                0.0000000000         0.0000000000
+E_vdwD3               -0.3514443958        -4.7816463125
+E_exx                  0.0000000000         0.0000000000
+E_Fermi               -0.1479545724        -2.0130252300
+----------------------------------------------------------
+
+ charge density convergence is achieved
+ final etot is -24756.759054 eV
+
+ Warning_Memory_Consuming allocated:  Force::dS_GO 16.381439209 MB
+
+ Warning_Memory_Consuming allocated:  Stress::dSH_GO 65.525756836 MB
+
+ Warning_Memory_Consuming allocated:  Force::dTVNL 16.381439209 MB
+------------------------------------------------------------------------------------------
+TOTAL-FORCE (eV/Angstrom)                                                               
+------------------------------------------------------------------------------------------
+Ti1                              -5.2336845274        -2.1397617460         2.2923317060
+N1                                9.1933378167        -5.3154020429         4.5236751725
+N2                              -20.4092273236         8.9711426140         0.3216517557
+N3                               13.0638841322        -7.0135073602         0.4749308696
+N4                                1.5535669027         8.1457326827        -2.1664545078
+N5                                3.3991501188         1.8882663486        -0.1414839584
+N6                               -8.2579105804         2.2509685831        -4.1570360180
+N7                                4.2964853326         4.7195684098        -4.2920674627
+N8                                8.3321502541        -2.4129229685        -1.3232097672
+N9                                0.6442486478        -8.0158978669         5.7853801648
+N10                               9.3559865598         6.9073375055        -1.2494815974
+N11                               0.2993357841        -4.0223015154        -3.5059628344
+N12                              -3.0129980685        -2.2250988377        -0.2567482013
+N13                              -2.4779455211         4.5801625023        -0.5917858151
+N14                              -1.2633035792        -5.8840379968        -4.9476795849
+N15                              -1.1648386855        -8.5045105508        -3.8100237740
+N16                              -1.8266180206         9.2980975555         0.6458867480
+N17                             -10.6301760688         0.7081208428        -0.3395778630
+N18                               0.1620606775        -5.5469724501        -1.3261535357
+N19                               3.3914345460         3.0291619573        -1.6698150486
+N20                              -1.7579387716        -5.8076324732        -2.3739054726
+N21                               6.4218538972         5.9747367052        -0.4663669521
+N22                              -4.4717383136         1.9060293715         0.6615290488
+N23                               6.0455917634         6.1649289643         1.2140668736
+N24                              -0.5790282340         4.3991805072         5.4954836185
+N25                              -0.9943996042        -4.6713861445         4.2397390103
+N26                               2.6003606379         0.0918636256        -1.0582135727
+N27                              -9.3304343824         9.3817999094        -0.9142984381
+N28                              11.0285503469        -9.1509527437        -0.0621905692
+N29                              -6.1254404680         0.3419154702        -0.7815148251
+N30                              -2.6145760268         0.9251407576         0.4141987117
+N31                             -16.0855780156         9.5242911233         3.1665005641
+N32                               4.9889451397        -5.4834718765         3.7886706581
+N33                              -7.3226570473        -0.9811269182         0.4819533078
+N34                               1.3727026248        -6.2587959803        -3.2813173639
+N35                               3.3618493935        -5.9466189918        -1.6559731532
+N36                              -2.5455621280         6.0715070977        -0.1669275304
+N37                              -2.7605185158         2.3394809849         2.2622792373
+N38                               9.3556506455         3.7034319365        -3.7683265666
+N39                              -0.8946902714         4.1884909960         0.8705621035
+N40                              -6.4724393020        -8.0056188210        -1.9274889724
+N41                               8.5374736537         8.2039258071         0.2725347354
+N42                              -0.6592984063         0.4766310282        -1.2425347548
+N43                              -6.7898452883       -23.1738947199        -1.1158855690
+N44                              12.6245489584        -4.8759354831         1.0346177809
+N45                             -12.3142520581         4.8645356093         0.1040122534
+N46                               0.0403254660         5.7005550512         1.0558878464
+N47                              -3.4696338768        -0.1216093157         2.4610022561
+N48                               5.7581131993        -1.8356571249        -0.3468553978
+N49                               3.6532369226         6.4281499177         2.6440223558
+N50                               4.6484629277        -1.6248088965        -1.7100471754
+N51                              -5.9233507952        -1.1153699679        -1.7509736027
+N52                              -3.9789975560         8.7678858157        -0.8064770733
+N53                               8.7934085437         2.5207510253         0.3050914993
+N54                              -6.7520859230         0.8378516412        -0.4499656108
+N55                               0.2399541703        -5.5392174969         7.4347292945
+N56                               2.1293448148         2.3262904628         1.3067300571
+N57                               4.2885676349       -18.3610127298         1.7130157426
+N58                              -3.6192132233         0.2655631970         1.9034886033
+N59                               1.3631219557         0.1246765474        -3.5808369233
+N60                               8.7503863642        -1.2857349696        -0.8228138489
+N61                             -12.8281827692        -7.6059712269         0.0738154187
+N62                              10.0769818653         4.2988028402        -2.9662924120
+N63                             -12.9150352260         9.4292139680         0.8459863838
+N64                               6.2042102081         1.1693972516         2.5742861846
+B1                                2.2026161479         1.0802416337         0.4744987466
+B2                                2.9634640413        -3.9837285574        -1.3167979966
+B3                               -4.9960913769        -2.4488951851         3.9160852267
+B4                                1.1967111734        -3.0227186408        -2.3682261688
+B5                               -5.9875424217        11.0527698295         1.9642088666
+B6                                3.9952981500        -5.1667554467         4.1499247986
+B7                               -2.9214354977         0.5489321298        -5.2053384424
+B8                                1.7788015313         1.6678901256        -4.8676700211
+B9                               -1.2414728129         5.8125936558         3.4200390402
+B10                              -4.4434219255         9.4131456498         0.5225420933
+B11                               5.6557404124        -0.8736090954         1.1685352682
+B12                               4.6257919860         0.6672341079         1.2736565539
+B13                               2.7573514271        -0.6755929315         8.1384610441
+B14                              -5.5228596129        -0.4583874877         4.0659886529
+B15                               1.9499337202        -3.3955292596         1.9193271885
+B16                               2.0054865034       -11.9556740779        -0.8248089815
+B17                               0.6385024272         1.2565042563         0.9122419761
+B18                               6.2481585665        -0.5488080123         3.3231428304
+B19                              -0.7476585875         0.4216117659         0.7843749443
+B20                              -4.8367077418        -4.1541475091        -0.9724768273
+B21                              -8.7797801150        -3.8074653228         1.8969008392
+B22                               7.9388305154         2.1856856859        -0.5214249500
+B23                               0.8400110153        -0.8074122207        -7.1644945124
+B24                              -4.9701361039        12.3106485062        -0.3030806796
+B25                              -4.7331941304        -4.9296736547         2.5617201164
+B26                              -3.2602987607        -8.5115418560         0.3771452815
+B27                              -0.9394096033         5.7984471965         2.5642201507
+B28                               6.1819916531        -6.3114736795         1.8645539228
+B29                               5.6013957797        -1.3924947887        -4.6235526224
+B30                              11.5720953352        -3.4286275820        -1.2655969722
+B31                              -1.1193039085         2.7350821934        -6.3317939329
+B32                               6.9583230790        -3.2418619512        -2.4304728580
+B33                              -1.2708040715         7.5364330671         3.0884482535
+B34                               3.9908518135         0.8599614918         0.6679062439
+B35                              -3.5250449981         8.8934763239        -0.0049935006
+B36                              -8.3870098145        -3.1564812528        -3.2420871501
+B37                              -1.7899704845        -3.6600415624        -2.5507425543
+B38                              -0.2292838082         3.3744127689        -1.2372713653
+B39                               1.8498474227         0.9782993260         5.6234903824
+B40                              10.5827661289        -2.3731809237        -1.2466918018
+B41                              -4.1228603002         9.3786334307         1.9579223724
+B42                               1.8002053691        -8.0977476938        -0.5217521644
+B43                               1.5003710267         0.1494727363        -5.0359713378
+B44                               8.5886877096         5.7517537915        -0.1942689251
+B45                               4.5336939255        -3.5373669497        -0.0783139838
+B46                              -3.5716952034        -6.2614158567         1.0060184794
+B47                             -11.1395814540        -2.5309417328         0.8129319067
+B48                              -2.5846589436         8.0447104296        -1.8419176846
+B49                              -1.0248581466        -4.7896859651         3.6770548192
+B50                               3.1160402959        15.4909529823         0.6474434163
+B51                              -5.7902654627        -4.9866663157         0.3600305506
+B52                              -2.9712356501         0.3750588725         0.3266435369
+B53                               5.9226269711        -4.1414435848        -3.7047316089
+B54                              -6.5960815057        -2.6159816105        -4.7419336229
+B55                              -1.7062158095         1.5372459962        -0.8603057491
+B56                              -0.0048016499        -2.3994679988        -5.6740371608
+B57                              -8.6856996861        -3.4697712900         1.9755972999
+B58                              -3.0533715499         7.8918314200         2.9871796269
+B59                               0.4073420206         4.3370340551         2.3340064831
+B60                               6.9485707798       -12.5402390940        -0.0553754368
+B61                               1.2559715141         6.2548735387         2.4411224006
+B62                               0.7986250211        -7.5221627126        -2.7344523480
+B63                               4.0529643470         7.3916974376        -0.6241561633
+------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+TOTAL-STRESS (KBAR)                                           
+----------------------------------------------------------------
+       29.8870456517         1.0694402195         1.8652064507
+        1.0694402195        31.2126088703        -3.6922977004
+        1.8652064507        -3.6922977004        -6.9680423029
+----------------------------------------------------------------
+ TOTAL-PRESSURE: 18.043871 KBAR
+
+
+
+ ------------------------------------------------------------------------------------------------
+ Energy (Ry)         Potential (Ry)      Kinetic (Ry)        Temperature (K)     Pressure (kbar)     
+ -1816.0492          -1819.5876          3.5383476           2932.5996           22.954283           
+ ------------------------------------------------------------------------------------------------
+Virtual Pressure is 22.954283 kbar 
+Virial Term is 18.043871 kbar 
+Kinetic Term is 4.9104119 kbar 
+
+
+ ><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+ MD STRESS (kbar)
+
+ ><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+35.569019      0.97554345     2.7010927      
+0.97554345     36.329787      -4.3775262     
+2.7010927      -4.3775262     -3.0359573     
+
+
+
+
+ --------------------------------------------
+ !FINAL_ETOT_IS -24756.75905422177 eV
+ --------------------------------------------
+
+
+TIME STATISTICS
+------------------------------------------------------------------------------------
+     CLASS_NAME                 NAME            TIME(Sec)  CALLS   AVG(Sec) PER(%)
+------------------------------------------------------------------------------------
+                     total                      459.03           9  51.00   100.00
+Driver               reading                      0.00           1   0.00     0.00
+Input                Init                         0.00           1   0.00     0.00
+Input_Conv           Convert                      0.00           1   0.00     0.00
+Driver               driver_line                459.03           1 459.03   100.00
+UnitCell             check_tau                    0.00           1   0.00     0.00
+ESolver_KS_LCAO      init                         5.38           1   5.38     1.17
+PW_Basis_Sup         setuptransform               0.03           1   0.03     0.01
+PW_Basis_Sup         distributeg                  0.02           1   0.02     0.00
+mymath               heapsort                     0.18           3   0.06     0.04
+PW_Basis_K           setuptransform               0.02           1   0.02     0.00
+PW_Basis_K           distributeg                  0.02           1   0.02     0.00
+PW_Basis             setup_struc_factor           1.16           1   1.16     0.25
+NOrbital_Lm          extra_uniform                0.04          19   0.00     0.01
+Mathzone_Add1        SplineD2                     0.00          19   0.00     0.00
+Mathzone_Add1        Cubic_Spline_Interpolation   0.00          19   0.00     0.00
+Mathzone_Add1        Uni_Deriv_Phi                0.04          19   0.00     0.01
+ppcell_vl            init_vloc                    3.43           1   3.43     0.75
+Run_MD               md_line                    453.58           1 453.58    98.81
+Verlet               setup                      453.56           1 453.56    98.81
+MD_func              force_virial               453.56           1 453.56    98.81
+ESolver_KS_LCAO      run                        393.92           1 393.92    85.82
+ESolver_KS_LCAO      before_scf                  12.64           1  12.64     2.75
+Vdwd3                cal_energy                   0.04           1   0.04     0.01
+ESolver_KS_LCAO      beforesolver                 1.14           1   1.14     0.25
+ESolver_KS_LCAO      set_matrix_grid              1.09           1   1.09     0.24
+atom_arrange         search                       0.00           1   0.00     0.00
+Grid_Technique       init                         1.09           1   1.09     0.24
+Grid_BigCell         grid_expansion_index         0.01           1   0.01     0.00
+Record_adj           for_2d                       0.00           1   0.00     0.00
+Grid_Driver          Find_atom                    0.00         896   0.00     0.00
+LCAO_domain          grid_prepare                 0.00           1   0.00     0.00
+OverlapNew           initialize_SR                0.00           1   0.00     0.00
+EkineticNew          initialize_HR                0.00           1   0.00     0.00
+NonlocalNew          initialize_HR                0.01           1   0.01     0.00
+Veff                 initialize_HR                0.00           1   0.00     0.00
+LOC                  Alltoall                     0.04           1   0.04     0.01
+Charge               set_rho_core                 5.00           1   5.00     1.09
+PW_Basis_Sup         recip2real                  15.54         175   0.09     3.38
+PW_Basis_Sup         gathers_scatterp             6.97         175   0.04     1.52
+Charge               atomic_rho                  10.32           2   5.16     2.25
+Potential            init_pot                     1.29           1   1.29     0.28
+Potential            update_from_charge          31.98          27   1.18     6.97
+Potential            cal_fixed_v                  0.10           1   0.10     0.02
+PotLocal             cal_fixed_v                  0.10           1   0.10     0.02
+Potential            cal_v_eff                   31.77          27   1.18     6.92
+H_Hartree_pw         v_hartree                    4.97          27   0.18     1.08
+PW_Basis_Sup         real2recip                  14.58         205   0.07     3.18
+PW_Basis_Sup         gatherp_scatters             5.72         205   0.03     1.25
+PotXC                cal_v_eff                   26.43          27   0.98     5.76
+XC_Functional        v_xc                        28.22          29   0.97     6.15
+Potential            interpolate_vrs              0.11          27   0.00     0.02
+H_Ewald_pw           compute_ewald                0.02           1   0.02     0.01
+Charge_Mixing        init_mixing                  0.00           1   0.00     0.00
+HSolverLCAO          solve                      333.34          26  12.82    72.62
+HamiltLCAO           updateHk                   170.73          26   6.57    37.19
+OperatorLCAO         init                       170.04          78   2.18    37.04
+OverlapNew           calculate_SR                 0.22           1   0.22     0.05
+OverlapNew           contributeHk                 0.00           1   0.00     0.00
+EkineticNew          contributeHR                 0.23          26   0.01     0.05
+EkineticNew          calculate_HR                 0.22           1   0.22     0.05
+NonlocalNew          contributeHR                 0.47          26   0.02     0.10
+NonlocalNew          calculate_HR                 0.44           1   0.44     0.10
+Veff                 contributeHR               169.78          26   6.53    36.99
+Gint_interface       cal_gint                     0.00          53   0.00     0.00
+Gint_interface       cal_gint_vlocal              0.00          26   0.00     0.00
+Gint_Gamma           transfer_pvpR              169.78          26   6.53    36.99
+OperatorLCAO         contributeHk                 0.02          26   0.00     0.00
+HSolverLCAO          hamiltSolvePsiK             11.86          26   0.46     2.58
+OperatorLCAO         get_hs_pointers              0.00          27   0.00     0.00
+DiagoElpa            elpa_solve                  11.36          26   0.44     2.47
+ElecStateLCAO        psiToRho                   150.74          26   5.80    32.84
+ElecStateLCAO        cal_dm_2d                    0.26          26   0.01     0.06
+elecstate            cal_dm                       0.25          27   0.01     0.05
+psiMulPsiMpi         pdgemm                       0.23          27   0.01     0.05
+DensityMatrix        cal_DMR                      0.03          26   0.00     0.01
+Gint                 transfer_DMR                 0.18          26   0.01     0.04
+Gint_interface       cal_gint_rho                 0.00          26   0.00     0.00
+Charge_Mixing        get_drho                     0.14          26   0.01     0.03
+Charge               mix_rho                      7.46          25   0.30     1.63
+Charge               Pulay_mixing                 1.22          25   0.05     0.27
+ESolver_KS_LCAO      cal_force                   59.64           1  59.64    12.99
+Force_Stress_LCAO    getForceStress              59.64           1  59.64    12.99
+Forces               cal_force_loc                1.30           1   1.30     0.28
+Forces               cal_force_ew                 0.92           1   0.92     0.20
+Forces               cal_force_cc                 6.92           1   6.92     1.51
+Forces               cal_force_scc                6.15           1   6.15     1.34
+Stress_Func          stress_loc                   7.01           1   7.01     1.53
+Stress_Func          stress_har                   0.10           1   0.10     0.02
+Stress_Func          stress_ewa                   1.34           1   1.34     0.29
+Stress_Func          stress_cc                   12.88           1  12.88     2.81
+Stress_Func          stress_gga                   0.53           1   0.53     0.12
+Force_LCAO_gamma     ftable_gamma                22.39           1  22.39     4.88
+Force_LCAO_gamma     allocate_gamma               0.82           1   0.82     0.18
+LCAO_gen_fixedH      build_ST_new                 0.52           2   0.26     0.11
+LCAO_gen_fixedH      b_NL_mu_new                  0.28           1   0.28     0.06
+Force_LCAO_gamma     cal_foverlap                 0.05           1   0.05     0.01
+Force_LCAO_gamma     cal_edm_2d                   0.02           1   0.02     0.00
+Force_LCAO_gamma     cal_ftvnl_dphi               0.02           1   0.02     0.00
+Force_LCAO_gamma     cal_fvnl_dbeta_new           1.10           1   1.10     0.24
+Force_LCAO_gamma     cal_fvl_dphi                 0.00           1   0.00     0.00
+Gint_interface       cal_gint_force               0.00           1   0.00     0.00
+Vdwd3                cal_force                    0.05           1   0.05     0.01
+Vdwd3                cal_stress                   0.05           1   0.05     0.01
+ESolver_KS_LCAO      cal_stress                   0.00           1   0.00     0.00
+ESolver_KS_LCAO      post_process                 0.00           1   0.00     0.00
+ModuleIO             write_istate_info            0.00           1   0.00     0.00
+------------------------------------------------------------------------------------
+
+ NAME-------------------------|MEMORY(MB)--------
+total                         2637           
+FFT::grid                     503.7          
+SF::strucFac                  312.7          
+Stress::dSH_GO                214.8          
+                              128.9          
+Chg::rho                      125.1          
+Chg::rho_save                 125.1          
+Chg::rho_core                 125.1          
+Pot::veff_fix                 125.1          
+Pot::veff                     125.1          
+Pot::veff_smooth              125.1          
+Force::dTVNL                  118.1          
+LOC::A2A_sender               92.11          
+Force::dS_GO                  75.19          
+Chg::rhog                     52.11          
+Chg::rhog_save                52.11          
+Chg::rhog_core                52.11          
+                              32.22          
+                              32.22          
+TwoCenterTable: Kinetic       31.56          
+TwoCenterTable: Overlap       31.56          
+TwoCenterTable: Nonlocal      22.43          
+DensityMatrix::DMK            21.48          
+PW_B_K::gcar                  19.54          
+GT::index2normal              12.45          
+SF::eigts123                  12.09          
+HamiltLCAO::hR                11.41          
+Gint::hRGint                  8.662          
+Gint::DMRGint                 8.662          
+PW_B_K::gk2                   6.513          
+LOC::A2A_receiv               6.331          
+GT::trace_lo                  6.238          
+DensityMatrix::DMR            5.016          
+LOC::A2A_other                2.758          
+HamiltLCAO::sR                2.723          
+                              2.282          
+Grid::AtomLink                1.75           
+meshball_pos                  1.622          
+ -------------   < 1.0 MB has been ignored ----------------
+ ----------------------------------------------------------
+
+ Start  Time  : Thu Jun 27 02:01:04 2024
+ Finish Time  : Thu Jun 27 02:08:43 2024
+ Total  Time  : 0 h 7 mins 39 secs 

@@ -36,7 +36,7 @@ md_nstep                1         #
 md_dt                   1           # fs
 md_tfirst               300         # Kelvin
 md_tlast                300         # Kelvin
-md_restart          	0    		# whether restart md
+md_restart          	1    		# whether restart md
 md_dumpfreq         	1   		# The period to dump MD information
 
 

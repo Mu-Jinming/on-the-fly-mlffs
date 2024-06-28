@@ -1,0 +1,533 @@
+                                                                                     
+                              ABACUS v3.6.0
+
+               Atomic-orbital Based Ab-initio Computation at UStc                    
+
+                     Website: http://abacus.ustc.edu.cn/                             
+               Documentation: https://abacus.deepmodeling.com/                       
+                  Repository: https://github.com/abacusmodeling/abacus-develop       
+                              https://github.com/deepmodeling/abacus-develop         
+                      Commit: unknown
+
+    Start Time is Thu Jun 27 02:18:15 2024
+                                                                                     
+ ------------------------------------------------------------------------------------
+
+ READING GENERAL INFORMATION
+                           global_out_dir = OUT.ABACUS/
+                           global_in_card = INPUT
+                               pseudo_dir = 
+                              orbital_dir = 
+                                    DRANK = 1
+                                    DSIZE = 4
+                                   DCOLOR = 1
+                                    GRANK = 1
+                                    GSIZE = 1
+ The esolver type has been set to : ksdft_lcao
+
+ RUNNING WITH DEVICE  : CPU / 13th Gen Intel(R) Core(TM) i9-13900K
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Reading atom information in unitcell:                              |
+ | From the input file and the structure file we know the number of   |
+ | different elments in this unitcell, then we list the detail        |
+ | information for each element, especially the zeta and polar atomic |
+ | orbital number for each element. The total atom number is counted. |
+ | We calculate the nearest atom distance for each atom and show the  |
+ | Cartesian and Direct coordinates for each atom. We list the file   |
+ | address for atomic orbitals. The volume and the lattice vectors    |
+ | in real and reciprocal space is also shown.                        |
+ |                                                                    |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+ READING UNITCELL INFORMATION
+                                    ntype = 3
+                  lattice constant (Bohr) = 1.88973
+              lattice constant (Angstrom) = 1
+
+ READING ATOM TYPE 1
+                               atom label = Ti
+                      L=0, number of zeta = 4
+                      L=1, number of zeta = 2
+                      L=2, number of zeta = 2
+                      L=3, number of zeta = 1
+             number of atom for this type = 1
+
+ READING ATOM TYPE 2
+                               atom label = N
+                      L=0, number of zeta = 2
+                      L=1, number of zeta = 2
+                      L=2, number of zeta = 1
+             number of atom for this type = 64
+
+ READING ATOM TYPE 3
+                               atom label = B
+                      L=0, number of zeta = 2
+                      L=1, number of zeta = 2
+                      L=2, number of zeta = 1
+             number of atom for this type = 63
+
+                        TOTAL ATOM NUMBER = 128
+
+ CARTESIAN COORDINATES ( UNIT = 1.88973 Bohr ).
+         atom                   x                   y                   z                 mag                  vx                  vy                  vz
+     tauc_Ti1          6.36134008          9.45456479         16.41542177                   0   3.27654087325e-05   2.32436991425e-05   5.49215898614e-05
+      tauc_N1       4.81998050001       9.92576043001         15.58207282                   0    -0.0005702149609  -7.04639861987e-05   0.000549697419453
+      tauc_N2      0.135196780011          1.25832116         15.25690042                   0   0.000203258761573    0.00096455374244   0.000560084702425
+      tauc_N3       2.62546788998       1.79360358001         14.91561175                   0    0.00055203461101   0.000268445238016   8.32585597617e-05
+      tauc_N4          4.98514886          1.04278614         14.91323009                   0   0.000926927410201   0.000422142680491  -0.000432777037505
+      tauc_N5       7.84060915001       1.44461820001         14.85980439                   0   0.000516038377638  -0.000567993479746   0.000186118615063
+      tauc_N6         10.17370836       1.75964099999         14.93870908                   0   -0.00102412748077    0.00115796507479  -0.000826767604388
+      tauc_N7          12.2718353       1.63164348001         15.22620738                   0  -3.75905311642e-05  -0.000752871539612  -0.000410394168067
+      tauc_N8         13.97194929       1.85879499001         14.87918198                   0   -0.00255134191128    0.00145222812657  -0.000784566079481
+      tauc_N9         17.71767364          1.45746116         14.95667972                   0   -0.00059513955764   -0.00191583193384   0.000820475795824
+     tauc_N10         -1.15288343       3.38716728999         14.94620196                   0  -0.000592920016829   0.000271424975581    0.00032560351174
+     tauc_N11      0.924598150021       3.72988695999         14.84779132                   0   -0.00135853262061    0.00108696232997  -0.000828805255418
+     tauc_N12          3.77933207          3.61870387         14.81525732                   0  -0.000273041731291   0.000233376091787   2.18943598767e-05
+     tauc_N13       6.24557158999       3.43638636001         14.72709971                   0   0.000826534330591  -0.000883015606749  -4.38455889321e-05
+     tauc_N14       8.78311831002       3.54324190999         14.85369429                   0   0.000689964255357   5.70498221475e-05  -0.000883077162265
+     tauc_N15         11.16593788       3.73749425999         14.91924802                   0  -0.000234405704241   0.000435892063927  -0.000886359442073
+     tauc_N16         13.75472119       3.48023628001         15.04894255                   0  -0.000500585375491  -0.000637279597746   1.80664200924e-05
+     tauc_N17         16.36849074          3.67894522         15.15100731                   0   0.000414463421891   0.000296896914242   0.000329091041883
+     tauc_N18         -2.23205614       5.66237475001         14.96278035                   0  -0.000975045307619  -0.000584740028475  -0.000303858962198
+     tauc_N19     -0.473611409991          5.65549754          14.9174768                   0   0.000922299250655   0.000185114353889  -0.000376113677475
+     tauc_N20          2.23434262       5.64957061001         14.77970484                   0   0.000464196819105   -0.00071693817772  -0.000743248234392
+     tauc_N21          4.98734901          5.59533577         14.76083558                   0  -0.000945773659888   -0.00063663322987  -0.000286541857555
+     tauc_N22       7.42118187002          5.64974104         14.77666161                   0   -0.00116077773308  -0.000811228795351  -0.000221146807232
+     tauc_N23         10.02328438          5.69260147         15.09897926                   0   0.000265257727619   0.000183420325001  -0.000163803259274
+     tauc_N24         12.55253172       5.57470367999         14.99481702                   0    0.00161757668873   7.54907778792e-05   0.000802305146961
+     tauc_N25         15.04056167          5.70593435         15.01623231                   0   0.000726650228453  -0.000185681428403   0.000481676461155
+     tauc_N26      -3.61782853998       7.99699608999         14.91701983                   0   4.96089430809e-05   0.000692409912843  -0.000345970276156
+     tauc_N27         -1.11370755       7.54315308001         14.84321083                   0   6.96792448051e-05   -0.00113457910013  -0.000388547122382
+     tauc_N28       1.40692157999       8.03767155001         14.87735593                   0   -0.00149667848197   0.000888376755392  -0.000506300388909
+     tauc_N29          3.77208101          7.74412146         15.25747421                   0    0.00119588681752  -0.000252458811426   0.000197867111121
+     tauc_N30       6.41329425001       7.60417999999         15.44652601                   0    0.00106277177779  -0.000459786455645   0.000238350779766
+     tauc_N31          8.81268924       8.04458918999         15.29767041                   0    0.00113924526209   -0.00068648919246     0.0011018684393
+     tauc_N32          11.3844098          7.76780247          15.0503961                   0  -6.68000776235e-05    0.00100099818459   0.000667429343189
+     tauc_N33         13.73329063       8.13322519001         14.83923952                   0   0.000490711849711   -0.00147998519994  -0.000168590693335
+     tauc_N34      -5.01059751001         10.33544041         14.96474456                   0   5.93556509484e-05   0.000376533812931  -0.000309550684739
+     tauc_N35      -2.49077020001          9.31246289         14.94024134                   0   8.42653412882e-05   -0.00223224801208  -0.000479517955405
+     tauc_N36    -0.0235824500242         10.10271411         14.94316333                   0  -0.000520524390357    0.00130739653785   0.000158725954909
+     tauc_N37          2.27038317         10.43312436          14.9064474                   0   -0.00163127492627   0.000430136462399    0.00043385286947
+     tauc_N38       7.98946654001         10.33318449         15.60281828                   0   0.000761563962505  -6.03642938612e-05   0.000367143186712
+     tauc_N39          10.2546607         10.28852487         15.07554364                   0  -0.000272453459872   -0.00064319446691    0.00033248967667
+     tauc_N40         12.64463873         10.04255359         15.13403256                   0  -0.000177989618435  -0.000151445465112   -0.00013073713288
+     tauc_N41      -6.28386587002         12.34198466         14.82818256                   0    0.00147516667692    0.00109825239289   0.000314482205792
+     tauc_N42      -3.90875959999         12.45465853         15.05849826                   0  -0.000624095795317   0.000124829231847   0.000212964821423
+     tauc_N43      -1.38300095999         12.49364977          14.7769208                   0   0.000517734495293   0.000409374440912  -0.000252009711901
+     tauc_N44       1.09840916998         12.40708502         14.87462088                   0  -0.000282314502249  -0.000418415137678   0.000280417235422
+     tauc_N45       3.35698977002          12.4306197         14.95928361                   0   0.000309876896075   0.000436806070429   0.000437991809436
+     tauc_N46       6.34350823999         12.42596568         15.44117708                   0   0.000919571130919   0.000124496804921   0.000430553100413
+     tauc_N47          8.49156179         12.50393876         15.09124668                   0   0.000110703900334  -8.97229317913e-05   0.000119723708287
+     tauc_N48         11.03709573         12.21585739         15.04924186                   0   0.000285484974389   0.000287515008856   0.000136409251136
+     tauc_N49      -7.44592993001         13.37748505         14.62993828                   0  -0.000409217099813   -0.00268425752057  -0.000709610322022
+     tauc_N50         -4.85630987         14.57035048         14.95048632                   0  -0.000100763060587  -0.000756650802089  -0.000310298781915
+     tauc_N51      -2.56641400999         14.55603965          14.9542266                   0  -3.74159023071e-05   0.000120735245736  -0.000527741018742
+     tauc_N52      0.175303140009         14.77306893         15.14468325                   0   0.000356893202918   0.000591567583525   0.000116036511634
+     tauc_N53          2.74061518         14.48124615         14.93553407                   0  -0.000574969422156  -0.000449873626349  -0.000234771883934
+     tauc_N54            5.202785         14.50689953         15.14408285                   0  -0.000265647447167    0.00127922200047   0.000110506666667
+     tauc_N55       7.82992469001         14.63935163         15.33859832                   0   -0.00149991278002  -0.000987428460304    0.00182009477567
+     tauc_N56         10.07486927         14.71883093         14.85838117                   0   0.000165576709539    0.00142292755755  -4.43070715387e-05
+     tauc_N57      -8.81435042001         16.70681737          14.9705288                   0   0.000858452512731    0.00151196951673   8.73336092184e-05
+     tauc_N58         -6.26121068         16.88984209         14.96847065                   0  -6.63693594474e-05  -0.000332964367471   0.000591056633059
+     tauc_N59      -3.43440083999         16.58337641         15.16104074                   0   -0.00161582767526   -0.00038913827184   2.21126602191e-05
+     tauc_N60      -1.16076331998         16.81694384         14.82505959                   0   5.52425276433e-05     0.0005045021327   -0.00069075232772
+     tauc_N61       1.02471551001         16.49656409         14.97401443                   0    0.00213861224918   0.000600777171702  -0.000490362490111
+     tauc_N62       3.79968624001         16.74975173         14.93960774                   0   0.000235962417631  -0.000784848443338  -0.000354171671748
+     tauc_N63       6.38925515999         16.47897097         15.09400706                   0   0.000321092525092    0.00054793849824   0.000876818957202
+     tauc_N64       8.95208403999         16.96115681         15.06632754                   0    0.00183981813487   -0.00125874078898   0.000140606193838
+      tauc_B1       1.34310919998      0.728105270013          14.9268047                   0  -0.000377562243851     0.0011161404305  -0.000481991965285
+      tauc_B2       3.65978244001       1.12663103001         14.94845196                   0    0.00109363383126    0.00121099617823  -0.000480850853587
+      tauc_B3          6.37736314      0.599144469999          15.1100314                   0   0.000857002875405   0.000596422674608     0.0014462926439
+      tauc_B4       9.09847282001      0.751857939997         14.94814676                   0  -0.000199425056736   0.000755976096202    -0.0017106727196
+      tauc_B5         11.21787608          0.61563597         15.06332421                   0  -0.000629137805886  -0.000663343516798    0.00183119492506
+      tauc_B6         13.45116866      0.682392929995         15.30048994                   0  -3.63895468232e-06   0.000995436691173    0.00198173719327
+      tauc_B7         16.61894897      0.453955580002         14.82227769                   0   0.000218174061151   0.000388282051654   -0.00150763433889
+      tauc_B8           18.830522      0.998007250004         14.78208534                   0  -0.000505498455795   -0.00165347876382   -0.00143274457573
+      tauc_B9    -0.0453735000026           2.6506878         15.00777316                   0   -0.00104426124883   -2.6442863375e-05    0.00144744044094
+     tauc_B10       2.40110496999       3.30889021999         14.93312113                   0   0.000418724212862   -0.00208285779704  -0.000292390145092
+     tauc_B11       4.87268414001       2.66366694001         14.85916606                   0  -0.000943598822562   0.000286604348352    0.00017548171639
+     tauc_B12       7.55708018001          2.86846842         14.94445471                   0   0.000252113238355  -0.000709726920396  -0.000328538495034
+     tauc_B13         10.10504959       3.06311714999         15.35201558                   0    -0.0013534353952  -0.000480667482956    0.00243253663524
+     tauc_B14         12.62840057          2.96122053         15.33039758                   0   0.000804703492313  -0.000487320655156   0.000758052974401
+     tauc_B15         14.95589776       2.95178048999         14.99686834                   0  -0.000815364365639   0.000991278177479    0.00119543101773
+     tauc_B16         17.70475694          3.11635661         15.18258579                   0   0.000255578744073    0.00142155692208   -0.00150700415503
+     tauc_B17      -1.32812424001          4.79941439         14.88550059                   0   0.000287296179512   0.000536709361732   -0.00022866444105
+     tauc_B18      0.975754380001          5.18698556         15.03764567                   0  -0.000688918229109   -0.00060164103921    0.00163651109544
+     tauc_B19           3.7596612       4.99015095999         14.86429864                   0   0.000513394855827   0.000303152769032  -0.000317985859483
+     tauc_B20       6.09680318999       4.86068216999         14.75758259                   0   0.000234541877072   0.000289695862245  -0.000566678337459
+     tauc_B21       8.79108154001       5.01458714999         15.02864166                   0   0.000253279049075    -6.834903005e-05    0.00178817813161
+     tauc_B22         11.18153937          4.96512536         15.00393211                   0  -0.000945724591318  -0.000699964590598    0.00019974492114
+     tauc_B23         13.78665146       4.86996853999         14.63807584                   0  -0.000657779499812    0.00106572573984    -0.0021330847544
+     tauc_B24         16.28729816       5.26247555001         14.93188816                   0   0.000220668236071  -0.000737394893827   0.000629486237564
+     tauc_B25      -2.30983706999       7.18886591001         15.02669655                   0  -0.000303379229778   0.000300474465886   0.000896612004184
+     tauc_B26       0.13855794001       7.00208734001         14.99228377                   0  -9.75910011937e-05   0.000900992856727  -0.000177414187401
+     tauc_B27          2.62973329       7.17026938999         15.02025666                   0   0.000405689361739   -0.00236497628849   0.000379494921606
+     tauc_B28       5.01174582002          7.14563725         15.21323408                   0  -0.000222198552881    0.00034075409775     0.0012962649285
+     tauc_B29       7.73709770999          7.17410484         14.99362396                   0   -0.00190758883553  -0.000287867977642   -0.00158524480257
+     tauc_B30       9.98036434999          7.26926451         14.99673303                   0   -0.00134668050958    0.00013886425033  -0.000564948776098
+     tauc_B31         12.66069434          6.98739501         14.67659596                   0    0.00220162415833   0.000249146496128    -0.0015711516174
+     tauc_B32         15.04924323       7.38866833001          14.7945704                   0  -0.000968701147754   0.000986308256412   -0.00144331020809
+     tauc_B33      -3.77719418998       9.42352751999          15.1257214                   0     0.0011765678599  -0.000793573506507   0.000793566010571
+     tauc_B34      -1.25316968998       9.09978667999         15.06589605                   0  -0.000406947770629   0.000474749636632   -0.00021106134983
+     tauc_B35       1.27934698999          9.44693769         14.83302915                   0  -0.000209383578306   -0.00132508387432   0.000785233536592
+     tauc_B36       3.46333447002       9.27668489999         15.25277417                   0   0.000105144422841    0.00038185710443  -0.000926129109069
+     tauc_B37       8.94284307001       9.50014753001         15.16100251                   0    0.00120065036574    0.00129135054398   -0.00101346002778
+     tauc_B38         11.43284392          9.50412859         14.98051664                   0   -0.00196264126077   -0.00140592096086  -0.000559616993632
+     tauc_B39         13.76910412       9.43603149001         15.04279215                   0    1.1080473032e-05   -0.00128479623462    0.00198345551884
+     tauc_B40      -5.12573921001         11.72066807         14.96490973                   0   -0.00170685231634  -0.000213330634873   -0.00156723828617
+     tauc_B41      -2.69132412999         11.94331505         14.94282688                   0    0.00108172585981  -0.000681210246315   0.000649695831984
+     tauc_B42     -0.211421889981         11.45785023         14.85093999                   0   0.000724418549741  -0.000581442961522  -0.000980870320609
+     tauc_B43          2.35027511         11.84767434         14.77834611                   0   0.000341936115601  -0.000296112430666   -0.00186605130892
+     tauc_B44       4.62347437002         11.70575615         15.16321263                   0   -0.00169663050237   0.000849925813743   0.000507811036933
+     tauc_B45       7.52796711002         11.60747013         15.28411895                   0    0.00086564138613   0.000785049802058   0.000659349364231
+     tauc_B46       9.80824928001         11.78209692          15.0014131                   0    -0.0014412699407   0.000697631170725    0.00110272708147
+     tauc_B47         12.57411044          11.6557018         14.89452985                   0    0.00156087361664    0.00163371142209   0.000667345050795
+     tauc_B48      -6.10712519998          13.8343235         14.93192762                   0   -3.7456858438e-05    0.00070712036253  -0.000776536613537
+     tauc_B49      -3.74712006999         13.83418055         15.16138429                   0  -8.89303327056e-05    0.00087895177104   0.000992489280536
+     tauc_B50         -1.33744609          13.7437458         15.03918061                   0  -0.000838652883442  -0.000782765605241  -0.000191544610616
+     tauc_B51       1.48627147999         14.08389584         14.92131987                   0  -0.000374719924517  -0.000231380537772   0.000852648940296
+     tauc_B52       3.93389033002         13.81159598         15.05898431                   0    0.00114144311774  -0.000435778853042    0.00020371143668
+     tauc_B53          6.42839589         13.67792294         15.00415127                   0  -0.000334682776694   0.000664148497824   -0.00152204664463
+     tauc_B54          8.96669697         13.92733603          14.7658908                   0   9.20992309991e-05   -0.00062479639583   -0.00157404926365
+     tauc_B55          11.2754703         13.63535625         14.91458113                   0  -0.000864926793403  -8.33814157655e-05  -0.000119557005615
+     tauc_B56      -7.57189657999         16.50804274          15.0479703                   0    0.00151519578901   -0.00133682127968   -0.00162183072245
+     tauc_B57      -4.98838656001         15.95604583         15.15924182                   0   0.000627926857812   0.000621337421915   0.000617235080375
+     tauc_B58         -2.23244722         15.88416236         14.94772748                   0   0.000861415600838   0.000949336229416   0.000738277604974
+     tauc_B59     -0.227051620012         15.93111555         15.02691408                   0   0.000236376431117  -0.000900903117895   0.000638741474404
+     tauc_B60       2.42569384002         15.91464003         15.16596891                   0  -0.000105885776669   0.000921785164932  -0.000736819376464
+     tauc_B61       5.11528355001         15.92183121         15.12551257                   0   0.000725252669584   -0.00066410618874    0.00147236657871
+     tauc_B62       7.76096654998         16.30818561         14.90792373                   0  -5.32432815259e-05    0.00114985570068   -0.00210920761061
+     tauc_B63         10.02966272          16.0351807         14.63124433                   0  -0.000104077698069   0.000329764026704   0.000794904873552
+
+
+                          Volume (Bohr^3) = 70667.4498483
+                             Volume (A^3) = 10471.8231456
+
+ Lattice vectors: (Cartesian coordinate: in unit of a_0)
+       +20.0763846187                  +0                  +0
+       -10.0381923094        +17.38665923                  +0
+                   +0                  +0                 +30
+ Reciprocal vectors: (Cartesian coordinate: in unit of 2 pi/a_0)
+     +0.0498097650046    +0.0287576810121                  -0
+                   -0    +0.0575153620239                  -0
+                   +0                  -0    +0.0333333333333
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Reading pseudopotentials files:                                    |
+ | The pseudopotential file is in UPF format. The 'NC' indicates that |
+ | the type of pseudopotential is 'norm conserving'. Functional of    |
+ | exchange and correlation is decided by 4 given parameters in UPF   |
+ | file.  We also read in the 'core correction' if there exists.      |
+ | Also we can read the valence electrons number and the maximal      |
+ | angular momentum used in this pseudopotential. We also read in the |
+ | trail wave function, trail atomic density and local-pseudopotential|
+ | on logrithmic grid. The non-local pseudopotential projector is also|
+ | read in if there is any.                                           |
+ |                                                                    |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+                PAO radial cut off (Bohr) = 15
+
+ Read in pseudopotential file is /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/Ti.upf
+                     pseudopotential type = NC
+          exchange-correlation functional = PBE
+                 nonlocal core correction = 1
+                        valence electrons = 12
+                                     lmax = 2
+                           number of zeta = 4
+                     number of projectors = 6
+                           L of projector = 0
+                           L of projector = 0
+                           L of projector = 1
+                           L of projector = 1
+                           L of projector = 2
+                           L of projector = 2
+                PAO radial cut off (Bohr) = 15
+
+ Read in pseudopotential file is /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/N.upf
+                     pseudopotential type = NC
+          exchange-correlation functional = PBE
+                 nonlocal core correction = 1
+                        valence electrons = 5
+                                     lmax = 1
+                           number of zeta = 2
+                     number of projectors = 4
+                           L of projector = 0
+                           L of projector = 0
+                           L of projector = 1
+                           L of projector = 1
+                PAO radial cut off (Bohr) = 15
+
+ Read in pseudopotential file is /home/jinming/on-the-fly-mlffs/1step/TiNB/upf/B.upf
+                     pseudopotential type = NC
+          exchange-correlation functional = PBE
+                 nonlocal core correction = 1
+                        valence electrons = 3
+                                     lmax = 1
+                           number of zeta = 2
+                     number of projectors = 4
+                           L of projector = 0
+                           L of projector = 0
+                           L of projector = 1
+                           L of projector = 1
+     initial pseudo atomic orbital number = 518
+                                   NLOCAL = 1678
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ Warning: the number of valence electrons in pseudopotential > 4 for Ti: [Ar] 3d2 4s2
+ Pseudopotentials with additional electrons can yield (more) accurate outcomes, but may be less efficient.
+ If you're confident that your chosen pseudopotential is appropriate, you can safely ignore this warning.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                  
+
+ Warning_Memory_Consuming allocated:  FFT::grid 125.141143799 MB
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Setup plane waves of charge/potential:                             |
+ | Use the energy cutoff and the lattice vectors to generate the      |
+ | dimensions of FFT grid. The number of FFT grid on each processor   |
+ | is 'nrxx'. The number of plane wave basis in reciprocal space is   |
+ | different for charege/potential and wave functions. We also set    |
+ | the 'sticks' for the parallel of FFT. The number of plane waves    |
+ | is 'npw' in each processor.                                        |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+ SETUP THE PLANE WAVE BASIS
+ energy cutoff for charge/potential (unit:Ry) = 320
+            fft grid for charge/potential = [ 225, 225, 324 ]
+                        fft grid division = [ 5, 5, 3 ]
+        big fft grid for charge/potential = [ 45, 45, 108 ]
+                                     nbxx = 54675
+                                     nrxx = 4100625
+
+ SETUP PLANE WAVES FOR CHARGE/POTENTIAL
+                    number of plane waves = 6830333
+                         number of sticks = 31723
+
+ PARALLEL PW FOR CHARGE/POTENTIAL
+     PROC   COLUMNS(POT)             PW
+        1           7931        1707585
+        2           7931        1707583
+        3           7931        1707583
+        4           7930        1707582
+ --------------- sum -------------------
+        4          31723        6830333
+                            number of |g| = 534926
+                                  max |g| = 28.9458904779
+                                  min |g| = 0
+
+----------- Double Check Mixing Parameters Begin ------------
+mixing_type: pulay
+mixing_beta: 0.4
+mixing_gg0: 1.5
+mixing_gg0_min: 0.1
+mixing_ndim: 20
+----------- Double Check Mixing Parameters End ------------
+
+ SETUP THE ELECTRONS NUMBER
+            electron number of element Ti = 12
+      total electron number of element Ti = 12
+             electron number of element N = 5
+       total electron number of element N = 320
+             electron number of element B = 3
+       total electron number of element B = 189
+            AUTOSET number of electrons:  = 521
+ DONE : SETUP UNITCELL Time : 0.341108407 (SEC)
+
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Setup K-points                                                     |
+ | We setup the k-points according to input parameters.               |
+ | The reduced k-points are set according to symmetry operations.     |
+ | We treat the spin as another set of k-points.                      |
+ |                                                                    |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+ SETUP K-POINTS
+                                    nspin = 1
+                   Input type of k points = Monkhorst-Pack(Gamma)
+                                   nkstot = 1
+                               nkstot_ibz = 1
+K-POINTS REDUCTION ACCORDING TO SYMMETRY
+     IBZ     DIRECT_X     DIRECT_Y     DIRECT_Z WEIGHT ibz2bz
+       1   0.00000000   0.00000000   0.00000000 1.0000 0     
+                               nkstot now = 1
+K-POINTS DIRECT COORDINATES
+ KPOINTS     DIRECT_X     DIRECT_Y     DIRECT_Z WEIGHT
+       1   0.00000000   0.00000000   0.00000000 1.0000
+
+           k-point number in this process = 1
+       minimum distributed K point number = 1
+
+K-POINTS CARTESIAN COORDINATES
+ KPOINTS  CARTESIAN_X  CARTESIAN_Y  CARTESIAN_Z WEIGHT
+       1   0.00000000   0.00000000   0.00000000 2.0000
+
+K-POINTS DIRECT COORDINATES
+ KPOINTS     DIRECT_X     DIRECT_Y     DIRECT_Z WEIGHT
+       1   0.00000000   0.00000000   0.00000000 2.0000
+ DONE : INIT K-POINTS Time : 0.345092183 (SEC)
+
+
+ Warning_Memory_Consuming allocated:  FFT::grid 126.686096191 MB
+
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ |                                                                    |
+ | Setup plane waves of wave functions:                               |
+ | Use the energy cutoff and the lattice vectors to generate the      |
+ | dimensions of FFT grid. The number of FFT grid on each processor   |
+ | is 'nrxx'. The number of plane wave basis in reciprocal space is   |
+ | different for charege/potential and wave functions. We also set    |
+ | the 'sticks' for the parallel of FFT. The number of plane wave of  |
+ | each k-point is 'npwk[ik]' in each processor                       |
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+ SETUP PLANE WAVES FOR WAVE FUNCTIONS
+     energy cutoff for wavefunc (unit:Ry) = 80
+              fft grid for wave functions = [ 225, 225, 324 ]
+                    number of plane waves = 853619
+                         number of sticks = 7915
+
+ PARALLEL PW FOR WAVE FUNCTIONS
+     PROC   COLUMNS(POT)             PW
+        1           1979         213405
+        2           1978         213406
+        3           1979         213403
+        4           1979         213405
+ --------------- sum -------------------
+        4           7915         853619
+ DONE : INIT PLANEWAVE Time : 0.38819034 (SEC)
+
+
+ Warning_Memory_Consuming allocated:  SF::strucFac 78.1670379639 MB
+                           occupied bands = 261
+                                   NLOCAL = 1678
+                                   NBANDS = 314
+                                   NBANDS = 314
+ SET NONLOCAL PSEUDOPOTENTIAL PROJECTORS
+ SET NONLOCAL PSEUDOPOTENTIAL PROJECTORS
+ SET NONLOCAL PSEUDOPOTENTIAL PROJECTORS
+ max number of nonlocal projetors among all species is 6
+
+ Warning_Memory_Consuming allocated:  TwoCenterTable: Kinetic 7.88999176025 MB
+
+ Warning_Memory_Consuming allocated:  TwoCenterTable: Overlap 7.88999176025 MB
+
+ Warning_Memory_Consuming allocated:  TwoCenterTable: Nonlocal 5.6070098877 MB
+
+ SETUP THE DIVISION OF H/S MATRIX
+ divide the H&S matrix using 2D block algorithms.
+                                     nb2d = 64
+               global2local_row dimension = 1678
+               global2local_col dimension = 1678
+
+ Warning_Memory_Consuming allocated:  DensityMatrix::DMK 5.46047973633 MB
+                                     nloc = 715716
+
+ Warning_Memory_Consuming allocated:  Chg::rho 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rho_save 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rhog 13.0278396606 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rhog_save 13.0278396606 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rho_core 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Chg::rhog_core 13.0278396606 MB
+
+ Warning_Memory_Consuming allocated:  Pot::veff_fix 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Pot::veff 31.2852859497 MB
+
+ Warning_Memory_Consuming allocated:  Pot::veff_smooth 31.2852859497 MB
+
+ -------------------------------------------
+ STEP OF MOLECULAR DYNAMICS : 40
+ -------------------------------------------
+              searching radius is (Bohr)) = 20.01
+         searching radius unit is (Bohr)) = 1.889726
+ No atoms on this sub-FFT-mesh.
+        enter setAlltoallvParameter, nblk = 64
+                                     pnum = 0
+                                     prow = 0
+                                     pcol = 0
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+                                     pnum = 1
+                                     prow = 0
+                                     pcol = 1
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+                                     pnum = 2
+                                     prow = 1
+                                     pcol = 0
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+                                     pnum = 3
+                                     prow = 1
+                                     pcol = 1
+                             nRow_in_proc = 0
+                             nCol_in_proc = 0
+receiver_size is 0 ; receiver_size of each process is:
+0 0 0 0 
+sender_size is 1431432 ; sender_size of each process is:
+0 715716 715716 0 
+
+ Warning_Memory_Consuming allocated:  LOC::A2A_sender 43.6838684082 MB
+                                 init_chg = atomic
+ DONE : INIT SCF Time : 18.0582 (SEC)
+
+
+ LCAO ALGORITHM --------------- ION=   1  ELEC=   1--------------------------------
+
+K-S equation was solved by genelpa2
+
+eigenvalues were copied to ekb
+
+ Density error is 0.238391380186
+------------------------------------------------------
+  Energy         Rydberg                 eV         
+------------------------------------------------------
+E_KohnSham     -1817.1693791252    -24723.8577872254
+E_Harris       -1829.1205987541    -24886.4624722270
+E_Fermi           -0.3308402367        -4.5013123475
+------------------------------------------------------
